@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/debounce2/output_files/simulation/qsim
+vhard_block
+Z1 !s110 1540967471
+!i10b 1
+!s100 8c[a>i1R:6M6>n[kk^]?00
+I`gIhZ3J;a=61O@jN[7NCd1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1540967470
+Z4 8my_lock.vo
+Z5 Fmy_lock.vo
+L0 5543
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1540967471.000000
+Z8 !s107 my_lock.vo|
+Z9 !s90 -work|work|my_lock.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmy_lock
+R1
+!i10b 1
+!s100 Rbf?`<<@81?:lcMi0dBid3
+IL4a6T:`iIL`kQ>oTb9DXC3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vmy_lock_vlg_vec_tst
+R1
+!i10b 1
+!s100 IO2oLIF5@cd_gPB;4dl[h0
+IdhR=_M[SHBe;9cii^K0ME1
+R2
+R0
+w1540967468
+8output_files/Waveform.vwf.vt
+Foutput_files/Waveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 output_files/Waveform.vwf.vt|
+!s90 -work|work|output_files/Waveform.vwf.vt|
+!i113 1
+R10
+R11

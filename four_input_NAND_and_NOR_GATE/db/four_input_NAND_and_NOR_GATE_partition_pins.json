@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED_N5_R",
+					"strict" : false
+				},
+				{
+					"name" : "LED_T6_G",
+					"strict" : false
+				},
+				{
+					"name" : "swa[0]",
+					"strict" : false
+				},
+				{
+					"name" : "swa[1]",
+					"strict" : false
+				},
+				{
+					"name" : "swa[2]",
+					"strict" : false
+				},
+				{
+					"name" : "swa[3]",
+					"strict" : false
+				},
+				{
+					"name" : "swo[0]",
+					"strict" : false
+				},
+				{
+					"name" : "swo[1]",
+					"strict" : false
+				},
+				{
+					"name" : "swo[2]",
+					"strict" : false
+				},
+				{
+					"name" : "swo[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

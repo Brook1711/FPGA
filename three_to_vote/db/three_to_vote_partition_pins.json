@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "agreement",
+					"strict" : false
+				},
+				{
+					"name" : "sw3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sw3[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

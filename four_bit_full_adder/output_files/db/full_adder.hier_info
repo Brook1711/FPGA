@@ -1,0 +1,64 @@
+|full_adder
+swx[0] => swx[0].IN1
+swx[1] => swx[1].IN1
+swx[2] => swx[2].IN1
+swx[3] => swx[3].IN1
+swy[0] => swy[0].IN1
+swy[1] => swy[1].IN1
+swy[2] => swy[2].IN1
+swy[3] => swy[3].IN1
+little_led[0] << full_add:add.sum
+little_led[1] << full_add:add.sum
+little_led[2] << full_add:add.sum
+little_led[3] << full_add:add.sum
+little_led[4] << full_add:add.sum
+
+
+|full_adder|full_add:add
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+y[0] => y[0].IN1
+y[1] => y[1].IN1
+y[2] => y[2].IN1
+y[3] => y[3].IN1
+sum[0] <= add_N:a0.Sum
+sum[1] <= add_N:a1.Sum
+sum[2] <= add_N:a2.Sum
+sum[3] <= add_N:a3.Sum
+sum[4] <= add_N:a3.Cout
+
+
+|full_adder|full_add:add|add_N:a0
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|full_add:add|add_N:a1
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|full_add:add|add_N:a2
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|full_add:add|add_N:a3
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

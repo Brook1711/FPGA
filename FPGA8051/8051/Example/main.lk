@@ -1,0 +1,22 @@
+-muwx
+-i main.ihx
+-M
+-Y
+-I 0x0080
+-S 0x20
+-X 0x0800
+-b HOME = 0x0000
+-b XSEG = 0x0001
+-b PSEG = 0x0001
+-b ISEG = 0x0000
+-b BSEG = 0x0000
+-b SSEG = 0x0060
+-k D:\default\SDCC\bin\..\lib\large
+-l mcs51
+-l libsdcc
+-l libint
+-l liblong
+-l libfloat
+main.rel
+
+-e

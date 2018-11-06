@@ -1,0 +1,57 @@
+|debounce
+clk => clk.IN1
+rst => rst.IN1
+key => key.IN1
+led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|debounce|top:u1
+clk => key_sec_pre[0].CLK
+clk => key_sec[0].CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => key_rst_pre[0].CLK
+clk => key_rst[0].CLK
+real_rst => key_rst_pre[0].PRESET
+real_rst => key_rst[0].PRESET
+real_rst => cnt[0].ACLR
+real_rst => cnt[1].ACLR
+real_rst => cnt[2].ACLR
+real_rst => cnt[3].ACLR
+real_rst => cnt[4].ACLR
+real_rst => cnt[5].ACLR
+real_rst => cnt[6].ACLR
+real_rst => cnt[7].ACLR
+real_rst => cnt[8].ACLR
+real_rst => cnt[9].ACLR
+real_rst => cnt[10].ACLR
+real_rst => cnt[11].ACLR
+real_rst => cnt[12].ACLR
+real_rst => cnt[13].ACLR
+real_rst => cnt[14].ACLR
+real_rst => cnt[15].ACLR
+real_rst => cnt[16].ACLR
+real_rst => cnt[17].ACLR
+real_rst => key_sec[0].PRESET
+real_rst => key_sec_pre[0].PRESET
+real_key[0] => key_rst[0].DATAIN
+real_key[0] => key_sec[0].DATAIN
+key_pulse[0] <= key_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+

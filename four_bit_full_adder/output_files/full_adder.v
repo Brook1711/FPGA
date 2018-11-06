@@ -1,0 +1,62 @@
+module full_adder(swx, swy, little_led);
+
+input [3:0] swx;
+input [3:0] swy;
+output [4:0] little_led;
+
+
+full_add add(
+	.x(swx),
+	.y(swy),
+	.sum(little_led));
+
+
+endmodule
+
+module full_add(x,y,sum);
+parameter N=3;
+input [N:0] x;
+input [N:0] y;
+output [N+1:0] sum;
+wire co0,co1,co2,co3;
+wire co=0;
+add_N a0(
+	.x(x[0]),
+	.y(y[0]),
+	.Cin(co),
+	.Cout(co0),
+	.Sum(sum[0])
+	);
+add_N a1(
+	.x(x[1]),
+	.y(y[1]),
+	.Cin(co0),
+	.Cout(co1),
+	.Sum(sum[1])
+	);
+add_N a2(
+	.x(x[2]),
+	.y(y[2]),
+	.Cin(co1),
+	.Cout(co2),
+	.Sum(sum[2])
+	);
+add_N a3(
+	.x(x[3]),
+	.y(y[3]),
+	.Cin(co2),
+	.Cout(co3),
+	.Sum(sum[3])
+	);
+assign sum[4] = co3;
+
+endmodule
+
+module add_N(x,y,Cin,Cout,Sum);
+parameter N=0;
+  input [N:0]x,y;
+  input Cin;
+  output [N:0]Sum;
+  output  Cout;
+  assign  {Cout,Sum}=x+y+Cin;
+endmodule

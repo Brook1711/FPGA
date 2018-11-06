@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 24 22:35:06 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : breath_led_and_led_test
+Top-level Entity Name : breath_led_and_led_test
+Family : Cyclone IV E
+Total logic elements : 134
+    Total combinational functions : 134
+    Dedicated logic registers : 63
+Total registers : 63
+Total pins : 28
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

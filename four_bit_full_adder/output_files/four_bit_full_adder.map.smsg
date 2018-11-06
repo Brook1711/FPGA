@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at four_bit_full_adder.v(90): always construct contains both blocking and non-blocking assignments File: E:/prime_for_FPGA/Lite/demo/four_bit_full_adder/four_bit_full_adder.v Line: 90

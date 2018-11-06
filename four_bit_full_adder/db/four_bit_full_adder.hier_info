@@ -1,0 +1,132 @@
+|four_bit_full_adder
+buttun => _.IN1
+rst => rst.IN1
+clk => clk.IN1
+swx[0] => swx[0].IN1
+swx[1] => swx[1].IN1
+swx[2] => swx[2].IN1
+swx[3] => swx[3].IN1
+swy[0] => swy[0].IN1
+swy[1] => swy[1].IN1
+swy[2] => swy[2].IN1
+swy[3] => swy[3].IN1
+digit_seg[0] << <GND>
+digit_seg[1] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[2] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[3] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[4] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[5] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[6] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[7] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+digit_cath[0] << segcath_holdtime.DB_MAX_OUTPUT_PORT_TYPE
+digit_cath[1] << segcath_holdtime.DB_MAX_OUTPUT_PORT_TYPE
+little_led[0] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[1] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[2] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[3] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[4] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[5] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[6] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+little_led[7] << little_led.DB_MAX_OUTPUT_PORT_TYPE
+LED_N5_R << view_chose.DB_MAX_OUTPUT_PORT_TYPE
+LED_T6_G << view_chose.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_full_adder|debounce:u1
+clk => key_sec_pre[0].CLK
+clk => key_sec[0].CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => key_rst_pre[0].CLK
+clk => key_rst[0].CLK
+rst => key_sec_pre[0].PRESET
+rst => key_sec[0].PRESET
+rst => cnt[0].ACLR
+rst => cnt[1].ACLR
+rst => cnt[2].ACLR
+rst => cnt[3].ACLR
+rst => cnt[4].ACLR
+rst => cnt[5].ACLR
+rst => cnt[6].ACLR
+rst => cnt[7].ACLR
+rst => cnt[8].ACLR
+rst => cnt[9].ACLR
+rst => cnt[10].ACLR
+rst => cnt[11].ACLR
+rst => cnt[12].ACLR
+rst => cnt[13].ACLR
+rst => cnt[14].ACLR
+rst => cnt[15].ACLR
+rst => cnt[16].ACLR
+rst => cnt[17].ACLR
+rst => key_rst_pre[0].PRESET
+rst => key_rst[0].PRESET
+key[0] => key_rst[0].DATAIN
+key[0] => key_sec[0].DATAIN
+key_pulse[0] <= key_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_full_adder|full_add:add
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+y[0] => y[0].IN1
+y[1] => y[1].IN1
+y[2] => y[2].IN1
+y[3] => y[3].IN1
+sum[0] <= add_N:a0.Sum
+sum[1] <= add_N:a1.Sum
+sum[2] <= add_N:a2.Sum
+sum[3] <= add_N:a3.Sum
+sum[4] <= add_N:a3.Cout
+
+
+|four_bit_full_adder|full_add:add|add_N:a0
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_full_adder|full_add:add|add_N:a1
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_full_adder|full_add:add|add_N:a2
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_full_adder|full_add:add|add_N:a3
+x[0] => Add0.IN1
+y[0] => Add0.IN2
+Cin => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

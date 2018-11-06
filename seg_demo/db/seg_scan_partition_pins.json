@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "digit_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_cath[0]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_cath[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rst_button",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50M",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

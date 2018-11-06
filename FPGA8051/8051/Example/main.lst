@@ -1,0 +1,561 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.6.0 #9615 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module main
+                                      6 	.optsdcc -mmcs51 --model-large
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _main
+                                     12 	.globl _CY
+                                     13 	.globl _AC
+                                     14 	.globl _F0
+                                     15 	.globl _RS1
+                                     16 	.globl _RS0
+                                     17 	.globl _OV
+                                     18 	.globl _F1
+                                     19 	.globl _P
+                                     20 	.globl _PS
+                                     21 	.globl _PT1
+                                     22 	.globl _PX1
+                                     23 	.globl _PT0
+                                     24 	.globl _PX0
+                                     25 	.globl _RD
+                                     26 	.globl _WR
+                                     27 	.globl _T1
+                                     28 	.globl _T0
+                                     29 	.globl _INT1
+                                     30 	.globl _INT0
+                                     31 	.globl _TXD
+                                     32 	.globl _RXD
+                                     33 	.globl _P3_7
+                                     34 	.globl _P3_6
+                                     35 	.globl _P3_5
+                                     36 	.globl _P3_4
+                                     37 	.globl _P3_3
+                                     38 	.globl _P3_2
+                                     39 	.globl _P3_1
+                                     40 	.globl _P3_0
+                                     41 	.globl _EA
+                                     42 	.globl _ES
+                                     43 	.globl _ET1
+                                     44 	.globl _EX1
+                                     45 	.globl _ET0
+                                     46 	.globl _EX0
+                                     47 	.globl _P2_7
+                                     48 	.globl _P2_6
+                                     49 	.globl _P2_5
+                                     50 	.globl _P2_4
+                                     51 	.globl _P2_3
+                                     52 	.globl _P2_2
+                                     53 	.globl _P2_1
+                                     54 	.globl _P2_0
+                                     55 	.globl _SM0
+                                     56 	.globl _SM1
+                                     57 	.globl _SM2
+                                     58 	.globl _REN
+                                     59 	.globl _TB8
+                                     60 	.globl _RB8
+                                     61 	.globl _TI
+                                     62 	.globl _RI
+                                     63 	.globl _P1_7
+                                     64 	.globl _P1_6
+                                     65 	.globl _P1_5
+                                     66 	.globl _P1_4
+                                     67 	.globl _P1_3
+                                     68 	.globl _P1_2
+                                     69 	.globl _P1_1
+                                     70 	.globl _P1_0
+                                     71 	.globl _TF1
+                                     72 	.globl _TR1
+                                     73 	.globl _TF0
+                                     74 	.globl _TR0
+                                     75 	.globl _IE1
+                                     76 	.globl _IT1
+                                     77 	.globl _IE0
+                                     78 	.globl _IT0
+                                     79 	.globl _P0_7
+                                     80 	.globl _P0_6
+                                     81 	.globl _P0_5
+                                     82 	.globl _P0_4
+                                     83 	.globl _P0_3
+                                     84 	.globl _P0_2
+                                     85 	.globl _P0_1
+                                     86 	.globl _P0_0
+                                     87 	.globl _B
+                                     88 	.globl _ACC
+                                     89 	.globl _PSW
+                                     90 	.globl _IP
+                                     91 	.globl _P3
+                                     92 	.globl _IE
+                                     93 	.globl _P2
+                                     94 	.globl _SBUF
+                                     95 	.globl _SCON
+                                     96 	.globl _P1
+                                     97 	.globl _TH1
+                                     98 	.globl _TH0
+                                     99 	.globl _TL1
+                                    100 	.globl _TL0
+                                    101 	.globl _TMOD
+                                    102 	.globl _TCON
+                                    103 	.globl _PCON
+                                    104 	.globl _DPH
+                                    105 	.globl _DPL
+                                    106 	.globl _SP
+                                    107 	.globl _P0
+                                    108 	.globl _delay_ms
+                                    109 ;--------------------------------------------------------
+                                    110 ; special function registers
+                                    111 ;--------------------------------------------------------
+                                    112 	.area RSEG    (ABS,DATA)
+      000000                        113 	.org 0x0000
+                           000080   114 _P0	=	0x0080
+                           000081   115 _SP	=	0x0081
+                           000082   116 _DPL	=	0x0082
+                           000083   117 _DPH	=	0x0083
+                           000087   118 _PCON	=	0x0087
+                           000088   119 _TCON	=	0x0088
+                           000089   120 _TMOD	=	0x0089
+                           00008A   121 _TL0	=	0x008a
+                           00008B   122 _TL1	=	0x008b
+                           00008C   123 _TH0	=	0x008c
+                           00008D   124 _TH1	=	0x008d
+                           000090   125 _P1	=	0x0090
+                           000098   126 _SCON	=	0x0098
+                           000099   127 _SBUF	=	0x0099
+                           0000A0   128 _P2	=	0x00a0
+                           0000A8   129 _IE	=	0x00a8
+                           0000B0   130 _P3	=	0x00b0
+                           0000B8   131 _IP	=	0x00b8
+                           0000D0   132 _PSW	=	0x00d0
+                           0000E0   133 _ACC	=	0x00e0
+                           0000F0   134 _B	=	0x00f0
+                                    135 ;--------------------------------------------------------
+                                    136 ; special function bits
+                                    137 ;--------------------------------------------------------
+                                    138 	.area RSEG    (ABS,DATA)
+      000000                        139 	.org 0x0000
+                           000080   140 _P0_0	=	0x0080
+                           000081   141 _P0_1	=	0x0081
+                           000082   142 _P0_2	=	0x0082
+                           000083   143 _P0_3	=	0x0083
+                           000084   144 _P0_4	=	0x0084
+                           000085   145 _P0_5	=	0x0085
+                           000086   146 _P0_6	=	0x0086
+                           000087   147 _P0_7	=	0x0087
+                           000088   148 _IT0	=	0x0088
+                           000089   149 _IE0	=	0x0089
+                           00008A   150 _IT1	=	0x008a
+                           00008B   151 _IE1	=	0x008b
+                           00008C   152 _TR0	=	0x008c
+                           00008D   153 _TF0	=	0x008d
+                           00008E   154 _TR1	=	0x008e
+                           00008F   155 _TF1	=	0x008f
+                           000090   156 _P1_0	=	0x0090
+                           000091   157 _P1_1	=	0x0091
+                           000092   158 _P1_2	=	0x0092
+                           000093   159 _P1_3	=	0x0093
+                           000094   160 _P1_4	=	0x0094
+                           000095   161 _P1_5	=	0x0095
+                           000096   162 _P1_6	=	0x0096
+                           000097   163 _P1_7	=	0x0097
+                           000098   164 _RI	=	0x0098
+                           000099   165 _TI	=	0x0099
+                           00009A   166 _RB8	=	0x009a
+                           00009B   167 _TB8	=	0x009b
+                           00009C   168 _REN	=	0x009c
+                           00009D   169 _SM2	=	0x009d
+                           00009E   170 _SM1	=	0x009e
+                           00009F   171 _SM0	=	0x009f
+                           0000A0   172 _P2_0	=	0x00a0
+                           0000A1   173 _P2_1	=	0x00a1
+                           0000A2   174 _P2_2	=	0x00a2
+                           0000A3   175 _P2_3	=	0x00a3
+                           0000A4   176 _P2_4	=	0x00a4
+                           0000A5   177 _P2_5	=	0x00a5
+                           0000A6   178 _P2_6	=	0x00a6
+                           0000A7   179 _P2_7	=	0x00a7
+                           0000A8   180 _EX0	=	0x00a8
+                           0000A9   181 _ET0	=	0x00a9
+                           0000AA   182 _EX1	=	0x00aa
+                           0000AB   183 _ET1	=	0x00ab
+                           0000AC   184 _ES	=	0x00ac
+                           0000AF   185 _EA	=	0x00af
+                           0000B0   186 _P3_0	=	0x00b0
+                           0000B1   187 _P3_1	=	0x00b1
+                           0000B2   188 _P3_2	=	0x00b2
+                           0000B3   189 _P3_3	=	0x00b3
+                           0000B4   190 _P3_4	=	0x00b4
+                           0000B5   191 _P3_5	=	0x00b5
+                           0000B6   192 _P3_6	=	0x00b6
+                           0000B7   193 _P3_7	=	0x00b7
+                           0000B0   194 _RXD	=	0x00b0
+                           0000B1   195 _TXD	=	0x00b1
+                           0000B2   196 _INT0	=	0x00b2
+                           0000B3   197 _INT1	=	0x00b3
+                           0000B4   198 _T0	=	0x00b4
+                           0000B5   199 _T1	=	0x00b5
+                           0000B6   200 _WR	=	0x00b6
+                           0000B7   201 _RD	=	0x00b7
+                           0000B8   202 _PX0	=	0x00b8
+                           0000B9   203 _PT0	=	0x00b9
+                           0000BA   204 _PX1	=	0x00ba
+                           0000BB   205 _PT1	=	0x00bb
+                           0000BC   206 _PS	=	0x00bc
+                           0000D0   207 _P	=	0x00d0
+                           0000D1   208 _F1	=	0x00d1
+                           0000D2   209 _OV	=	0x00d2
+                           0000D3   210 _RS0	=	0x00d3
+                           0000D4   211 _RS1	=	0x00d4
+                           0000D5   212 _F0	=	0x00d5
+                           0000D6   213 _AC	=	0x00d6
+                           0000D7   214 _CY	=	0x00d7
+                                    215 ;--------------------------------------------------------
+                                    216 ; overlayable register banks
+                                    217 ;--------------------------------------------------------
+                                    218 	.area REG_BANK_0	(REL,OVR,DATA)
+      000000                        219 	.ds 8
+                                    220 ;--------------------------------------------------------
+                                    221 ; internal ram data
+                                    222 ;--------------------------------------------------------
+                                    223 	.area DSEG    (DATA)
+                                    224 ;--------------------------------------------------------
+                                    225 ; overlayable items in internal ram 
+                                    226 ;--------------------------------------------------------
+                                    227 ;--------------------------------------------------------
+                                    228 ; Stack segment in internal ram 
+                                    229 ;--------------------------------------------------------
+                                    230 	.area	SSEG
+      000000                        231 __start__stack:
+      000000                        232 	.ds	1
+                                    233 
+                                    234 ;--------------------------------------------------------
+                                    235 ; indirectly addressable internal ram data
+                                    236 ;--------------------------------------------------------
+                                    237 	.area ISEG    (DATA)
+                                    238 ;--------------------------------------------------------
+                                    239 ; absolute internal ram data
+                                    240 ;--------------------------------------------------------
+                                    241 	.area IABS    (ABS,DATA)
+                                    242 	.area IABS    (ABS,DATA)
+                                    243 ;--------------------------------------------------------
+                                    244 ; bit data
+                                    245 ;--------------------------------------------------------
+                                    246 	.area BSEG    (BIT)
+                                    247 ;--------------------------------------------------------
+                                    248 ; paged external ram data
+                                    249 ;--------------------------------------------------------
+                                    250 	.area PSEG    (PAG,XDATA)
+                                    251 ;--------------------------------------------------------
+                                    252 ; external ram data
+                                    253 ;--------------------------------------------------------
+                                    254 	.area XSEG    (XDATA)
+      000000                        255 _main_num_1_15:
+      000000                        256 	.ds 2
+      000002                        257 _main_DTrgb_1_15:
+      000002                        258 	.ds 30
+      000020                        259 _delay_ms_ms_1_17:
+      000020                        260 	.ds 2
+                                    261 ;--------------------------------------------------------
+                                    262 ; absolute external ram data
+                                    263 ;--------------------------------------------------------
+                                    264 	.area XABS    (ABS,XDATA)
+                                    265 ;--------------------------------------------------------
+                                    266 ; external initialized ram data
+                                    267 ;--------------------------------------------------------
+                                    268 	.area XISEG   (XDATA)
+                                    269 	.area HOME    (CODE)
+                                    270 	.area GSINIT0 (CODE)
+                                    271 	.area GSINIT1 (CODE)
+                                    272 	.area GSINIT2 (CODE)
+                                    273 	.area GSINIT3 (CODE)
+                                    274 	.area GSINIT4 (CODE)
+                                    275 	.area GSINIT5 (CODE)
+                                    276 	.area GSINIT  (CODE)
+                                    277 	.area GSFINAL (CODE)
+                                    278 	.area CSEG    (CODE)
+                                    279 ;--------------------------------------------------------
+                                    280 ; interrupt vector 
+                                    281 ;--------------------------------------------------------
+                                    282 	.area HOME    (CODE)
+      000000                        283 __interrupt_vect:
+      000000 02r00r00         [24]  284 	ljmp	__sdcc_gsinit_startup
+                                    285 ;--------------------------------------------------------
+                                    286 ; global & static initialisations
+                                    287 ;--------------------------------------------------------
+                                    288 	.area HOME    (CODE)
+                                    289 	.area GSINIT  (CODE)
+                                    290 	.area GSFINAL (CODE)
+                                    291 	.area GSINIT  (CODE)
+                                    292 	.globl __sdcc_gsinit_startup
+                                    293 	.globl __sdcc_program_startup
+                                    294 	.globl __start__stack
+                                    295 	.globl __mcs51_genXINIT
+                                    296 	.globl __mcs51_genXRAMCLEAR
+                                    297 	.globl __mcs51_genRAMCLEAR
+                                    298 	.area GSFINAL (CODE)
+      000000 02r00r03         [24]  299 	ljmp	__sdcc_program_startup
+                                    300 ;--------------------------------------------------------
+                                    301 ; Home
+                                    302 ;--------------------------------------------------------
+                                    303 	.area HOME    (CODE)
+                                    304 	.area HOME    (CODE)
+      000003                        305 __sdcc_program_startup:
+      000003 02r00r00         [24]  306 	ljmp	_main
+                                    307 ;	return from main will return to caller
+                                    308 ;--------------------------------------------------------
+                                    309 ; code
+                                    310 ;--------------------------------------------------------
+                                    311 	.area CSEG    (CODE)
+                                    312 ;------------------------------------------------------------
+                                    313 ;Allocation info for local variables in function 'main'
+                                    314 ;------------------------------------------------------------
+                                    315 ;num                       Allocated with name '_main_num_1_15'
+                                    316 ;DTrgb                     Allocated with name '_main_DTrgb_1_15'
+                                    317 ;------------------------------------------------------------
+                                    318 ;	main.c:6: void main()
+                                    319 ;	-----------------------------------------
+                                    320 ;	 function main
+                                    321 ;	-----------------------------------------
+      000000                        322 _main:
+                           000007   323 	ar7 = 0x07
+                           000006   324 	ar6 = 0x06
+                           000005   325 	ar5 = 0x05
+                           000004   326 	ar4 = 0x04
+                           000003   327 	ar3 = 0x03
+                           000002   328 	ar2 = 0x02
+                           000001   329 	ar1 = 0x01
+                           000000   330 	ar0 = 0x00
+                                    331 ;	main.c:8: int num = 0;
+      000000 90r00r00         [24]  332 	mov	dptr,#_main_num_1_15
+      000003 E4               [12]  333 	clr	a
+      000004 F0               [24]  334 	movx	@dptr,a
+      000005 A3               [24]  335 	inc	dptr
+      000006 F0               [24]  336 	movx	@dptr,a
+                                    337 ;	main.c:9: unsigned char DTrgb[3][10] = {{0x00,0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0xFF},
+      000007 90r00r02         [24]  338 	mov	dptr,#_main_DTrgb_1_15
+      00000A F0               [24]  339 	movx	@dptr,a
+      00000B 90r00r03         [24]  340 	mov	dptr,#(_main_DTrgb_1_15 + 0x0001)
+      00000E 04               [12]  341 	inc	a
+      00000F F0               [24]  342 	movx	@dptr,a
+      000010 90r00r04         [24]  343 	mov	dptr,#(_main_DTrgb_1_15 + 0x0002)
+      000013 04               [12]  344 	inc	a
+      000014 F0               [24]  345 	movx	@dptr,a
+      000015 90r00r05         [24]  346 	mov	dptr,#(_main_DTrgb_1_15 + 0x0003)
+      000018 23               [12]  347 	rl	a
+      000019 F0               [24]  348 	movx	@dptr,a
+      00001A 90r00r06         [24]  349 	mov	dptr,#(_main_DTrgb_1_15 + 0x0004)
+      00001D 23               [12]  350 	rl	a
+      00001E F0               [24]  351 	movx	@dptr,a
+      00001F 90r00r07         [24]  352 	mov	dptr,#(_main_DTrgb_1_15 + 0x0005)
+      000022 23               [12]  353 	rl	a
+      000023 F0               [24]  354 	movx	@dptr,a
+      000024 90r00r08         [24]  355 	mov	dptr,#(_main_DTrgb_1_15 + 0x0006)
+      000027 23               [12]  356 	rl	a
+      000028 F0               [24]  357 	movx	@dptr,a
+      000029 90r00r09         [24]  358 	mov	dptr,#(_main_DTrgb_1_15 + 0x0007)
+      00002C 23               [12]  359 	rl	a
+      00002D F0               [24]  360 	movx	@dptr,a
+      00002E 90r00r0A         [24]  361 	mov	dptr,#(_main_DTrgb_1_15 + 0x0008)
+      000031 23               [12]  362 	rl	a
+      000032 F0               [24]  363 	movx	@dptr,a
+      000033 90r00r0B         [24]  364 	mov	dptr,#(_main_DTrgb_1_15 + 0x0009)
+      000036 74 FF            [12]  365 	mov	a,#0xff
+      000038 F0               [24]  366 	movx	@dptr,a
+      000039 90r00r0C         [24]  367 	mov	dptr,#(_main_DTrgb_1_15 + 0x000a)
+      00003C 74 FC            [12]  368 	mov	a,#0xfc
+      00003E F0               [24]  369 	movx	@dptr,a
+      00003F 90r00r0D         [24]  370 	mov	dptr,#(_main_DTrgb_1_15 + 0x000b)
+      000042 74 60            [12]  371 	mov	a,#0x60
+      000044 F0               [24]  372 	movx	@dptr,a
+      000045 90r00r0E         [24]  373 	mov	dptr,#(_main_DTrgb_1_15 + 0x000c)
+      000048 74 DA            [12]  374 	mov	a,#0xda
+      00004A F0               [24]  375 	movx	@dptr,a
+      00004B 90r00r0F         [24]  376 	mov	dptr,#(_main_DTrgb_1_15 + 0x000d)
+      00004E 74 F2            [12]  377 	mov	a,#0xf2
+      000050 F0               [24]  378 	movx	@dptr,a
+      000051 90r00r10         [24]  379 	mov	dptr,#(_main_DTrgb_1_15 + 0x000e)
+      000054 74 66            [12]  380 	mov	a,#0x66
+      000056 F0               [24]  381 	movx	@dptr,a
+      000057 90r00r11         [24]  382 	mov	dptr,#(_main_DTrgb_1_15 + 0x000f)
+      00005A 74 B6            [12]  383 	mov	a,#0xb6
+      00005C F0               [24]  384 	movx	@dptr,a
+      00005D 90r00r12         [24]  385 	mov	dptr,#(_main_DTrgb_1_15 + 0x0010)
+      000060 74 BE            [12]  386 	mov	a,#0xbe
+      000062 F0               [24]  387 	movx	@dptr,a
+      000063 90r00r13         [24]  388 	mov	dptr,#(_main_DTrgb_1_15 + 0x0011)
+      000066 74 E0            [12]  389 	mov	a,#0xe0
+      000068 F0               [24]  390 	movx	@dptr,a
+      000069 90r00r14         [24]  391 	mov	dptr,#(_main_DTrgb_1_15 + 0x0012)
+      00006C 74 FE            [12]  392 	mov	a,#0xfe
+      00006E F0               [24]  393 	movx	@dptr,a
+      00006F 90r00r15         [24]  394 	mov	dptr,#(_main_DTrgb_1_15 + 0x0013)
+      000072 74 F6            [12]  395 	mov	a,#0xf6
+      000074 F0               [24]  396 	movx	@dptr,a
+      000075 90r00r16         [24]  397 	mov	dptr,#(_main_DTrgb_1_15 + 0x0014)
+      000078 74 11            [12]  398 	mov	a,#0x11
+      00007A F0               [24]  399 	movx	@dptr,a
+      00007B 90r00r17         [24]  400 	mov	dptr,#(_main_DTrgb_1_15 + 0x0015)
+      00007E 23               [12]  401 	rl	a
+      00007F F0               [24]  402 	movx	@dptr,a
+      000080 90r00r18         [24]  403 	mov	dptr,#(_main_DTrgb_1_15 + 0x0016)
+      000083 74 0C            [12]  404 	mov	a,#0x0c
+      000085 F0               [24]  405 	movx	@dptr,a
+      000086 90r00r19         [24]  406 	mov	dptr,#(_main_DTrgb_1_15 + 0x0017)
+      000089 74 1E            [12]  407 	mov	a,#0x1e
+      00008B F0               [24]  408 	movx	@dptr,a
+      00008C 90r00r1A         [24]  409 	mov	dptr,#(_main_DTrgb_1_15 + 0x0018)
+      00008F 74 35            [12]  410 	mov	a,#0x35
+      000091 F0               [24]  411 	movx	@dptr,a
+      000092 90r00r1B         [24]  412 	mov	dptr,#(_main_DTrgb_1_15 + 0x0019)
+      000095 74 2B            [12]  413 	mov	a,#0x2b
+      000097 F0               [24]  414 	movx	@dptr,a
+      000098 90r00r1C         [24]  415 	mov	dptr,#(_main_DTrgb_1_15 + 0x001a)
+      00009B 74 3F            [12]  416 	mov	a,#0x3f
+      00009D F0               [24]  417 	movx	@dptr,a
+      00009E 90r00r1D         [24]  418 	mov	dptr,#(_main_DTrgb_1_15 + 0x001b)
+      0000A1 74 22            [12]  419 	mov	a,#0x22
+      0000A3 F0               [24]  420 	movx	@dptr,a
+      0000A4 90r00r1E         [24]  421 	mov	dptr,#(_main_DTrgb_1_15 + 0x001c)
+      0000A7 74 35            [12]  422 	mov	a,#0x35
+      0000A9 F0               [24]  423 	movx	@dptr,a
+      0000AA 90r00r1F         [24]  424 	mov	dptr,#(_main_DTrgb_1_15 + 0x001d)
+      0000AD 74 3F            [12]  425 	mov	a,#0x3f
+      0000AF F0               [24]  426 	movx	@dptr,a
+                                    427 ;	main.c:13: while(1)
+      0000B0                        428 00102$:
+                                    429 ;	main.c:15: P1 = DTrgb[0][num];     //控制流水灯
+      0000B0 90r00r00         [24]  430 	mov	dptr,#_main_num_1_15
+      0000B3 E0               [24]  431 	movx	a,@dptr
+      0000B4 FE               [12]  432 	mov	r6,a
+      0000B5 A3               [24]  433 	inc	dptr
+      0000B6 E0               [24]  434 	movx	a,@dptr
+      0000B7 FF               [12]  435 	mov	r7,a
+      0000B8 EE               [12]  436 	mov	a,r6
+      0000B9 24r02            [12]  437 	add	a,#_main_DTrgb_1_15
+      0000BB F5 82            [12]  438 	mov	dpl,a
+      0000BD EF               [12]  439 	mov	a,r7
+      0000BE 34s00            [12]  440 	addc	a,#(_main_DTrgb_1_15 >> 8)
+      0000C0 F5 83            [12]  441 	mov	dph,a
+      0000C2 E0               [24]  442 	movx	a,@dptr
+      0000C3 F5 90            [12]  443 	mov	_P1,a
+                                    444 ;	main.c:16: P2 = DTrgb[1][num];     //控制数码管
+      0000C5 EE               [12]  445 	mov	a,r6
+      0000C6 24r0C            [12]  446 	add	a,#(_main_DTrgb_1_15 + 0x000a)
+      0000C8 F5 82            [12]  447 	mov	dpl,a
+      0000CA EF               [12]  448 	mov	a,r7
+      0000CB 34s00            [12]  449 	addc	a,#((_main_DTrgb_1_15 + 0x000a) >> 8)
+      0000CD F5 83            [12]  450 	mov	dph,a
+      0000CF E0               [24]  451 	movx	a,@dptr
+      0000D0 F5 A0            [12]  452 	mov	_P2,a
+                                    453 ;	main.c:17: P3 = DTrgb[2][num] | 0xC0; //控制rgb彩灯
+      0000D2 EE               [12]  454 	mov	a,r6
+      0000D3 24r16            [12]  455 	add	a,#(_main_DTrgb_1_15 + 0x0014)
+      0000D5 F5 82            [12]  456 	mov	dpl,a
+      0000D7 EF               [12]  457 	mov	a,r7
+      0000D8 34s00            [12]  458 	addc	a,#((_main_DTrgb_1_15 + 0x0014) >> 8)
+      0000DA F5 83            [12]  459 	mov	dph,a
+      0000DC E0               [24]  460 	movx	a,@dptr
+      0000DD FD               [12]  461 	mov	r5,a
+      0000DE 74 C0            [12]  462 	mov	a,#0xc0
+      0000E0 4D               [12]  463 	orl	a,r5
+      0000E1 F5 B0            [12]  464 	mov	_P3,a
+                                    465 ;	main.c:18: num++; num %=10;
+      0000E3 90r00r00         [24]  466 	mov	dptr,#_main_num_1_15
+      0000E6 74 01            [12]  467 	mov	a,#0x01
+      0000E8 2E               [12]  468 	add	a,r6
+      0000E9 F0               [24]  469 	movx	@dptr,a
+      0000EA E4               [12]  470 	clr	a
+      0000EB 3F               [12]  471 	addc	a,r7
+      0000EC A3               [24]  472 	inc	dptr
+      0000ED F0               [24]  473 	movx	@dptr,a
+      0000EE 90r00r00         [24]  474 	mov	dptr,#_main_num_1_15
+      0000F1 E0               [24]  475 	movx	a,@dptr
+      0000F2 FE               [12]  476 	mov	r6,a
+      0000F3 A3               [24]  477 	inc	dptr
+      0000F4 E0               [24]  478 	movx	a,@dptr
+      0000F5 FF               [12]  479 	mov	r7,a
+      0000F6 90r00r00         [24]  480 	mov	dptr,#__modsint_PARM_2
+      0000F9 74 0A            [12]  481 	mov	a,#0x0a
+      0000FB F0               [24]  482 	movx	@dptr,a
+      0000FC E4               [12]  483 	clr	a
+      0000FD A3               [24]  484 	inc	dptr
+      0000FE F0               [24]  485 	movx	@dptr,a
+      0000FF 8E 82            [24]  486 	mov	dpl,r6
+      000101 8F 83            [24]  487 	mov	dph,r7
+      000103 12r00r00         [24]  488 	lcall	__modsint
+      000106 E5 82            [12]  489 	mov	a,dpl
+      000108 85 83 F0         [24]  490 	mov	b,dph
+      00010B 90r00r00         [24]  491 	mov	dptr,#_main_num_1_15
+      00010E F0               [24]  492 	movx	@dptr,a
+      00010F E5 F0            [12]  493 	mov	a,b
+      000111 A3               [24]  494 	inc	dptr
+      000112 F0               [24]  495 	movx	@dptr,a
+                                    496 ;	main.c:19: delay_ms(1000);
+      000113 90 03 E8         [24]  497 	mov	dptr,#0x03e8
+      000116 12r01r1B         [24]  498 	lcall	_delay_ms
+      000119 80 95            [24]  499 	sjmp	00102$
+                                    500 ;------------------------------------------------------------
+                                    501 ;Allocation info for local variables in function 'delay_ms'
+                                    502 ;------------------------------------------------------------
+                                    503 ;ms                        Allocated with name '_delay_ms_ms_1_17'
+                                    504 ;i                         Allocated with name '_delay_ms_i_2_19'
+                                    505 ;j                         Allocated with name '_delay_ms_j_2_19'
+                                    506 ;------------------------------------------------------------
+                                    507 ;	main.c:23: void delay_ms(unsigned int ms)
+                                    508 ;	-----------------------------------------
+                                    509 ;	 function delay_ms
+                                    510 ;	-----------------------------------------
+      00011B                        511 _delay_ms:
+      00011B AF 83            [24]  512 	mov	r7,dph
+      00011D E5 82            [12]  513 	mov	a,dpl
+      00011F 90r00r20         [24]  514 	mov	dptr,#_delay_ms_ms_1_17
+      000122 F0               [24]  515 	movx	@dptr,a
+      000123 EF               [12]  516 	mov	a,r7
+      000124 A3               [24]  517 	inc	dptr
+      000125 F0               [24]  518 	movx	@dptr,a
+                                    519 ;	main.c:25: while(ms--)
+      000126 90r00r20         [24]  520 	mov	dptr,#_delay_ms_ms_1_17
+      000129 E0               [24]  521 	movx	a,@dptr
+      00012A FE               [12]  522 	mov	r6,a
+      00012B A3               [24]  523 	inc	dptr
+      00012C E0               [24]  524 	movx	a,@dptr
+      00012D FF               [12]  525 	mov	r7,a
+      00012E                        526 00107$:
+      00012E 8E 04            [24]  527 	mov	ar4,r6
+      000130 8F 05            [24]  528 	mov	ar5,r7
+      000132 1E               [12]  529 	dec	r6
+      000133 BE FF 01         [24]  530 	cjne	r6,#0xff,00129$
+      000136 1F               [12]  531 	dec	r7
+      000137                        532 00129$:
+      000137 90r00r20         [24]  533 	mov	dptr,#_delay_ms_ms_1_17
+      00013A EE               [12]  534 	mov	a,r6
+      00013B F0               [24]  535 	movx	@dptr,a
+      00013C EF               [12]  536 	mov	a,r7
+      00013D A3               [24]  537 	inc	dptr
+      00013E F0               [24]  538 	movx	@dptr,a
+      00013F EC               [12]  539 	mov	a,r4
+      000140 4D               [12]  540 	orl	a,r5
+      000141 60 0A            [24]  541 	jz	00118$
+                                    542 ;	main.c:31: while (--j);
+      000143 7D 70            [12]  543 	mov	r5,#0x70
+      000145 7C 28            [12]  544 	mov	r4,#0x28
+      000147                        545 00101$:
+      000147 DD FE            [24]  546 	djnz	r5,00101$
+                                    547 ;	main.c:32: }  while (--i);
+      000149 DC FC            [24]  548 	djnz	r4,00101$
+      00014B 80 E1            [24]  549 	sjmp	00107$
+      00014D                        550 00118$:
+      00014D 90r00r20         [24]  551 	mov	dptr,#_delay_ms_ms_1_17
+      000150 EE               [12]  552 	mov	a,r6
+      000151 F0               [24]  553 	movx	@dptr,a
+      000152 EF               [12]  554 	mov	a,r7
+      000153 A3               [24]  555 	inc	dptr
+      000154 F0               [24]  556 	movx	@dptr,a
+      000155 22               [24]  557 	ret
+                                    558 	.area CSEG    (CODE)
+                                    559 	.area CONST   (CODE)
+                                    560 	.area XINIT   (CODE)
+                                    561 	.area CABS    (ABS,CODE)

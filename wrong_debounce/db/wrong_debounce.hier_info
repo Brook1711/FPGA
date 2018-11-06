@@ -1,0 +1,6 @@
+|wrong_debounce
+key => led.DATAIN
+rst => ~NO_FANOUT~
+led <= key.DB_MAX_OUTPUT_PORT_TYPE
+
+

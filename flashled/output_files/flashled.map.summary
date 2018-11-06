@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 15 15:52:28 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : flashled
+Top-level Entity Name : flashled
+Family : Cyclone IV E
+Total logic elements : 69
+    Total combinational functions : 63
+    Dedicated logic registers : 41
+Total registers : 41
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

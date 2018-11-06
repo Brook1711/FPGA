@@ -1,0 +1,29 @@
+|four_input_NAND_and_NOR_GATE
+swa[0] => swa[0].IN1
+swa[1] => swa[1].IN1
+swa[2] => swa[2].IN1
+swa[3] => swa[3].IN1
+swo[0] => swo[0].IN1
+swo[1] => swo[1].IN1
+swo[2] => swo[2].IN1
+swo[3] => swo[3].IN1
+LED_N5_R <= four_input_NAND:NAND.out
+LED_T6_G <= four_input_NOR:NOR.out
+
+
+|four_input_NAND_and_NOR_GATE|four_input_NAND:NAND
+sw4[0] => Equal0.IN3
+sw4[1] => Equal0.IN2
+sw4[2] => Equal0.IN1
+sw4[3] => Equal0.IN0
+out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_input_NAND_and_NOR_GATE|four_input_NOR:NOR
+sw4[0] => Equal0.IN3
+sw4[1] => Equal0.IN2
+sw4[2] => Equal0.IN1
+sw4[3] => Equal0.IN0
+out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

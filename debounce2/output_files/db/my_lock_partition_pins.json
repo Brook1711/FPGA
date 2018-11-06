@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "little_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "little_led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "led_N5_R",
+					"strict" : false
+				},
+				{
+					"name" : "led_T6_G",
+					"strict" : false
+				},
+				{
+					"name" : "led_R4_B",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_seg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_cath[0]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_cath[1]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[0]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[1]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[2]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[3]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[4]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[5]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[6]",
+					"strict" : false
+				},
+				{
+					"name" : "keys[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "key",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

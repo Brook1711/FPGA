@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/four_bit_full_adder/simulation/qsim
+vfour_bit_full_adder
+Z1 !s110 1540966849
+!i10b 1
+!s100 He8MEHDo@MD7c=SAm65`Z2
+ICJKZL=1i1NcmaUQJ9hHc^0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1540966845
+Z4 8four_bit_full_adder.vo
+Z5 Ffour_bit_full_adder.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1540966849.000000
+Z8 !s107 four_bit_full_adder.vo|
+Z9 !s90 -work|work|four_bit_full_adder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfour_bit_full_adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 7gAEE<EM>:L5E4Z76bll:0
+I3]3Z@2JE6bbd^]ZKXo^dl3
+R2
+R0
+w1540966843
+8output_files/Waveform.vwf.vt
+Foutput_files/Waveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 output_files/Waveform.vwf.vt|
+!s90 -work|work|output_files/Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 6Jf<^]OHTz<<eV9oM<[7=1
+I1HaY:6nNQ[64;H;EiTlnQ1
+R2
+R0
+R3
+R4
+R5
+L0 2440
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
