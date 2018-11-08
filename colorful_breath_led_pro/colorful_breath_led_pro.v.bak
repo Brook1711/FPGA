@@ -46,13 +46,13 @@ wire R_T5_tmp;
 wire G_T6_tmp;
 wire B_T4_tmp;
 
-assign R_N5 = pulse_count[0] | R_N5_tmp ;
-assign G_R3 = pulse_count[0] | G_R3_tmp ;
-assign B_R4 = pulse_count[0] | B_R4_tmp ;
+assign R_N5 = pulse_count[0] & R_N5_tmp ;
+assign G_R3 = pulse_count[0] & G_R3_tmp ;
+assign B_R4 = pulse_count[0] & B_R4_tmp ;
 
-assign R_T5 = pulse_count[1] | R_T5_tmp ;
-assign G_T6 = pulse_count[1] | G_T6_tmp ;
-assign B_T4 = pulse_count[1] | B_T4_tmp ;
+assign R_T5 = pulse_count[1] & R_T5_tmp ;
+assign G_T6 = pulse_count[1] & G_T6_tmp ;
+assign B_T4 = pulse_count[1] & B_T4_tmp ;
 breath_led u1(
 	.clk(clk),
 	.freq(swy),

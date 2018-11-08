@@ -1,4 +1,4 @@
-module colorful_breath_led(clk, key, led, digit_seg, digit_cath, swx, swy, real_rst, R_N5, G_R3, B_R4, R_T5, G_T6, B_T4);
+module colorful_breath_led_pro(clk, key, led, digit_seg, digit_cath, swx, swy, real_rst, R_N5, G_R3, B_R4, R_T5, G_T6, B_T4);
  
 input clk;
 input key;

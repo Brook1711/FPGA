@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -6.881
+TNS   : -871.570
+
+Type  : Slow 1200mV 85C Model Setup 'debounce:u4|key_sec[0]'
+Slack : -0.030
+TNS   : -0.030
+
+Type  : Slow 1200mV 85C Model Setup 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debounce:u4|key_sec[0]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -324.192
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:u4|key_sec[0]'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -6.356
+TNS   : -801.642
+
+Type  : Slow 1200mV 0C Model Setup 'debounce:u4|key_sec[0]'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debounce:u4|key_sec[0]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -324.192
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:u4|key_sec[0]'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.323
+TNS   : -257.990
+
+Type  : Fast 1200mV 0C Model Setup 'debounce:u4|key_sec[0]'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'debounce:u4|key_sec[0]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -234.492
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:u4|key_sec[0]'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'breath_led_and_led_test:u3|seg_scan:u2|div_count[10]'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------
