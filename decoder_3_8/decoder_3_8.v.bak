@@ -1,0 +1,21 @@
+module decoder_3_8(sw,S,led);
+	input [2:0] sw;
+	input [2:0] S;//The subscript is 0 corresponding to A.
+	output [7:0] led;
+always @(sw or S) begin
+	if (S == 3'b111) begin
+		case(sw)
+			3'b000:led=8'b1111_1110;
+			3'b001:led=8'b1111_1101;
+			3'b010:led=8'b1111_1011;
+			3'b011:led=8'b1111_0111;
+			3'b100:led=8'b1110_1111;
+			3'b101:led=8'b1101_1111;
+			3'b110:led=8'b1011_1111;
+			3'b111:led=8'b0111_1111;
+		default: ;
+	end
+	else begin
+		
+	end
+end
