@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at colorful_breath_led.v(47): always construct contains both blocking and non-blocking assignments File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 47
+Warning (10268): Verilog HDL information at colorful_breath_led.v(88): always construct contains both blocking and non-blocking assignments File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 88

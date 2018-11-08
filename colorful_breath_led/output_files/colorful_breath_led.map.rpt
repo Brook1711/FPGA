@@ -1,5 +1,5 @@
 Analysis & Synthesis report for colorful_breath_led
-Thu Nov 08 11:06:34 2018
+Thu Nov 08 19:56:34 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,14 +13,18 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: breath_led:u1
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: breath_led_and_led_test:u3
+ 13. Parameter Settings for Inferred Entity Instance: breath_led:u1|lpm_mult:Mult0
+ 14. Parameter Settings for Inferred Entity Instance: breath_led:u2|lpm_mult:Mult0
+ 15. lpm_mult Parameter Settings by Entity Instance
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,16 +50,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 08 11:06:34 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 08 19:56:34 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; colorful_breath_led                         ;
 ; Top-level Entity Name              ; colorful_breath_led                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 161                                         ;
-;     Total combinational functions  ; 159                                         ;
-;     Dedicated logic registers      ; 56                                          ;
-; Total registers                    ; 56                                          ;
-; Total pins                         ; 5                                           ;
+; Total logic elements               ; 535                                         ;
+;     Total combinational functions  ; 531                                         ;
+;     Dedicated logic registers      ; 195                                         ;
+; Total registers                    ; 195                                         ;
+; Total pins                         ; 34                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,13 +170,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; colorful_breath_led.v            ; yes             ; User Verilog HDL File  ; E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; colorful_breath_led.v            ; yes             ; User Verilog HDL File  ; E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v     ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/lpm_mult.tdf       ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/aglobal181.inc     ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/lpm_add_sub.inc    ;         ;
+; multcore.inc                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/multcore.inc       ;         ;
+; bypassff.inc                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/bypassff.inc       ;         ;
+; altshift.inc                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/altshift.inc       ;         ;
+; multcore.tdf                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/multcore.tdf       ;         ;
+; csa_add.inc                      ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/csa_add.inc        ;         ;
+; mpar_add.inc                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/mpar_add.inc       ;         ;
+; muleabz.inc                      ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/muleabz.inc        ;         ;
+; mul_lfrg.inc                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/mul_lfrg.inc       ;         ;
+; mul_boothc.inc                   ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/mul_boothc.inc     ;         ;
+; alt_ded_mult.inc                 ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/alt_ded_mult.inc   ;         ;
+; alt_ded_mult_y.inc               ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/alt_ded_mult_y.inc ;         ;
+; dffpipe.inc                      ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/dffpipe.inc        ;         ;
+; mpar_add.tdf                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/mpar_add.tdf       ;         ;
+; altshift.tdf                     ; yes             ; Megafunction           ; e:/prime_for_fpga/lite/quartus/libraries/megafunctions/altshift.tdf       ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -180,42 +201,65 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 161       ;
+; Estimated Total logic elements              ; 535       ;
 ;                                             ;           ;
-; Total combinational functions               ; 159       ;
+; Total combinational functions               ; 531       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 21        ;
-;     -- 3 input functions                    ; 82        ;
-;     -- <=2 input functions                  ; 56        ;
+;     -- 4 input functions                    ; 127       ;
+;     -- 3 input functions                    ; 244       ;
+;     -- <=2 input functions                  ; 160       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 63        ;
-;     -- arithmetic mode                      ; 96        ;
+;     -- normal mode                          ; 246       ;
+;     -- arithmetic mode                      ; 285       ;
 ;                                             ;           ;
-; Total registers                             ; 56        ;
-;     -- Dedicated logic registers            ; 56        ;
+; Total registers                             ; 195       ;
+;     -- Dedicated logic registers            ; 195       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 5         ;
+; I/O pins                                    ; 34        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 56        ;
-; Total fan-out                               ; 661       ;
-; Average fan-out                             ; 2.94      ;
+; Maximum fan-out                             ; 194       ;
+; Total fan-out                               ; 2308      ;
+; Average fan-out                             ; 2.89      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name         ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+---------------------+--------------+
-; |colorful_breath_led       ; 159 (0)             ; 56 (0)                    ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |colorful_breath_led               ; colorful_breath_led ; work         ;
-;    |breath_led:u1|         ; 159 (159)           ; 56 (56)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |colorful_breath_led|breath_led:u1 ; breath_led          ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                               ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name             ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+-------------------------+--------------+
+; |colorful_breath_led            ; 531 (0)             ; 195 (0)                   ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |colorful_breath_led                                        ; colorful_breath_led     ; work         ;
+;    |breath_led:u1|              ; 202 (202)           ; 66 (66)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |colorful_breath_led|breath_led:u1                          ; breath_led              ; work         ;
+;    |breath_led:u2|              ; 195 (195)           ; 66 (66)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |colorful_breath_led|breath_led:u2                          ; breath_led              ; work         ;
+;    |breath_led_and_led_test:u3| ; 134 (111)           ; 63 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |colorful_breath_led|breath_led_and_led_test:u3             ; breath_led_and_led_test ; work         ;
+;       |seg_scan:u2|             ; 23 (23)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |colorful_breath_led|breath_led_and_led_test:u3|seg_scan:u2 ; seg_scan                ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++----------------------------------------------------------+----------------------------------------+
+; Register name                                            ; Reason for Removal                     ;
++----------------------------------------------------------+----------------------------------------+
+; breath_led:u2|CNT_NUM[14..24]                            ; Stuck at GND due to stuck port data_in ;
+; breath_led:u1|CNT_NUM[14..24]                            ; Stuck at GND due to stuck port data_in ;
+; breath_led:u2|CNT_NUM[0]                                 ; Stuck at GND due to stuck port data_in ;
+; breath_led:u1|CNT_NUM[0]                                 ; Stuck at GND due to stuck port data_in ;
+; breath_led:u2|CNT_NUM[1]                                 ; Stuck at GND due to stuck port data_in ;
+; breath_led:u1|CNT_NUM[1]                                 ; Stuck at GND due to stuck port data_in ;
+; breath_led:u2|CNT_NUM[2]                                 ; Stuck at GND due to stuck port data_in ;
+; breath_led:u1|CNT_NUM[2]                                 ; Stuck at GND due to stuck port data_in ;
+; breath_led_and_led_test:u3|seg_scan:u2|div_count[11..31] ; Lost fanout                            ;
+; breath_led:u1|CNT_NUM[9]                                 ; Stuck at VCC due to stuck port data_in ;
+; breath_led:u2|CNT_NUM[9]                                 ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 51                   ;                                        ;
++----------------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -223,45 +267,159 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 56    ;
-; Number of registers using Synchronous Clear  ; 25    ;
+; Total registers                              ; 195   ;
+; Number of registers using Synchronous Clear  ; 75    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 51    ;
+; Number of registers using Asynchronous Clear ; 165   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Clock Enable       ; 75    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; breath_led:u1|control[1]               ; 5       ;
-; breath_led:u1|control[2]               ; 5       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; breath_led:u1|CNT_NUM[13]               ; 2       ;
+; breath_led:u1|CNT_NUM[10]               ; 2       ;
+; breath_led:u1|CNT_NUM[8]                ; 2       ;
+; breath_led:u1|CNT_NUM[4]                ; 2       ;
+; breath_led:u1|control[1]                ; 5       ;
+; breath_led:u1|control[2]                ; 5       ;
+; breath_led:u2|CNT_NUM[13]               ; 2       ;
+; breath_led:u2|CNT_NUM[10]               ; 2       ;
+; breath_led:u2|CNT_NUM[8]                ; 2       ;
+; breath_led:u2|CNT_NUM[4]                ; 2       ;
+; breath_led:u2|control[1]                ; 5       ;
+; breath_led:u2|control[2]                ; 5       ;
+; Total number of inverted registers = 12 ;         ;
++-----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |colorful_breath_led|breath_led:u1|cnt2[7]    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |colorful_breath_led|breath_led:u1|control[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |colorful_breath_led|breath_led:u1|cnt2[5]               ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |colorful_breath_led|breath_led:u2|cnt2[16]              ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |colorful_breath_led|breath_led_and_led_test:u3|cnt2[16] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |colorful_breath_led|breath_led:u1|control[1]            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |colorful_breath_led|breath_led:u2|control[1]            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: breath_led:u1 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; CNT_NUM        ; 10000 ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: breath_led_and_led_test:u3 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; CNT_NUM        ; 10000 ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: breath_led:u1|lpm_mult:Mult0       ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 10           ; Untyped             ;
+; LPM_WIDTHB                                     ; 4            ; Untyped             ;
+; LPM_WIDTHP                                     ; 14           ; Untyped             ;
+; LPM_WIDTHR                                     ; 14           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: breath_led:u2|lpm_mult:Mult0       ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 10           ; Untyped             ;
+; LPM_WIDTHB                                     ; 4            ; Untyped             ;
+; LPM_WIDTHP                                     ; 14           ; Untyped             ;
+; LPM_WIDTHR                                     ; 14           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                       ;
++---------------------------------------+------------------------------+
+; Name                                  ; Value                        ;
++---------------------------------------+------------------------------+
+; Number of entity instances            ; 2                            ;
+; Entity Instance                       ; breath_led:u1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 10                           ;
+;     -- LPM_WIDTHB                     ; 4                            ;
+;     -- LPM_WIDTHP                     ; 14                           ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                     ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                          ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                           ;
+;     -- USE_EAB                        ; OFF                          ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                         ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                           ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                           ;
+; Entity Instance                       ; breath_led:u2|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 10                           ;
+;     -- LPM_WIDTHB                     ; 4                            ;
+;     -- LPM_WIDTHP                     ; 14                           ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                     ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                          ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                           ;
+;     -- USE_EAB                        ; OFF                          ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                         ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                           ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                           ;
++---------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------+
@@ -269,24 +427,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 56                          ;
-;     CLR               ; 1                           ;
-;     CLR SCLR          ; 25                          ;
-;     ENA CLR           ; 25                          ;
-;     plain             ; 5                           ;
-; cycloneiii_lcell_comb ; 159                         ;
-;     arith             ; 96                          ;
-;         2 data inputs ; 49                          ;
-;         3 data inputs ; 47                          ;
-;     normal            ; 63                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 35                          ;
-;         4 data inputs ; 21                          ;
+; boundary_port         ; 34                          ;
+; cycloneiii_ff         ; 195                         ;
+;     CLR               ; 15                          ;
+;     CLR SCLR          ; 75                          ;
+;     ENA CLR           ; 75                          ;
+;     plain             ; 30                          ;
+; cycloneiii_lcell_comb ; 543                         ;
+;     arith             ; 285                         ;
+;         2 data inputs ; 123                         ;
+;         3 data inputs ; 162                         ;
+;     normal            ; 258                         ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 82                          ;
+;         4 data inputs ; 127                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.40                        ;
-; Average LUT depth     ; 4.40                        ;
+; Max LUT depth         ; 9.20                        ;
+; Average LUT depth     ; 4.46                        ;
 +-----------------------+-----------------------------+
 
 
@@ -305,27 +464,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 08 11:06:22 2018
+    Info: Processing started: Thu Nov 08 19:56:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off colorful_breath_led -c colorful_breath_led
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 2 entities, in source file colorful_breath_led.v
+Info (12021): Found 4 design units, including 4 entities, in source file colorful_breath_led.v
     Info (12023): Found entity 1: colorful_breath_led File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 1
-    Info (12023): Found entity 2: breath_led File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 16
+    Info (12023): Found entity 2: breath_led File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 48
+    Info (12023): Found entity 3: breath_led_and_led_test File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 150
+    Info (12023): Found entity 4: seg_scan File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 292
 Info (12127): Elaborating entity "colorful_breath_led" for the top level hierarchy
-Info (12128): Elaborating entity "breath_led" for hierarchy "breath_led:u1" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 13
-Warning (10230): Verilog HDL assignment warning at colorful_breath_led.v(99): truncated value with size 32 to match size of target (25) File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 99
+Warning (10036): Verilog HDL or VHDL warning at colorful_breath_led.v(16): object "swx_temp" assigned a value but never read File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 16
+Warning (10036): Verilog HDL or VHDL warning at colorful_breath_led.v(17): object "swy_temp" assigned a value but never read File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 17
+Info (12128): Elaborating entity "breath_led" for hierarchy "breath_led:u1" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 29
+Warning (10230): Verilog HDL assignment warning at colorful_breath_led.v(69): truncated value with size 32 to match size of target (25) File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 69
+Info (12128): Elaborating entity "breath_led_and_led_test" for hierarchy "breath_led_and_led_test:u3" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 44
+Info (12128): Elaborating entity "seg_scan" for hierarchy "breath_led_and_led_test:u3|seg_scan:u2" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 180
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "breath_led:u1|Mult0" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 69
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "breath_led:u2|Mult0" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 69
+Info (12130): Elaborated megafunction instantiation "breath_led:u1|lpm_mult:Mult0" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 69
+Info (12133): Instantiated megafunction "breath_led:u1|lpm_mult:Mult0" with the following parameter: File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 69
+    Info (12134): Parameter "LPM_WIDTHA" = "10"
+    Info (12134): Parameter "LPM_WIDTHB" = "4"
+    Info (12134): Parameter "LPM_WIDTHP" = "14"
+    Info (12134): Parameter "LPM_WIDTHR" = "14"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12131): Elaborated megafunction instantiation "breath_led:u1|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "breath_led:u1|lpm_mult:Mult0" File: e:/prime_for_fpga/lite/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "breath_led:u1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "breath_led:u1|lpm_mult:Mult0" File: e:/prime_for_fpga/lite/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "breath_led:u1|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "breath_led:u1|lpm_mult:Mult0" File: e:/prime_for_fpga/lite/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "digit_seg[0]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 5
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 21 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "breath_led:u1|Add0~10" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u1|Add0~12" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u1|Add0~14" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u1|Add0~16" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u2|Add0~0" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u2|Add0~2" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u2|Add0~4" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
+    Info (17048): Logic cell "breath_led:u2|Add0~6" File: E:/prime_for_FPGA/Lite/demo/colorful_breath_led/colorful_breath_led.v Line: 77
 Info (144001): Generated suppressed messages file E:/prime_for_FPGA/Lite/demo/colorful_breath_led/output_files/colorful_breath_led.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 166 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 161 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Thu Nov 08 11:06:34 2018
+Info (21057): Implemented 573 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 539 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Thu Nov 08 19:56:34 2018
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:25
 

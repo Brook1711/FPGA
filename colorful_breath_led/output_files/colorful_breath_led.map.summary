@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 08 11:06:34 2018
+Analysis & Synthesis Status : Successful - Thu Nov 08 19:56:34 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : colorful_breath_led
 Top-level Entity Name : colorful_breath_led
 Family : Cyclone IV E
-Total logic elements : 161
-    Total combinational functions : 159
-    Dedicated logic registers : 56
-Total registers : 56
-Total pins : 5
+Total logic elements : 535
+    Total combinational functions : 531
+    Dedicated logic registers : 195
+Total registers : 195
+Total pins : 34
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
