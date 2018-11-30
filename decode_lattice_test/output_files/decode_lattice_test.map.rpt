@@ -1,5 +1,5 @@
 Analysis & Synthesis report for decode_lattice_test
-Fri Nov 30 10:49:16 2018
+Fri Nov 30 19:27:20 2018
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -17,9 +17,10 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Parameter Settings for User Entity Instance: frequency_divider:u_clk_6
- 12. Parameter Settings for User Entity Instance: decode_lattice:u1|frequency_divider:u1
- 13. Port Connectivity Checks: "decode_lattice:u1"
- 14. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: frequency_divider:u1
+ 13. Port Connectivity Checks: "decode_lattice:u2"
+ 14. Port Connectivity Checks: "decode_seg:u_decode_seg"
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -46,7 +47,7 @@ agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Nov 30 10:49:16 2018      ;
+; Analysis & Synthesis Status ; Successful - Fri Nov 30 19:27:20 2018      ;
 ; Quartus II 64-Bit Version   ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name               ; decode_lattice_test                        ;
 ; Top-level Entity Name       ; decode_lattice_test                        ;
@@ -191,16 +192,16 @@ agreement for further details.
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Library Name ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; |decode_lattice_test           ; 205 (3)     ; 102          ; 0          ; 18   ; 0            ; 103 (0)      ; 37 (0)            ; 65 (3)           ; 56 (0)          ; 0 (0)      ; |decode_lattice_test                                        ; work         ;
-;    |decode_lattice:u1|         ; 136 (70)    ; 70           ; 0          ; 0    ; 0            ; 66 (29)      ; 22 (1)            ; 48 (40)          ; 28 (0)          ; 0 (0)      ; |decode_lattice_test|decode_lattice:u1                      ; work         ;
-;       |frequency_divider:u1|   ; 66 (66)     ; 29           ; 0          ; 0    ; 0            ; 37 (37)      ; 21 (21)           ; 8 (8)            ; 28 (28)         ; 0 (0)      ; |decode_lattice_test|decode_lattice:u1|frequency_divider:u1 ; work         ;
-;    |frequency_divider:u_clk_6| ; 66 (66)     ; 29           ; 0          ; 0    ; 0            ; 37 (37)      ; 15 (15)           ; 14 (14)          ; 28 (28)         ; 0 (0)      ; |decode_lattice_test|frequency_divider:u_clk_6              ; work         ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                            ; Library Name ;
++--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+--------------+
+; |decode_lattice_test           ; 205 (3)     ; 102          ; 0          ; 18   ; 0            ; 103 (0)      ; 37 (0)            ; 65 (3)           ; 56 (0)          ; 0 (0)      ; |decode_lattice_test                           ; work         ;
+;    |decode_lattice:u2|         ; 70 (70)     ; 41           ; 0          ; 0    ; 0            ; 29 (29)      ; 1 (1)             ; 40 (40)          ; 0 (0)           ; 0 (0)      ; |decode_lattice_test|decode_lattice:u2         ; work         ;
+;    |frequency_divider:u1|      ; 66 (66)     ; 29           ; 0          ; 0    ; 0            ; 37 (37)      ; 21 (21)           ; 8 (8)            ; 28 (28)         ; 0 (0)      ; |decode_lattice_test|frequency_divider:u1      ; work         ;
+;    |frequency_divider:u_clk_6| ; 66 (66)     ; 29           ; 0          ; 0    ; 0            ; 37 (37)      ; 15 (15)           ; 14 (14)          ; 28 (28)         ; 0 (0)      ; |decode_lattice_test|frequency_divider:u_clk_6 ; work         ;
++--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -209,30 +210,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+--------------------------------------------+
 ; Register name                           ; Reason for Removal                         ;
 +-----------------------------------------+--------------------------------------------+
-; decode_lattice:u1|col_temp[31]          ; Stuck at GND due to stuck port data_in     ;
-; decode_lattice:u1|col_temp[48,51,54]    ; Stuck at VCC due to stuck port data_in     ;
-; decode_lattice:u1|col_temp[57]          ; Stuck at GND due to stuck port data_in     ;
-; decode_lattice:u1|col_temp[8,11,56]     ; Merged with decode_lattice:u1|col_temp[0]  ;
-; decode_lattice:u1|col_temp[32,40,62]    ; Merged with decode_lattice:u1|col_temp[24] ;
-; decode_lattice:u1|col_temp[49,50,52]    ; Merged with decode_lattice:u1|col_temp[44] ;
-; decode_lattice:u1|col_temp[29,41,42,45] ; Merged with decode_lattice:u1|col_temp[12] ;
-; decode_lattice:u1|col_temp[5,33]        ; Merged with decode_lattice:u1|col_temp[20] ;
-; decode_lattice:u1|col_temp[26]          ; Merged with decode_lattice:u1|col_temp[25] ;
-; decode_lattice:u1|col_temp[1]           ; Merged with decode_lattice:u1|col_temp[17] ;
-; decode_lattice:u1|col_temp[9,60]        ; Merged with decode_lattice:u1|col_temp[4]  ;
-; decode_lattice:u1|col_temp[58]          ; Merged with decode_lattice:u1|col_temp[13] ;
-; decode_lattice:u1|col_temp[36]          ; Merged with decode_lattice:u1|col_temp[34] ;
-; decode_lattice:u1|col_temp[53,55]       ; Merged with decode_lattice:u1|col_temp[18] ;
-; decode_lattice:u1|col_temp[23,39,61]    ; Merged with decode_lattice:u1|col_temp[10] ;
-; decode_lattice:u1|col_temp[2,6,37]      ; Merged with decode_lattice:u1|col_temp[21] ;
-; decode_lattice:u1|col_temp[59]          ; Merged with decode_lattice:u1|col_temp[19] ;
-; decode_lattice:u1|col_temp[46]          ; Merged with decode_lattice:u1|col_temp[27] ;
-; decode_lattice:u1|col_temp[38]          ; Merged with decode_lattice:u1|col_temp[14] ;
-; decode_lattice:u1|col_temp[7]           ; Merged with decode_lattice:u1|col_temp[30] ;
-; decode_lattice:u1|col_temp[63]          ; Merged with decode_lattice:u1|col_temp[47] ;
-; decode_lattice:u1|col_temp[44]          ; Merged with decode_lattice:u1|col_temp[0]  ;
-; decode_lattice:u1|col_temp[15]          ; Merged with decode_lattice:u1|col_temp[3]  ;
-; decode_lattice:u1|col_temp[43]          ; Merged with decode_lattice:u1|col_temp[13] ;
+; decode_lattice:u2|col_temp[31]          ; Stuck at GND due to stuck port data_in     ;
+; decode_lattice:u2|col_temp[48,51,54]    ; Stuck at VCC due to stuck port data_in     ;
+; decode_lattice:u2|col_temp[57]          ; Stuck at GND due to stuck port data_in     ;
+; decode_lattice:u2|col_temp[8,11,56]     ; Merged with decode_lattice:u2|col_temp[0]  ;
+; decode_lattice:u2|col_temp[32,40,62]    ; Merged with decode_lattice:u2|col_temp[24] ;
+; decode_lattice:u2|col_temp[49,50,52]    ; Merged with decode_lattice:u2|col_temp[44] ;
+; decode_lattice:u2|col_temp[29,41,42,45] ; Merged with decode_lattice:u2|col_temp[12] ;
+; decode_lattice:u2|col_temp[5,33]        ; Merged with decode_lattice:u2|col_temp[20] ;
+; decode_lattice:u2|col_temp[26]          ; Merged with decode_lattice:u2|col_temp[25] ;
+; decode_lattice:u2|col_temp[1]           ; Merged with decode_lattice:u2|col_temp[17] ;
+; decode_lattice:u2|col_temp[9,60]        ; Merged with decode_lattice:u2|col_temp[4]  ;
+; decode_lattice:u2|col_temp[58]          ; Merged with decode_lattice:u2|col_temp[13] ;
+; decode_lattice:u2|col_temp[36]          ; Merged with decode_lattice:u2|col_temp[34] ;
+; decode_lattice:u2|col_temp[53,55]       ; Merged with decode_lattice:u2|col_temp[18] ;
+; decode_lattice:u2|col_temp[23,39,61]    ; Merged with decode_lattice:u2|col_temp[10] ;
+; decode_lattice:u2|col_temp[2,6,37]      ; Merged with decode_lattice:u2|col_temp[21] ;
+; decode_lattice:u2|col_temp[59]          ; Merged with decode_lattice:u2|col_temp[19] ;
+; decode_lattice:u2|col_temp[46]          ; Merged with decode_lattice:u2|col_temp[27] ;
+; decode_lattice:u2|col_temp[38]          ; Merged with decode_lattice:u2|col_temp[14] ;
+; decode_lattice:u2|col_temp[7]           ; Merged with decode_lattice:u2|col_temp[30] ;
+; decode_lattice:u2|col_temp[63]          ; Merged with decode_lattice:u2|col_temp[47] ;
+; decode_lattice:u2|col_temp[44]          ; Merged with decode_lattice:u2|col_temp[0]  ;
+; decode_lattice:u2|col_temp[15]          ; Merged with decode_lattice:u2|col_temp[3]  ;
+; decode_lattice:u2|col_temp[43]          ; Merged with decode_lattice:u2|col_temp[13] ;
 ; Total Number of Removed Registers = 42  ;                                            ;
 +-----------------------------------------+--------------------------------------------+
 
@@ -257,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 8:1                ; 25 bits   ; 125 LEs       ; 75 LEs               ; 50 LEs                 ; Yes        ; |decode_lattice_test|decode_lattice:u1|col_temp[0] ;
+; 8:1                ; 25 bits   ; 125 LEs       ; 75 LEs               ; 50 LEs                 ; Yes        ; |decode_lattice_test|decode_lattice:u2|col_temp[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
@@ -271,23 +272,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode_lattice:u1|frequency_divider:u1 ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; N              ; 50000 ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u1 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 50000 ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "decode_lattice:u1"                                                                                                                          ;
+; Port Connectivity Checks: "decode_lattice:u2"                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                      ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; code ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "code[3..3]" will be connected to GND. ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decode_seg:u_decode_seg"                                                                                                            ;
++------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                       ;
++------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; code       ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
+; digit_seg  ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "digit_seg[7..1]" have no fanouts  ;
+; digit_seg  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; digit_cath ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "digit_cath[5..1]" have no fanouts ;
+; digit_cath ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
++------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -296,29 +310,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Fri Nov 30 10:49:04 2018
+    Info: Processing started: Fri Nov 30 19:27:10 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decode_lattice_test -c decode_lattice_test
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 3 design units, including 3 entities, in source file decode_lattice_test.v
+Warning (10229): Verilog HDL Expression warning at decode_lattice_test.v(183): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at decode_lattice_test.v(187): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at decode_lattice_test.v(191): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at decode_lattice_test.v(195): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at decode_lattice_test.v(199): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at decode_lattice_test.v(203): truncated literal to match 6 bits
+Info (12021): Found 4 design units, including 4 entities, in source file decode_lattice_test.v
     Info (12023): Found entity 1: decode_lattice_test
     Info (12023): Found entity 2: decode_lattice
-    Info (12023): Found entity 3: frequency_divider
+    Info (12023): Found entity 3: decode_seg
+    Info (12023): Found entity 4: frequency_divider
+Warning (10236): Verilog HDL Implicit Net warning at decode_lattice_test.v(48): created implicit net for "digit_seg"
+Warning (10236): Verilog HDL Implicit Net warning at decode_lattice_test.v(49): created implicit net for "digit_cath"
 Info (12127): Elaborating entity "decode_lattice_test" for the top level hierarchy
 Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_6"
-Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(142): truncated value with size 32 to match size of target (28)
-Info (12128): Elaborating entity "decode_lattice" for hierarchy "decode_lattice:u1"
-Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(72): truncated value with size 32 to match size of target (3)
-Info (12128): Elaborating entity "frequency_divider" for hierarchy "decode_lattice:u1|frequency_divider:u1"
-Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(142): truncated value with size 32 to match size of target (28)
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(227): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u1"
+Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(227): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "decode_seg" for hierarchy "decode_seg:u_decode_seg"
+Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(153): truncated value with size 32 to match size of target (3)
+Info (12128): Elaborating entity "decode_lattice" for hierarchy "decode_lattice:u2"
+Warning (10230): Verilog HDL assignment warning at decode_lattice_test.v(77): truncated value with size 32 to match size of target (3)
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 205 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Fri Nov 30 10:49:16 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Fri Nov 30 19:27:20 2018
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 

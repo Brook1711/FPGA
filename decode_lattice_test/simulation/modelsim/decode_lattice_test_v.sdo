@@ -25,7 +25,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "decode_lattice_test")
-  (DATE "11/30/2018 10:49:30")
+  (DATE "11/30/2018 19:27:34")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition")
@@ -43,7 +43,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~30.lecomb)
+    (INSTANCE u1\|Add0\~30.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1934:1934:1934) (1934:1934:1934))
@@ -55,7 +55,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[0\].lecomb)
+    (INSTANCE u1\|cnt\[0\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2931:2931:2931) (2931:2931:2931))
@@ -67,7 +67,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[0\].lereg)
+    (INSTANCE u1\|cnt\[0\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -83,7 +83,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~0.lecomb)
+    (INSTANCE u1\|Add0\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1976:1976:1976) (1976:1976:1976))
@@ -96,7 +96,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[4\].lecomb)
+    (INSTANCE u1\|cnt\[4\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (823:823:823) (823:823:823))
@@ -108,7 +108,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[4\].lereg)
+    (INSTANCE u1\|cnt\[4\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -124,7 +124,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~5.lecomb)
+    (INSTANCE u1\|Add0\~5.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1841:1841:1841) (1841:1841:1841))
@@ -141,7 +141,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[5\].lecomb)
+    (INSTANCE u1\|cnt\[5\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1894:1894:1894) (1894:1894:1894))
@@ -157,7 +157,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[5\].lereg)
+    (INSTANCE u1\|cnt\[5\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2682:2682:2682) (2682:2682:2682))
@@ -178,7 +178,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~20.lecomb)
+    (INSTANCE u1\|Add0\~20.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1914:1914:1914) (1914:1914:1914))
@@ -195,7 +195,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[6\].lecomb)
+    (INSTANCE u1\|cnt\[6\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (819:819:819) (819:819:819))
@@ -207,7 +207,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[6\].lereg)
+    (INSTANCE u1\|cnt\[6\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -223,7 +223,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~25.lecomb)
+    (INSTANCE u1\|Add0\~25.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1994:1994:1994) (1994:1994:1994))
@@ -239,7 +239,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~35.lecomb)
+    (INSTANCE u1\|Add0\~35.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1296:1296:1296) (1296:1296:1296))
@@ -256,7 +256,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[7\].lecomb)
+    (INSTANCE u1\|cnt\[7\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (1122:1122:1122) (1122:1122:1122))
@@ -266,7 +266,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[7\].lereg)
+    (INSTANCE u1\|cnt\[7\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -282,7 +282,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[1\].lecomb)
+    (INSTANCE u1\|cnt\[1\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1347:1347:1347) (1347:1347:1347))
@@ -298,7 +298,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[1\].lereg)
+    (INSTANCE u1\|cnt\[1\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2140:2140:2140) (2140:2140:2140))
@@ -319,7 +319,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~15.lecomb)
+    (INSTANCE u1\|Add0\~15.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (895:895:895) (895:895:895))
@@ -335,7 +335,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[2\].lecomb)
+    (INSTANCE u1\|cnt\[2\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (710:710:710) (710:710:710))
@@ -345,7 +345,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[2\].lereg)
+    (INSTANCE u1\|cnt\[2\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -361,7 +361,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~10.lecomb)
+    (INSTANCE u1\|Add0\~10.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1942:1942:1942) (1942:1942:1942))
@@ -376,7 +376,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[3\].lecomb)
+    (INSTANCE u1\|cnt\[3\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1746:1746:1746) (1746:1746:1746))
@@ -385,7 +385,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[3\].lereg)
+    (INSTANCE u1\|cnt\[3\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2026:2026:2026) (2026:2026:2026))
@@ -404,7 +404,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~40.lecomb)
+    (INSTANCE u1\|Add0\~40.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1918:1918:1918) (1918:1918:1918))
@@ -421,7 +421,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[8\].lecomb)
+    (INSTANCE u1\|cnt\[8\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1796:1796:1796) (1796:1796:1796))
@@ -433,7 +433,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[8\].lereg)
+    (INSTANCE u1\|cnt\[8\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -449,7 +449,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~60.lecomb)
+    (INSTANCE u1\|Add0\~60.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2034:2034:2034) (2034:2034:2034))
@@ -462,7 +462,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[14\].lecomb)
+    (INSTANCE u1\|cnt\[14\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1244:1244:1244) (1244:1244:1244))
@@ -474,7 +474,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[14\].lereg)
+    (INSTANCE u1\|cnt\[14\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -490,7 +490,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~65.lecomb)
+    (INSTANCE u1\|Add0\~65.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1892:1892:1892) (1892:1892:1892))
@@ -507,7 +507,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[15\].lecomb)
+    (INSTANCE u1\|cnt\[15\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1238:1238:1238) (1238:1238:1238))
@@ -519,7 +519,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[15\].lereg)
+    (INSTANCE u1\|cnt\[15\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -535,7 +535,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~45.lecomb)
+    (INSTANCE u1\|Add0\~45.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2081:2081:2081) (2081:2081:2081))
@@ -548,7 +548,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[9\].lecomb)
+    (INSTANCE u1\|cnt\[9\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (807:807:807) (807:807:807))
@@ -560,7 +560,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[9\].lereg)
+    (INSTANCE u1\|cnt\[9\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -576,7 +576,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~50.lecomb)
+    (INSTANCE u1\|Add0\~50.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1858:1858:1858) (1858:1858:1858))
@@ -593,7 +593,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[10\].lecomb)
+    (INSTANCE u1\|cnt\[10\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1999:1999:1999) (1999:1999:1999))
@@ -609,7 +609,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[10\].lereg)
+    (INSTANCE u1\|cnt\[10\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2778:2778:2778) (2778:2778:2778))
@@ -630,7 +630,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~55.lecomb)
+    (INSTANCE u1\|Add0\~55.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1992:1992:1992) (1992:1992:1992))
@@ -647,7 +647,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[11\].lecomb)
+    (INSTANCE u1\|cnt\[11\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2408:2408:2408) (2408:2408:2408))
@@ -656,7 +656,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[11\].lereg)
+    (INSTANCE u1\|cnt\[11\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2688:2688:2688) (2688:2688:2688))
@@ -675,7 +675,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~70.lecomb)
+    (INSTANCE u1\|Add0\~70.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1298:1298:1298) (1298:1298:1298))
@@ -692,7 +692,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[12\].lecomb)
+    (INSTANCE u1\|cnt\[12\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1325:1325:1325) (1325:1325:1325))
@@ -708,7 +708,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[12\].lereg)
+    (INSTANCE u1\|cnt\[12\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2007:2007:2007) (2007:2007:2007))
@@ -729,7 +729,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~75.lecomb)
+    (INSTANCE u1\|Add0\~75.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1950:1950:1950) (1950:1950:1950))
@@ -746,7 +746,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[13\].lecomb)
+    (INSTANCE u1\|cnt\[13\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1781:1781:1781) (1781:1781:1781))
@@ -755,7 +755,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[13\].lereg)
+    (INSTANCE u1\|cnt\[13\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2061:2061:2061) (2061:2061:2061))
@@ -774,7 +774,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~80.lecomb)
+    (INSTANCE u1\|Add0\~80.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2043:2043:2043) (2043:2043:2043))
@@ -791,7 +791,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~85.lecomb)
+    (INSTANCE u1\|Add0\~85.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1912:1912:1912) (1912:1912:1912))
@@ -808,7 +808,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~90.lecomb)
+    (INSTANCE u1\|Add0\~90.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1905:1905:1905) (1905:1905:1905))
@@ -825,7 +825,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[18\].lecomb)
+    (INSTANCE u1\|cnt\[18\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1744:1744:1744) (1744:1744:1744))
@@ -834,7 +834,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[18\].lereg)
+    (INSTANCE u1\|cnt\[18\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2024:2024:2024) (2024:2024:2024))
@@ -853,7 +853,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~95.lecomb)
+    (INSTANCE u1\|Add0\~95.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1296:1296:1296) (1296:1296:1296))
@@ -866,7 +866,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[19\].lecomb)
+    (INSTANCE u1\|cnt\[19\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (1149:1149:1149) (1149:1149:1149))
@@ -876,7 +876,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[19\].lereg)
+    (INSTANCE u1\|cnt\[19\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -892,7 +892,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[16\].lecomb)
+    (INSTANCE u1\|cnt\[16\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2498:2498:2498) (2498:2498:2498))
@@ -908,7 +908,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[16\].lereg)
+    (INSTANCE u1\|cnt\[16\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2704:2704:2704) (2704:2704:2704))
@@ -929,7 +929,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[17\].lecomb)
+    (INSTANCE u1\|cnt\[17\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1761:1761:1761) (1761:1761:1761))
@@ -938,7 +938,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[17\].lereg)
+    (INSTANCE u1\|cnt\[17\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2041:2041:2041) (2041:2041:2041))
@@ -957,7 +957,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~100.lecomb)
+    (INSTANCE u1\|Add0\~100.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2024:2024:2024) (2024:2024:2024))
@@ -974,7 +974,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[20\].lecomb)
+    (INSTANCE u1\|cnt\[20\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (884:884:884) (884:884:884))
@@ -990,7 +990,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[20\].lereg)
+    (INSTANCE u1\|cnt\[20\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2144:2144:2144) (2144:2144:2144))
@@ -1011,7 +1011,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~105.lecomb)
+    (INSTANCE u1\|Add0\~105.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1302:1302:1302) (1302:1302:1302))
@@ -1028,7 +1028,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[21\].lecomb)
+    (INSTANCE u1\|cnt\[21\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (1129:1129:1129) (1129:1129:1129))
@@ -1038,7 +1038,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[21\].lereg)
+    (INSTANCE u1\|cnt\[21\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1054,7 +1054,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~110.lecomb)
+    (INSTANCE u1\|Add0\~110.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2049:2049:2049) (2049:2049:2049))
@@ -1071,7 +1071,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[22\].lecomb)
+    (INSTANCE u1\|cnt\[22\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1796:1796:1796) (1796:1796:1796))
@@ -1080,7 +1080,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[22\].lereg)
+    (INSTANCE u1\|cnt\[22\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2076:2076:2076) (2076:2076:2076))
@@ -1099,7 +1099,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~115.lecomb)
+    (INSTANCE u1\|Add0\~115.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2077:2077:2077) (2077:2077:2077))
@@ -1116,7 +1116,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[23\].lecomb)
+    (INSTANCE u1\|cnt\[23\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (1692:1692:1692) (1692:1692:1692))
@@ -1126,7 +1126,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[23\].lereg)
+    (INSTANCE u1\|cnt\[23\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1142,7 +1142,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~120.lecomb)
+    (INSTANCE u1\|Add0\~120.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2035:2035:2035) (2035:2035:2035))
@@ -1155,7 +1155,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~125.lecomb)
+    (INSTANCE u1\|Add0\~125.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2041:2041:2041) (2041:2041:2041))
@@ -1172,7 +1172,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~130.lecomb)
+    (INSTANCE u1\|Add0\~130.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1308:1308:1308) (1308:1308:1308))
@@ -1189,7 +1189,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Add0\~135.lecomb)
+    (INSTANCE u1\|Add0\~135.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (1287:1287:1287) (1287:1287:1287))
@@ -1202,7 +1202,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[27\].lecomb)
+    (INSTANCE u1\|cnt\[27\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1801:1801:1801) (1801:1801:1801))
@@ -1211,7 +1211,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[27\].lereg)
+    (INSTANCE u1\|cnt\[27\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2081:2081:2081) (2081:2081:2081))
@@ -1230,7 +1230,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[24\].lecomb)
+    (INSTANCE u1\|cnt\[24\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1277:1277:1277) (1277:1277:1277))
@@ -1246,7 +1246,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[24\].lereg)
+    (INSTANCE u1\|cnt\[24\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2100:2100:2100) (2100:2100:2100))
@@ -1267,7 +1267,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[25\].lecomb)
+    (INSTANCE u1\|cnt\[25\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1725:1725:1725) (1725:1725:1725))
@@ -1276,7 +1276,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[25\].lereg)
+    (INSTANCE u1\|cnt\[25\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (2005:2005:2005) (2005:2005:2005))
@@ -1295,7 +1295,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|cnt\[26\].lecomb)
+    (INSTANCE u1\|cnt\[26\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datad (1125:1125:1125) (1125:1125:1125))
@@ -1305,7 +1305,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|cnt\[26\].lereg)
+    (INSTANCE u1\|cnt\[26\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1321,7 +1321,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Equal0\~4.lecomb)
+    (INSTANCE u1\|Equal0\~4.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1119:1119:1119) (1119:1119:1119))
@@ -1337,7 +1337,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|Equal0\~8.lecomb)
+    (INSTANCE u1\|Equal0\~8.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (703:703:703) (703:703:703))
@@ -1353,7 +1353,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|u1\|clkout.lecomb)
+    (INSTANCE u1\|clkout.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (822:822:822) (822:822:822))
@@ -1365,7 +1365,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|u1\|clkout.lereg)
+    (INSTANCE u1\|clkout.lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1390,7 +1390,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|cnt\[0\].lecomb)
+    (INSTANCE u2\|cnt\[0\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2834:2834:2834) (2834:2834:2834))
@@ -1402,7 +1402,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|cnt\[0\].lereg)
+    (INSTANCE u2\|cnt\[0\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1418,7 +1418,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|cnt\[1\].lecomb)
+    (INSTANCE u2\|cnt\[1\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1004:1004:1004) (1004:1004:1004))
@@ -1432,7 +1432,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|cnt\[1\].lereg)
+    (INSTANCE u2\|cnt\[1\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1448,7 +1448,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|cnt\[2\].lecomb)
+    (INSTANCE u2\|cnt\[2\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1406:1406:1406) (1406:1406:1406))
@@ -1464,7 +1464,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|cnt\[2\].lereg)
+    (INSTANCE u2\|cnt\[2\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1480,7 +1480,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[0\].lecomb)
+    (INSTANCE u2\|row\[0\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2171:2171:2171) (2171:2171:2171))
@@ -1494,7 +1494,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[0\].lereg)
+    (INSTANCE u2\|row\[0\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1510,7 +1510,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[1\].lecomb)
+    (INSTANCE u2\|row\[1\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2180:2180:2180) (2180:2180:2180))
@@ -1524,7 +1524,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[1\].lereg)
+    (INSTANCE u2\|row\[1\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1540,7 +1540,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[2\].lecomb)
+    (INSTANCE u2\|row\[2\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2174:2174:2174) (2174:2174:2174))
@@ -1554,7 +1554,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[2\].lereg)
+    (INSTANCE u2\|row\[2\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1570,7 +1570,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[3\].lecomb)
+    (INSTANCE u2\|row\[3\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2161:2161:2161) (2161:2161:2161))
@@ -1584,7 +1584,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[3\].lereg)
+    (INSTANCE u2\|row\[3\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1600,7 +1600,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[4\].lecomb)
+    (INSTANCE u2\|row\[4\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2165:2165:2165) (2165:2165:2165))
@@ -1614,7 +1614,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[4\].lereg)
+    (INSTANCE u2\|row\[4\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1630,7 +1630,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[5\].lecomb)
+    (INSTANCE u2\|row\[5\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2178:2178:2178) (2178:2178:2178))
@@ -1644,7 +1644,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[5\].lereg)
+    (INSTANCE u2\|row\[5\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1660,7 +1660,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[6\].lecomb)
+    (INSTANCE u2\|row\[6\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2180:2180:2180) (2180:2180:2180))
@@ -1674,7 +1674,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[6\].lereg)
+    (INSTANCE u2\|row\[6\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -1690,7 +1690,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|row\[7\].lecomb)
+    (INSTANCE u2\|row\[7\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2168:2168:2168) (2168:2168:2168))
@@ -1704,7 +1704,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|row\[7\].lereg)
+    (INSTANCE u2\|row\[7\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3158,7 +3158,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[0\]\~0.lecomb)
+    (INSTANCE u2\|col_temp\[0\]\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (964:964:964) (964:964:964))
@@ -3172,7 +3172,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[27\].lecomb)
+    (INSTANCE u2\|col_temp\[27\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1525:1525:1525) (1525:1525:1525))
@@ -3184,7 +3184,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[27\].lereg)
+    (INSTANCE u2\|col_temp\[27\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (2816:2816:2816) (2816:2816:2816))
@@ -3209,7 +3209,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[0\].lecomb)
+    (INSTANCE u2\|col_temp\[0\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1011:1011:1011) (1011:1011:1011))
@@ -3223,7 +3223,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[0\].lereg)
+    (INSTANCE u2\|col_temp\[0\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT datac (3491:3491:3491) (3491:3491:3491))
@@ -3247,7 +3247,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[24\].lecomb)
+    (INSTANCE u2\|col_temp\[24\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1535:1535:1535) (1535:1535:1535))
@@ -3259,7 +3259,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[24\].lereg)
+    (INSTANCE u2\|col_temp\[24\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (2816:2816:2816) (2816:2816:2816))
@@ -3284,7 +3284,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[16\].lecomb)
+    (INSTANCE u2\|col_temp\[16\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1534:1534:1534) (1534:1534:1534))
@@ -3296,7 +3296,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[16\].lereg)
+    (INSTANCE u2\|col_temp\[16\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (2816:2816:2816) (2816:2816:2816))
@@ -3321,7 +3321,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~1.lecomb)
+    (INSTANCE u2\|Mux7\~1.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1916:1916:1916) (1916:1916:1916))
@@ -3337,7 +3337,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~0.lecomb)
+    (INSTANCE u2\|Mux7\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1922:1922:1922) (1922:1922:1922))
@@ -3353,7 +3353,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[0\].lecomb)
+    (INSTANCE u2\|col\[0\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2971:2971:2971) (2971:2971:2971))
@@ -3369,7 +3369,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[0\].lereg)
+    (INSTANCE u2\|col\[0\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3385,7 +3385,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[12\].lecomb)
+    (INSTANCE u2\|col_temp\[12\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2310:2310:2310) (2310:2310:2310))
@@ -3397,7 +3397,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[12\].lereg)
+    (INSTANCE u2\|col_temp\[12\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -3419,7 +3419,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[17\].lecomb)
+    (INSTANCE u2\|col_temp\[17\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2315:2315:2315) (2315:2315:2315))
@@ -3431,7 +3431,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[17\].lereg)
+    (INSTANCE u2\|col_temp\[17\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -3453,7 +3453,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux6\~2.lecomb)
+    (INSTANCE u2\|Mux6\~2.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2158:2158:2158) (2158:2158:2158))
@@ -3467,7 +3467,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[20\].lecomb)
+    (INSTANCE u2\|col_temp\[20\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2313:2313:2313) (2313:2313:2313))
@@ -3479,7 +3479,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[20\].lereg)
+    (INSTANCE u2\|col_temp\[20\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -3501,7 +3501,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[25\].lecomb)
+    (INSTANCE u2\|col_temp\[25\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2319:2319:2319) (2319:2319:2319))
@@ -3513,7 +3513,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[25\].lereg)
+    (INSTANCE u2\|col_temp\[25\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -3535,7 +3535,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[4\].lecomb)
+    (INSTANCE u2\|col_temp\[4\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1363:1363:1363) (1363:1363:1363))
@@ -3547,7 +3547,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[4\].lereg)
+    (INSTANCE u2\|col_temp\[4\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3566,7 +3566,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux6\~0.lecomb)
+    (INSTANCE u2\|Mux6\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2130:2130:2130) (2130:2130:2130))
@@ -3582,7 +3582,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux6\~1.lecomb)
+    (INSTANCE u2\|Mux6\~1.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2753:2753:2753) (2753:2753:2753))
@@ -3598,7 +3598,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[1\].lecomb)
+    (INSTANCE u2\|col\[1\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2059:2059:2059) (2059:2059:2059))
@@ -3614,7 +3614,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[1\].lereg)
+    (INSTANCE u2\|col\[1\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3630,7 +3630,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[13\].lecomb)
+    (INSTANCE u2\|col_temp\[13\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1324:1324:1324) (1324:1324:1324))
@@ -3642,7 +3642,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[13\].lereg)
+    (INSTANCE u2\|col_temp\[13\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3661,7 +3661,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~6.lecomb)
+    (INSTANCE u2\|Mux7\~6.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2159:2159:2159) (2159:2159:2159))
@@ -3675,7 +3675,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[34\].lecomb)
+    (INSTANCE u2\|col_temp\[34\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2312:2312:2312) (2312:2312:2312))
@@ -3687,7 +3687,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[34\].lereg)
+    (INSTANCE u2\|col_temp\[34\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -3709,7 +3709,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~3.lecomb)
+    (INSTANCE u2\|Mux7\~3.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1298:1298:1298) (1298:1298:1298))
@@ -3723,7 +3723,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[21\].lecomb)
+    (INSTANCE u2\|col_temp\[21\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2236:2236:2236) (2236:2236:2236))
@@ -3735,7 +3735,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[21\].lereg)
+    (INSTANCE u2\|col_temp\[21\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3754,7 +3754,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[18\].lecomb)
+    (INSTANCE u2\|col_temp\[18\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1283:1283:1283) (1283:1283:1283))
@@ -3766,7 +3766,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[18\].lereg)
+    (INSTANCE u2\|col_temp\[18\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3042:3042:3042) (3042:3042:3042))
@@ -3788,7 +3788,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~5.lecomb)
+    (INSTANCE u2\|Mux7\~5.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1297:1297:1297) (1297:1297:1297))
@@ -3802,7 +3802,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[10\].lecomb)
+    (INSTANCE u2\|col_temp\[10\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2317:2317:2317) (2317:2317:2317))
@@ -3814,7 +3814,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[10\].lereg)
+    (INSTANCE u2\|col_temp\[10\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -3836,7 +3836,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~4.lecomb)
+    (INSTANCE u2\|Mux7\~4.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1512:1512:1512) (1512:1512:1512))
@@ -3850,7 +3850,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux5\~0.lecomb)
+    (INSTANCE u2\|Mux5\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1988:1988:1988) (1988:1988:1988))
@@ -3866,7 +3866,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[2\].lecomb)
+    (INSTANCE u2\|col\[2\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2110:2110:2110) (2110:2110:2110))
@@ -3882,7 +3882,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[2\].lereg)
+    (INSTANCE u2\|col\[2\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -3898,7 +3898,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[19\].lecomb)
+    (INSTANCE u2\|col_temp\[19\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1525:1525:1525) (1525:1525:1525))
@@ -3910,7 +3910,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[19\].lereg)
+    (INSTANCE u2\|col_temp\[19\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (2816:2816:2816) (2816:2816:2816))
@@ -3935,7 +3935,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~8.lecomb)
+    (INSTANCE u2\|Mux7\~8.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1020:1020:1020) (1020:1020:1020))
@@ -3949,7 +3949,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[35\].lecomb)
+    (INSTANCE u2\|col_temp\[35\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1529:1529:1529) (1529:1529:1529))
@@ -3961,7 +3961,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[35\].lereg)
+    (INSTANCE u2\|col_temp\[35\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (2816:2816:2816) (2816:2816:2816))
@@ -3986,7 +3986,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[3\].lecomb)
+    (INSTANCE u2\|col_temp\[3\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (1425:1425:1425) (1425:1425:1425))
@@ -3998,7 +3998,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[3\].lereg)
+    (INSTANCE u2\|col_temp\[3\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -4017,7 +4017,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux4\~1.lecomb)
+    (INSTANCE u2\|Mux4\~1.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2058:2058:2058) (2058:2058:2058))
@@ -4033,7 +4033,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux4\~2.lecomb)
+    (INSTANCE u2\|Mux4\~2.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1017:1017:1017) (1017:1017:1017))
@@ -4049,7 +4049,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[3\].lecomb)
+    (INSTANCE u2\|col\[3\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (692:692:692) (692:692:692))
@@ -4065,7 +4065,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[3\].lereg)
+    (INSTANCE u2\|col\[3\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -4081,7 +4081,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~11.lecomb)
+    (INSTANCE u2\|Mux7\~11.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2135:2135:2135) (2135:2135:2135))
@@ -4095,7 +4095,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[28\].lecomb)
+    (INSTANCE u2\|col_temp\[28\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2320:2320:2320) (2320:2320:2320))
@@ -4107,7 +4107,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[28\].lereg)
+    (INSTANCE u2\|col_temp\[28\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -4129,7 +4129,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~9.lecomb)
+    (INSTANCE u2\|Mux7\~9.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2084:2084:2084) (2084:2084:2084))
@@ -4143,7 +4143,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~10.lecomb)
+    (INSTANCE u2\|Mux7\~10.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2176:2176:2176) (2176:2176:2176))
@@ -4157,7 +4157,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux3\~0.lecomb)
+    (INSTANCE u2\|Mux3\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2068:2068:2068) (2068:2068:2068))
@@ -4173,7 +4173,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[4\].lecomb)
+    (INSTANCE u2\|col\[4\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2068:2068:2068) (2068:2068:2068))
@@ -4189,7 +4189,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[4\].lereg)
+    (INSTANCE u2\|col\[4\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -4205,7 +4205,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux2\~0.lecomb)
+    (INSTANCE u2\|Mux2\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2110:2110:2110) (2110:2110:2110))
@@ -4219,7 +4219,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux2\~1.lecomb)
+    (INSTANCE u2\|Mux2\~1.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2399:2399:2399) (2399:2399:2399))
@@ -4235,7 +4235,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux2\~2.lecomb)
+    (INSTANCE u2\|Mux2\~2.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1999:1999:1999) (1999:1999:1999))
@@ -4251,7 +4251,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[5\].lecomb)
+    (INSTANCE u2\|col\[5\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1999:1999:1999) (1999:1999:1999))
@@ -4267,7 +4267,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[5\].lereg)
+    (INSTANCE u2\|col\[5\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -4283,7 +4283,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[14\].lecomb)
+    (INSTANCE u2\|col_temp\[14\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (1536:1536:1536) (1536:1536:1536))
@@ -4295,7 +4295,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[14\].lereg)
+    (INSTANCE u2\|col_temp\[14\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (2816:2816:2816) (2816:2816:2816))
@@ -4320,7 +4320,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[22\].lecomb)
+    (INSTANCE u2\|col_temp\[22\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2198:2198:2198) (2198:2198:2198))
@@ -4332,7 +4332,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[22\].lereg)
+    (INSTANCE u2\|col_temp\[22\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (4103:4103:4103) (4103:4103:4103))
@@ -4357,7 +4357,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~13.lecomb)
+    (INSTANCE u2\|Mux7\~13.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (897:897:897) (897:897:897))
@@ -4371,7 +4371,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[30\].lecomb)
+    (INSTANCE u2\|col_temp\[30\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (2196:2196:2196) (2196:2196:2196))
@@ -4383,7 +4383,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[30\].lereg)
+    (INSTANCE u2\|col_temp\[30\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sload (4103:4103:4103) (4103:4103:4103))
@@ -4408,7 +4408,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux7\~12.lecomb)
+    (INSTANCE u2\|Mux7\~12.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (885:885:885) (885:885:885))
@@ -4422,7 +4422,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux1\~0.lecomb)
+    (INSTANCE u2\|Mux1\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2138:2138:2138) (2138:2138:2138))
@@ -4438,7 +4438,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux1\~1.lecomb)
+    (INSTANCE u2\|Mux1\~1.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2171:2171:2171) (2171:2171:2171))
@@ -4454,7 +4454,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[6\].lecomb)
+    (INSTANCE u2\|col\[6\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2125:2125:2125) (2125:2125:2125))
@@ -4470,7 +4470,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[6\].lereg)
+    (INSTANCE u2\|col\[6\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))
@@ -4486,7 +4486,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux0\~0.lecomb)
+    (INSTANCE u2\|Mux0\~0.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (956:956:956) (956:956:956))
@@ -4500,7 +4500,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col_temp\[47\].lecomb)
+    (INSTANCE u2\|col_temp\[47\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datac (2313:2313:2313) (2313:2313:2313))
@@ -4512,7 +4512,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col_temp\[47\].lereg)
+    (INSTANCE u2\|col_temp\[47\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT sclr (3099:3099:3099) (3099:3099:3099))
@@ -4534,7 +4534,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux0\~1.lecomb)
+    (INSTANCE u2\|Mux0\~1.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT datab (1342:1342:1342) (1342:1342:1342))
@@ -4548,7 +4548,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|Mux0\~2.lecomb)
+    (INSTANCE u2\|Mux0\~2.lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2546:2546:2546) (2546:2546:2546))
@@ -4564,7 +4564,7 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE u1\|col\[7\].lecomb)
+    (INSTANCE u2\|col\[7\].lecomb)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3283:3283:3283) (3283:3283:3283))
@@ -4580,7 +4580,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE u1\|col\[7\].lereg)
+    (INSTANCE u2\|col\[7\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1372:1372:1372) (1372:1372:1372))

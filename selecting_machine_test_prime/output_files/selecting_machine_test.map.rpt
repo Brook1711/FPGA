@@ -1,0 +1,476 @@
+Analysis & Synthesis report for selecting_machine_test
+Fri Nov 30 20:54:42 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: frequency_divider:u_clk_6
+ 12. Parameter Settings for User Entity Instance: frequency_divider:u_clk_5
+ 13. Parameter Settings for User Entity Instance: frequency_divider:u_clk_4
+ 14. Parameter Settings for User Entity Instance: frequency_divider:u_clk_3
+ 15. Parameter Settings for User Entity Instance: frequency_divider:u_clk_2
+ 16. Parameter Settings for User Entity Instance: frequency_divider:u_clk_1
+ 17. Parameter Settings for User Entity Instance: frequency_divider:u_clk_0
+ 18. Port Connectivity Checks: "decode_seg:u_decode_seg"
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri Nov 30 20:54:42 2018       ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; selecting_machine_test                      ;
+; Top-level Entity Name       ; selecting_machine_test                      ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 39                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                      ;
++------------------------------------------------------------------+------------------------+------------------------+
+; Option                                                           ; Setting                ; Default Value          ;
++------------------------------------------------------------------+------------------------+------------------------+
+; Device                                                           ; EPM1270T144C5          ;                        ;
+; Top-level entity name                                            ; selecting_machine_test ; selecting_machine_test ;
+; Family name                                                      ; MAX II                 ; Cyclone V              ;
+; Use smart compilation                                            ; Off                    ; Off                    ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                     ; On                     ;
+; Enable compact report table                                      ; Off                    ; Off                    ;
+; Restructure Multiplexers                                         ; Auto                   ; Auto                   ;
+; Create Debugging Nodes for IP Cores                              ; Off                    ; Off                    ;
+; Preserve fewer node names                                        ; On                     ; On                     ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                 ; Enable                 ;
+; Verilog Version                                                  ; Verilog_2001           ; Verilog_2001           ;
+; VHDL Version                                                     ; VHDL_1993              ; VHDL_1993              ;
+; State Machine Processing                                         ; Auto                   ; Auto                   ;
+; Safe State Machine                                               ; Off                    ; Off                    ;
+; Extract Verilog State Machines                                   ; On                     ; On                     ;
+; Extract VHDL State Machines                                      ; On                     ; On                     ;
+; Ignore Verilog initial constructs                                ; Off                    ; Off                    ;
+; Iteration limit for constant Verilog loops                       ; 5000                   ; 5000                   ;
+; Iteration limit for non-constant Verilog loops                   ; 250                    ; 250                    ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                     ; On                     ;
+; Infer RAMs from Raw Logic                                        ; On                     ; On                     ;
+; Parallel Synthesis                                               ; On                     ; On                     ;
+; NOT Gate Push-Back                                               ; On                     ; On                     ;
+; Power-Up Don't Care                                              ; On                     ; On                     ;
+; Remove Redundant Logic Cells                                     ; Off                    ; Off                    ;
+; Remove Duplicate Registers                                       ; On                     ; On                     ;
+; Ignore CARRY Buffers                                             ; Off                    ; Off                    ;
+; Ignore CASCADE Buffers                                           ; Off                    ; Off                    ;
+; Ignore GLOBAL Buffers                                            ; Off                    ; Off                    ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                    ; Off                    ;
+; Ignore LCELL Buffers                                             ; Off                    ; Off                    ;
+; Ignore SOFT Buffers                                              ; On                     ; On                     ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                    ; Off                    ;
+; Optimization Technique                                           ; Balanced               ; Balanced               ;
+; Carry Chain Length                                               ; 70                     ; 70                     ;
+; Auto Carry Chains                                                ; On                     ; On                     ;
+; Auto Open-Drain Pins                                             ; On                     ; On                     ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                    ; Off                    ;
+; Auto Shift Register Replacement                                  ; Auto                   ; Auto                   ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                   ; Auto                   ;
+; Auto Clock Enable Replacement                                    ; On                     ; On                     ;
+; Allow Synchronous Control Signals                                ; On                     ; On                     ;
+; Force Use of Synchronous Clear Signals                           ; Off                    ; Off                    ;
+; Auto Resource Sharing                                            ; Off                    ; Off                    ;
+; Use LogicLock Constraints during Resource Balancing              ; On                     ; On                     ;
+; Ignore translate_off and synthesis_off directives                ; Off                    ; Off                    ;
+; Report Parameter Settings                                        ; On                     ; On                     ;
+; Report Source Assignments                                        ; On                     ; On                     ;
+; Report Connectivity Checks                                       ; On                     ; On                     ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                    ; Off                    ;
+; Synchronization Register Chain Length                            ; 2                      ; 2                      ;
+; Power Optimization During Synthesis                              ; Normal compilation     ; Normal compilation     ;
+; HDL message level                                                ; Level2                 ; Level2                 ;
+; Suppress Register Optimization Related Messages                  ; Off                    ; Off                    ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                   ; 5000                   ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                   ; 5000                   ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                    ; 100                    ;
+; Clock MUX Protection                                             ; On                     ; On                     ;
+; Block Design Naming                                              ; Auto                   ; Auto                   ;
+; Synthesis Effort                                                 ; Auto                   ; Auto                   ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                     ; On                     ;
+; Analysis & Synthesis Message Level                               ; Medium                 ; Medium                 ;
+; Disable Register Merging Across Hierarchies                      ; Auto                   ; Auto                   ;
++------------------------------------------------------------------+------------------------+------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+; selecting_machine_test.v         ; yes             ; User Verilog HDL File  ; E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 39    ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------+------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name     ; Entity Name            ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------+------------------------+--------------+
+; |selecting_machine_test    ; 0 (0)       ; 0            ; 0          ; 39   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |selecting_machine_test ; selecting_machine_test ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++-------------------------------------------+---------------------------------------------+
+; Register name                             ; Reason for Removal                          ;
++-------------------------------------------+---------------------------------------------+
+; decode_lattice:u2|col_temp[1,2]           ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|cnt[0]                  ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col_temp[0]             ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col[0]                  ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col_temp[48]            ; Lost fanout                                 ;
+; decode_lattice:u2|col_temp[3..47,49..63]  ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col[1..7]               ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|row[0..7]               ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|cnt[1,2]                ; Stuck at GND due to stuck port clock        ;
+; decode_seg:u_decode_seg|cath_control[0]   ; Stuck at GND due to stuck port clock        ;
+; decode_seg:u_decode_seg|digit_cath[0..5]  ; Stuck at GND due to stuck port clock        ;
+; decode_seg:u_decode_seg|cath_control[1,2] ; Stuck at GND due to stuck port clock        ;
+; sequencer_chi:u_sequencer_chi|code[0..3]  ; Stuck at GND due to stuck port clock_enable ;
+; frequency_divider:u_clk_6|cnt[0..27]      ; Lost fanout                                 ;
+; frequency_divider:u_clk_6|clkout          ; Lost fanout                                 ;
+; Total Number of Removed Registers = 125   ;                                             ;
++-------------------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                             ;
++-----------------------------------------+-------------------------+-------------------------------------------------------------------------------------+
+; Register name                           ; Reason for Removal      ; Registers Removed due to This Register                                              ;
++-----------------------------------------+-------------------------+-------------------------------------------------------------------------------------+
+; decode_lattice:u2|cnt[0]                ; Stuck at GND            ; decode_lattice:u2|col[0], decode_lattice:u2|col_temp[48], decode_lattice:u2|col[3], ;
+;                                         ; due to stuck port clock ; decode_lattice:u2|col[4], decode_lattice:u2|col[5], decode_lattice:u2|col[6],       ;
+;                                         ;                         ; decode_lattice:u2|col[7], decode_lattice:u2|row[0], decode_lattice:u2|row[1],       ;
+;                                         ;                         ; decode_lattice:u2|row[2], decode_lattice:u2|row[3], decode_lattice:u2|row[4],       ;
+;                                         ;                         ; decode_lattice:u2|row[5], decode_lattice:u2|row[6], decode_lattice:u2|row[7]        ;
+; decode_seg:u_decode_seg|cath_control[0] ; Stuck at GND            ; decode_seg:u_decode_seg|digit_cath[0], decode_seg:u_decode_seg|digit_cath[1],       ;
+;                                         ; due to stuck port clock ; decode_seg:u_decode_seg|digit_cath[2], decode_seg:u_decode_seg|digit_cath[3],       ;
+;                                         ;                         ; decode_seg:u_decode_seg|digit_cath[4], decode_seg:u_decode_seg|digit_cath[5]        ;
+; frequency_divider:u_clk_6|cnt[11]       ; Lost Fanouts            ; frequency_divider:u_clk_6|cnt[17], frequency_divider:u_clk_6|cnt[18],               ;
+;                                         ;                         ; frequency_divider:u_clk_6|cnt[19], frequency_divider:u_clk_6|cnt[20],               ;
+;                                         ;                         ; frequency_divider:u_clk_6|cnt[21], frequency_divider:u_clk_6|cnt[23]                ;
+; decode_lattice:u2|col_temp[2]           ; Stuck at GND            ; decode_lattice:u2|col[2]                                                            ;
+;                                         ; due to stuck port clock ;                                                                                     ;
+; decode_lattice:u2|col_temp[1]           ; Stuck at GND            ; decode_lattice:u2|col[1]                                                            ;
+;                                         ; due to stuck port clock ;                                                                                     ;
++-----------------------------------------+-------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_6 ;
++----------------+----------+--------------------------------------------+
+; Parameter Name ; Value    ; Type                                       ;
++----------------+----------+--------------------------------------------+
+; N              ; 12500000 ; Signed Integer                             ;
++----------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_5 ;
++----------------+----------+--------------------------------------------+
+; Parameter Name ; Value    ; Type                                       ;
++----------------+----------+--------------------------------------------+
+; N              ; 10000000 ; Signed Integer                             ;
++----------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_4 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 7500000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_3 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 5000000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_2 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 2500000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_1 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 2000000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_0 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 1250000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decode_seg:u_decode_seg"                                                                                                          ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                      ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; digit_seg ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "digit_seg[7..1]" have no fanouts ;
+; digit_seg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                          ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Nov 30 20:54:28 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off selecting_machine_test -c selecting_machine_test
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(226): truncated literal to match 6 bits File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 226
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(230): truncated literal to match 6 bits File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 230
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(234): truncated literal to match 6 bits File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 234
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(238): truncated literal to match 6 bits File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 238
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(242): truncated literal to match 6 bits File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 242
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(246): truncated literal to match 6 bits File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 246
+Info (12021): Found 7 design units, including 7 entities, in source file selecting_machine_test.v
+    Info (12023): Found entity 1: selecting_machine_test File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 1
+    Info (12023): Found entity 2: sequencer_eng File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 100
+    Info (12023): Found entity 3: sequencer_num File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 125
+    Info (12023): Found entity 4: sequencer_chi File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 150
+    Info (12023): Found entity 5: decode_seg File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 175
+    Info (12023): Found entity 6: decode_lattice File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 255
+    Info (12023): Found entity 7: frequency_divider File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 326
+Warning (10236): Verilog HDL Implicit Net warning at selecting_machine_test.v(88): created implicit net for "digit_seg" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 88
+Info (12127): Elaborating entity "selecting_machine_test" for the top level hierarchy
+Warning (10034): Output port "digit_scan" at selecting_machine_test.v(7) has no driver File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_6" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 16
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_5" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 20
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_4" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 24
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_3" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 28
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_2" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 32
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_1" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 36
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_0" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 40
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 341
+Info (12128): Elaborating entity "sequencer_chi" for hierarchy "sequencer_chi:u_sequencer_chi" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 46
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(165): truncated value with size 32 to match size of target (4) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 165
+Info (12128): Elaborating entity "sequencer_eng" for hierarchy "sequencer_eng:u_sequencer_eng" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 52
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(115): truncated value with size 32 to match size of target (4) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 115
+Info (12128): Elaborating entity "sequencer_num" for hierarchy "sequencer_num:u_sequencer_num_4" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 58
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(140): truncated value with size 32 to match size of target (4) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 140
+Info (12128): Elaborating entity "decode_seg" for hierarchy "decode_seg:u_decode_seg" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 90
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(196): truncated value with size 32 to match size of target (3) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 196
+Info (12128): Elaborating entity "decode_lattice" for hierarchy "decode_lattice:u2" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 97
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(271): truncated value with size 32 to match size of target (3) File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 271
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 12
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "row[0]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[1]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[2]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[3]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[4]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[5]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[6]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "row[7]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 5
+    Warning (13410): Pin "col[0]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[1]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[2]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[3]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[4]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[5]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[6]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "col[7]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 6
+    Warning (13410): Pin "digit_scan[0]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[1]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[2]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[3]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[4]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[5]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[6]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_scan[7]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 7
+    Warning (13410): Pin "digit_cath[0]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 8
+    Warning (13410): Pin "digit_cath[1]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 8
+    Warning (13410): Pin "digit_cath[2]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 8
+    Warning (13410): Pin "digit_cath[3]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 8
+    Warning (13410): Pin "digit_cath[4]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 8
+    Warning (13410): Pin "digit_cath[5]" is stuck at GND File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 8
+Info (17049): 30 registers lost all their fanouts during netlist optimizations.
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 2
+    Warning (15610): No output dependent on input pin "rst" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 3
+    Warning (15610): No output dependent on input pin "BTN[0]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+    Warning (15610): No output dependent on input pin "BTN[1]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+    Warning (15610): No output dependent on input pin "BTN[2]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+    Warning (15610): No output dependent on input pin "BTN[3]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+    Warning (15610): No output dependent on input pin "BTN[4]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+    Warning (15610): No output dependent on input pin "BTN[5]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+    Warning (15610): No output dependent on input pin "BTN[6]" File: E:/prime_for_FPGA/Lite/demo/selecting_machine_test_prime/selecting_machine_test.v Line: 4
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 30 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 93 warnings
+    Info: Peak virtual memory: 4741 megabytes
+    Info: Processing ended: Fri Nov 30 20:54:43 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:24
+
+

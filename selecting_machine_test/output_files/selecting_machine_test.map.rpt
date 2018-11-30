@@ -1,5 +1,5 @@
 Analysis & Synthesis report for selecting_machine_test
-Fri Nov 30 08:03:52 2018
+Fri Nov 30 20:39:17 2018
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -13,12 +13,18 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Parameter Settings for User Entity Instance: debounce:u1
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: frequency_divider:u_clk_6
+ 12. Parameter Settings for User Entity Instance: frequency_divider:u_clk_5
+ 13. Parameter Settings for User Entity Instance: frequency_divider:u_clk_4
+ 14. Parameter Settings for User Entity Instance: frequency_divider:u_clk_3
+ 15. Parameter Settings for User Entity Instance: frequency_divider:u_clk_2
+ 16. Parameter Settings for User Entity Instance: frequency_divider:u_clk_1
+ 17. Parameter Settings for User Entity Instance: frequency_divider:u_clk_0
+ 18. Port Connectivity Checks: "decode_seg:u_decode_seg"
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -42,24 +48,19 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 30 08:03:52 2018      ;
-; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name                      ; selecting_machine_test                     ;
-; Top-level Entity Name              ; selecting_machine_test                     ;
-; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 35                                         ;
-;     Total combinational functions  ; 27                                         ;
-;     Dedicated logic registers      ; 28                                         ;
-; Total registers                    ; 28                                         ;
-; Total pins                         ; 38                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                             ;
++-----------------------------+--------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri Nov 30 20:39:17 2018      ;
+; Quartus II 64-Bit Version   ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name               ; selecting_machine_test                     ;
+; Top-level Entity Name       ; selecting_machine_test                     ;
+; Family                      ; MAX II                                     ;
+; Total logic elements        ; 0                                          ;
+; Total pins                  ; 39                                         ;
+; Total virtual pins          ; 0                                          ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                              ;
++-----------------------------+--------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------+
@@ -67,9 +68,9 @@ agreement for further details.
 +----------------------------------------------------------------------------+------------------------+------------------------+
 ; Option                                                                     ; Setting                ; Default Value          ;
 +----------------------------------------------------------------------------+------------------------+------------------------+
-; Device                                                                     ; EP4CE6F17C8            ;                        ;
+; Device                                                                     ; EPM1270T144C5          ;                        ;
 ; Top-level entity name                                                      ; selecting_machine_test ; selecting_machine_test ;
-; Family name                                                                ; Cyclone IV E           ; Cyclone V              ;
+; Family name                                                                ; MAX II                 ; Cyclone V              ;
 ; Use smart compilation                                                      ; Off                    ; Off                    ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                     ; On                     ;
 ; Enable compact report table                                                ; Off                    ; Off                    ;
@@ -89,7 +90,6 @@ agreement for further details.
 ; Add Pass-Through Logic to Inferred RAMs                                    ; On                     ; On                     ;
 ; Infer RAMs from Raw Logic                                                  ; On                     ; On                     ;
 ; Parallel Synthesis                                                         ; On                     ; On                     ;
-; DSP Block Balancing                                                        ; Auto                   ; Auto                   ;
 ; NOT Gate Push-Back                                                         ; On                     ; On                     ;
 ; Power-Up Don't Care                                                        ; On                     ; On                     ;
 ; Remove Redundant Logic Cells                                               ; Off                    ; Off                    ;
@@ -106,24 +106,14 @@ agreement for further details.
 ; Auto Carry Chains                                                          ; On                     ; On                     ;
 ; Auto Open-Drain Pins                                                       ; On                     ; On                     ;
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                    ; Off                    ;
-; Auto ROM Replacement                                                       ; On                     ; On                     ;
-; Auto RAM Replacement                                                       ; On                     ; On                     ;
-; Auto DSP Block Replacement                                                 ; On                     ; On                     ;
 ; Auto Shift Register Replacement                                            ; Auto                   ; Auto                   ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto                   ; Auto                   ;
 ; Auto Clock Enable Replacement                                              ; On                     ; On                     ;
-; Strict RAM Replacement                                                     ; Off                    ; Off                    ;
 ; Allow Synchronous Control Signals                                          ; On                     ; On                     ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                    ; Off                    ;
-; Auto RAM Block Balancing                                                   ; On                     ; On                     ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                    ; Off                    ;
 ; Auto Resource Sharing                                                      ; Off                    ; Off                    ;
-; Allow Any RAM Size For Recognition                                         ; Off                    ; Off                    ;
-; Allow Any ROM Size For Recognition                                         ; Off                    ; Off                    ;
-; Allow Any Shift Register Size For Recognition                              ; Off                    ; Off                    ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                     ; On                     ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                    ; Off                    ;
-; Timing-Driven Synthesis                                                    ; On                     ; On                     ;
 ; Report Parameter Settings                                                  ; On                     ; On                     ;
 ; Report Source Assignments                                                  ; On                     ; On                     ;
 ; Report Connectivity Checks                                                 ; On                     ; On                     ;
@@ -136,15 +126,11 @@ agreement for further details.
 ; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                   ; 5000                   ;
 ; Number of Inverted Registers Reported in Synthesis Report                  ; 100                    ; 100                    ;
 ; Clock MUX Protection                                                       ; On                     ; On                     ;
-; Auto Gated Clock Conversion                                                ; Off                    ; Off                    ;
 ; Block Design Naming                                                        ; Auto                   ; Auto                   ;
-; SDC constraint protection                                                  ; Off                    ; Off                    ;
 ; Synthesis Effort                                                           ; Auto                   ; Auto                   ;
 ; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                     ; On                     ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                    ; Off                    ;
 ; Analysis & Synthesis Message Level                                         ; Medium                 ; Medium                 ;
 ; Disable Register Merging Across Hierarchies                                ; Auto                   ; Auto                   ;
-; Resource Aware Inference For Block RAM                                     ; On                     ; On                     ;
 ; Synthesis Seed                                                             ; 1                      ; 1                      ;
 +----------------------------------------------------------------------------+------------------------+------------------------+
 
@@ -172,51 +158,94 @@ agreement for further details.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                ; Library ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
 ; selecting_machine_test.v         ; yes             ; User Verilog HDL File  ; E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v ;         ;
-; debounce.v                       ; yes             ; User Verilog HDL File  ; E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v               ;         ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 35        ;
-;                                             ;           ;
-; Total combinational functions               ; 27        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 6         ;
-;     -- 3 input functions                    ; 3         ;
-;     -- <=2 input functions                  ; 18        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 10        ;
-;     -- arithmetic mode                      ; 17        ;
-;                                             ;           ;
-; Total registers                             ; 28        ;
-;     -- Dedicated logic registers            ; 28        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 38        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 28        ;
-; Total fan-out                               ; 212       ;
-; Average fan-out                             ; 1.62      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 39    ;
++---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; |selecting_machine_test    ; 27 (2)            ; 28 (2)       ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |selecting_machine_test             ; work         ;
-;    |debounce:u1|           ; 25 (25)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |selecting_machine_test|debounce:u1 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name     ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------+--------------+
+; |selecting_machine_test    ; 0 (0)       ; 0            ; 0          ; 39   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |selecting_machine_test ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++-------------------------------------------+---------------------------------------------+
+; Register name                             ; Reason for Removal                          ;
++-------------------------------------------+---------------------------------------------+
+; decode_lattice:u2|col_temp[1,2]           ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|cnt[0]                  ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col_temp[0]             ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col[0]                  ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col_temp[48]            ; Lost fanout                                 ;
+; decode_lattice:u2|col_temp[3..47,49..63]  ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|col[1..7]               ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|row[0..7]               ; Stuck at GND due to stuck port clock        ;
+; decode_lattice:u2|cnt[1,2]                ; Stuck at GND due to stuck port clock        ;
+; decode_seg:u_decode_seg|cath_control[0]   ; Stuck at GND due to stuck port clock        ;
+; decode_seg:u_decode_seg|digit_cath[0..5]  ; Stuck at GND due to stuck port clock        ;
+; decode_seg:u_decode_seg|cath_control[1,2] ; Stuck at GND due to stuck port clock        ;
+; sequencer_chi:u_sequencer_chi|code[0..3]  ; Stuck at GND due to stuck port clock_enable ;
+; frequency_divider:u_clk_6|cnt[0..27]      ; Lost fanout                                 ;
+; frequency_divider:u_clk_6|clkout          ; Lost fanout                                 ;
+; Total Number of Removed Registers = 125   ;                                             ;
++-------------------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                             ;
++-----------------------------------------+-------------------------+-------------------------------------------------------------------------------------+
+; Register name                           ; Reason for Removal      ; Registers Removed due to This Register                                              ;
++-----------------------------------------+-------------------------+-------------------------------------------------------------------------------------+
+; decode_lattice:u2|cnt[0]                ; Stuck at GND            ; decode_lattice:u2|col[0], decode_lattice:u2|col_temp[48], decode_lattice:u2|col[3], ;
+;                                         ; due to stuck port clock ; decode_lattice:u2|col[4], decode_lattice:u2|col[5], decode_lattice:u2|col[6],       ;
+;                                         ;                         ; decode_lattice:u2|col[7], decode_lattice:u2|row[0], decode_lattice:u2|row[1],       ;
+;                                         ;                         ; decode_lattice:u2|row[2], decode_lattice:u2|row[3], decode_lattice:u2|row[4],       ;
+;                                         ;                         ; decode_lattice:u2|row[5], decode_lattice:u2|row[6], decode_lattice:u2|row[7]        ;
+; decode_seg:u_decode_seg|cath_control[0] ; Stuck at GND            ; decode_seg:u_decode_seg|digit_cath[0], decode_seg:u_decode_seg|digit_cath[1],       ;
+;                                         ; due to stuck port clock ; decode_seg:u_decode_seg|digit_cath[2], decode_seg:u_decode_seg|digit_cath[3],       ;
+;                                         ;                         ; decode_seg:u_decode_seg|digit_cath[4], decode_seg:u_decode_seg|digit_cath[5]        ;
+; frequency_divider:u_clk_6|cnt[11]       ; Lost Fanouts            ; frequency_divider:u_clk_6|cnt[17], frequency_divider:u_clk_6|cnt[18],               ;
+;                                         ;                         ; frequency_divider:u_clk_6|cnt[19], frequency_divider:u_clk_6|cnt[20],               ;
+;                                         ;                         ; frequency_divider:u_clk_6|cnt[21], frequency_divider:u_clk_6|cnt[23]                ;
+; decode_lattice:u2|col_temp[2]           ; Stuck at GND            ; decode_lattice:u2|col[2]                                                            ;
+;                                         ; due to stuck port clock ;                                                                                     ;
+; decode_lattice:u2|col_temp[1]           ; Stuck at GND            ; decode_lattice:u2|col[1]                                                            ;
+;                                         ; due to stuck port clock ;                                                                                     ;
++-----------------------------------------+-------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -224,76 +253,94 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 28    ;
-; Number of registers using Synchronous Clear  ; 18    ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------+
-; Inverted Register Statistics                      ;
-+-----------------------------------------+---------+
-; Inverted Register                       ; Fan out ;
-+-----------------------------------------+---------+
-; digit_scan[0]~reg0                      ; 2       ;
-; digit_scan[1]~reg0                      ; 2       ;
-; debounce:u1|key_sec[0]                  ; 2       ;
-; debounce:u1|key_sec_pre[0]              ; 1       ;
-; debounce:u1|key_sec[1]                  ; 2       ;
-; debounce:u1|key_sec_pre[1]              ; 1       ;
-; debounce:u1|key_rst[0]                  ; 2       ;
-; debounce:u1|key_rst[1]                  ; 2       ;
-; debounce:u1|key_rst_pre[0]              ; 1       ;
-; debounce:u1|key_rst_pre[1]              ; 1       ;
-; Total number of inverted registers = 10 ;         ;
-+-----------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debounce:u1 ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; N              ; 2     ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_6 ;
++----------------+----------+--------------------------------------------+
+; Parameter Name ; Value    ; Type                                       ;
++----------------+----------+--------------------------------------------+
+; N              ; 12500000 ; Signed Integer                             ;
++----------------+----------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 38                          ;
-; cycloneiii_ff         ; 28                          ;
-;     CLR               ; 8                           ;
-;     CLR SCLR          ; 18                          ;
-;     ENA CLR           ; 2                           ;
-; cycloneiii_lcell_comb ; 30                          ;
-;     arith             ; 17                          ;
-;         2 data inputs ; 17                          ;
-;     normal            ; 13                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 6                           ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.05                        ;
-+-----------------------+-----------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_5 ;
++----------------+----------+--------------------------------------------+
+; Parameter Name ; Value    ; Type                                       ;
++----------------+----------+--------------------------------------------+
+; N              ; 10000000 ; Signed Integer                             ;
++----------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_4 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 7500000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_3 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 5000000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_2 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 2500000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_1 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 2000000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:u_clk_0 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; N              ; 1250000 ; Signed Integer                              ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decode_seg:u_decode_seg"                                                                                                          ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                      ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; digit_seg ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "digit_seg[7..1]" have no fanouts ;
+; digit_seg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                          ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -302,33 +349,84 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Fri Nov 30 08:03:40 2018
+    Info: Processing started: Fri Nov 30 20:39:07 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off selecting_machine_test -c selecting_machine_test
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file selecting_machine_test.v
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(226): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(230): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(234): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(238): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(242): truncated literal to match 6 bits
+Warning (10229): Verilog HDL Expression warning at selecting_machine_test.v(246): truncated literal to match 6 bits
+Info (12021): Found 7 design units, including 7 entities, in source file selecting_machine_test.v
     Info (12023): Found entity 1: selecting_machine_test
+    Info (12023): Found entity 2: sequencer_eng
+    Info (12023): Found entity 3: sequencer_num
+    Info (12023): Found entity 4: sequencer_chi
+    Info (12023): Found entity 5: decode_seg
+    Info (12023): Found entity 6: decode_lattice
+    Info (12023): Found entity 7: frequency_divider
 Info (12021): Found 1 design units, including 1 entities, in source file debounce.v
     Info (12023): Found entity 1: debounce
+Warning (10236): Verilog HDL Implicit Net warning at selecting_machine_test.v(88): created implicit net for "digit_seg"
 Info (12127): Elaborating entity "selecting_machine_test" for the top level hierarchy
-Warning (10034): Output port "digit_scan[6..2]" at selecting_machine_test.v(8) has no driver
-Warning (10034): Output port "digit_cath" at selecting_machine_test.v(9) has no driver
-Warning (10034): Output port "row" at selecting_machine_test.v(10) has no driver
-Warning (10034): Output port "col" at selecting_machine_test.v(11) has no driver
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:u1"
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (10034): Output port "digit_scan" at selecting_machine_test.v(7) has no driver
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_6"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_5"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_4"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_3"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_2"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_1"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u_clk_0"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(341): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "sequencer_chi" for hierarchy "sequencer_chi:u_sequencer_chi"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(165): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "sequencer_eng" for hierarchy "sequencer_eng:u_sequencer_eng"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(115): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "sequencer_num" for hierarchy "sequencer_num:u_sequencer_num_4"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(140): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "decode_seg" for hierarchy "decode_seg:u_decode_seg"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(196): truncated value with size 32 to match size of target (3)
+Info (12128): Elaborating entity "decode_lattice" for hierarchy "decode_lattice:u2"
+Warning (10230): Verilog HDL assignment warning at selecting_machine_test.v(271): truncated value with size 32 to match size of target (3)
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk_500" is missing source, defaulting to GND
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "digit_scan[2]" is stuck at GND
-    Warning (13410): Pin "digit_scan[3]" is stuck at GND
-    Warning (13410): Pin "digit_scan[4]" is stuck at GND
-    Warning (13410): Pin "digit_scan[5]" is stuck at GND
-    Warning (13410): Pin "digit_scan[6]" is stuck at GND
-    Warning (13410): Pin "digit_cath[0]" is stuck at GND
-    Warning (13410): Pin "digit_cath[1]" is stuck at GND
-    Warning (13410): Pin "digit_cath[2]" is stuck at GND
-    Warning (13410): Pin "digit_cath[3]" is stuck at GND
-    Warning (13410): Pin "digit_cath[4]" is stuck at GND
-    Warning (13410): Pin "digit_cath[5]" is stuck at GND
     Warning (13410): Pin "row[0]" is stuck at GND
     Warning (13410): Pin "row[1]" is stuck at GND
     Warning (13410): Pin "row[2]" is stuck at GND
@@ -345,23 +443,38 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "col[5]" is stuck at GND
     Warning (13410): Pin "col[6]" is stuck at GND
     Warning (13410): Pin "col[7]" is stuck at GND
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (13410): Pin "digit_scan[0]" is stuck at GND
+    Warning (13410): Pin "digit_scan[1]" is stuck at GND
+    Warning (13410): Pin "digit_scan[2]" is stuck at GND
+    Warning (13410): Pin "digit_scan[3]" is stuck at GND
+    Warning (13410): Pin "digit_scan[4]" is stuck at GND
+    Warning (13410): Pin "digit_scan[5]" is stuck at GND
+    Warning (13410): Pin "digit_scan[6]" is stuck at GND
+    Warning (13410): Pin "digit_scan[7]" is stuck at GND
+    Warning (13410): Pin "digit_cath[0]" is stuck at GND
+    Warning (13410): Pin "digit_cath[1]" is stuck at GND
+    Warning (13410): Pin "digit_cath[2]" is stuck at GND
+    Warning (13410): Pin "digit_cath[3]" is stuck at GND
+    Warning (13410): Pin "digit_cath[4]" is stuck at GND
+    Warning (13410): Pin "digit_cath[5]" is stuck at GND
+Info (17049): 30 registers lost all their fanouts during netlist optimizations.
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "rst"
+    Warning (15610): No output dependent on input pin "BTN[0]"
+    Warning (15610): No output dependent on input pin "BTN[1]"
     Warning (15610): No output dependent on input pin "BTN[2]"
     Warning (15610): No output dependent on input pin "BTN[3]"
     Warning (15610): No output dependent on input pin "BTN[4]"
     Warning (15610): No output dependent on input pin "BTN[5]"
     Warning (15610): No output dependent on input pin "BTN[6]"
-Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 35 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4863 megabytes
-    Info: Processing ended: Fri Nov 30 08:03:52 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:23
+    Info (21059): Implemented 30 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Fri Nov 30 20:39:17 2018
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
 
 

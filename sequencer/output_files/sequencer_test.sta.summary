@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clk'
+Slack : -8.741
+TNS   : -1363.163
+
+Type  : Setup 'frequency_divider:u_clk_6|clkout'
+Slack : -2.159
+TNS   : -7.464
+
+Type  : Setup 'frequency_divider:u_clk_5|clkout'
+Slack : -1.827
+TNS   : -5.148
+
+Type  : Setup 'frequency_divider:u_clk_3|clkout'
+Slack : -1.825
+TNS   : -6.628
+
+Type  : Setup 'frequency_divider:u_clk_4|clkout'
+Slack : -1.823
+TNS   : -6.638
+
+Type  : Setup 'frequency_divider:u_clk_0|clkout'
+Slack : -1.816
+TNS   : -6.719
+
+Type  : Setup 'frequency_divider:u_clk_2|clkout'
+Slack : -1.816
+TNS   : -6.606
+
+Type  : Setup 'frequency_divider:u_clk_1|clkout'
+Slack : -1.808
+TNS   : -6.713
+
+Type  : Hold 'clk'
+Slack : -2.537
+TNS   : -14.878
+
+Type  : Hold 'frequency_divider:u_clk_5|clkout'
+Slack : 1.660
+TNS   : 0.000
+
+Type  : Hold 'frequency_divider:u_clk_1|clkout'
+Slack : 1.687
+TNS   : 0.000
+
+Type  : Hold 'frequency_divider:u_clk_6|clkout'
+Slack : 1.690
+TNS   : 0.000
+
+Type  : Hold 'frequency_divider:u_clk_2|clkout'
+Slack : 1.691
+TNS   : 0.000
+
+Type  : Hold 'frequency_divider:u_clk_3|clkout'
+Slack : 1.717
+TNS   : 0.000
+
+Type  : Hold 'frequency_divider:u_clk_4|clkout'
+Slack : 1.718
+TNS   : 0.000
+
+Type  : Hold 'frequency_divider:u_clk_0|clkout'
+Slack : 1.755
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_0|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_1|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_2|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_3|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_4|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_5|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_6|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

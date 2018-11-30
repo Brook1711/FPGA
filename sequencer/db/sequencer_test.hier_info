@@ -1,0 +1,397 @@
+|sequencer_test
+clk => clk.IN7
+rst => rst.IN7
+code[0] <= sequencer_num:u_sequencer_num_0.code
+code[1] <= sequencer_num:u_sequencer_num_0.code
+code[2] <= sequencer_num:u_sequencer_num_0.code
+code[3] <= sequencer_num:u_sequencer_num_0.code
+code[4] <= sequencer_num:u_sequencer_num_1.code
+code[5] <= sequencer_num:u_sequencer_num_1.code
+code[6] <= sequencer_num:u_sequencer_num_1.code
+code[7] <= sequencer_num:u_sequencer_num_1.code
+code[8] <= sequencer_num:u_sequencer_num_2.code
+code[9] <= sequencer_num:u_sequencer_num_2.code
+code[10] <= sequencer_num:u_sequencer_num_2.code
+code[11] <= sequencer_num:u_sequencer_num_2.code
+code[12] <= sequencer_num:u_sequencer_num_3.code
+code[13] <= sequencer_num:u_sequencer_num_3.code
+code[14] <= sequencer_num:u_sequencer_num_3.code
+code[15] <= sequencer_num:u_sequencer_num_3.code
+code[16] <= sequencer_num:u_sequencer_num_4.code
+code[17] <= sequencer_num:u_sequencer_num_4.code
+code[18] <= sequencer_num:u_sequencer_num_4.code
+code[19] <= sequencer_num:u_sequencer_num_4.code
+code[20] <= sequencer_eng:u_sequencer_eng.code
+code[21] <= sequencer_eng:u_sequencer_eng.code
+code[22] <= sequencer_eng:u_sequencer_eng.code
+code[23] <= sequencer_eng:u_sequencer_eng.code
+code[24] <= sequencer_chi:u_sequencer_chi.code
+code[25] <= sequencer_chi:u_sequencer_chi.code
+code[26] <= sequencer_chi:u_sequencer_chi.code
+code[27] <= sequencer_chi:u_sequencer_chi.code
+
+
+|sequencer_test|frequency_divider:u_clk_6
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|frequency_divider:u_clk_5
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|frequency_divider:u_clk_4
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|frequency_divider:u_clk_3
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|frequency_divider:u_clk_2
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|frequency_divider:u_clk_1
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|frequency_divider:u_clk_0
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_chi:u_sequencer_chi
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.ACLR
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.ACLR
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_eng:u_sequencer_eng
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.PRESET
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.PRESET
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_num:u_sequencer_num_4
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.ACLR
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.ACLR
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_num:u_sequencer_num_3
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.ACLR
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.ACLR
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_num:u_sequencer_num_2
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.ACLR
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.ACLR
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_num:u_sequencer_num_1
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.ACLR
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.ACLR
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sequencer_test|sequencer_num:u_sequencer_num_0
+clk => code[0]~reg0.CLK
+clk => code[1]~reg0.CLK
+clk => code[2]~reg0.CLK
+clk => code[3]~reg0.CLK
+rst => code[0]~reg0.ACLR
+rst => code[1]~reg0.ACLR
+rst => code[2]~reg0.ACLR
+rst => code[3]~reg0.ACLR
+flag => code[0]~reg0.ENA
+flag => code[3]~reg0.ENA
+flag => code[2]~reg0.ENA
+flag => code[1]~reg0.ENA
+code[0] <= code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[1] <= code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[2] <= code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+code[3] <= code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
