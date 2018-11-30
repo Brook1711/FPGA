@@ -1,5 +1,5 @@
 Analysis & Synthesis report for colorful_breath_led_pro
-Thu Nov 08 20:24:14 2018
+Tue Nov 27 10:08:11 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 08 20:24:14 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 27 10:08:11 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; colorful_breath_led_pro                     ;
 ; Top-level Entity Name              ; colorful_breath_led_pro                     ;
@@ -467,7 +467,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -477,7 +477,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 08 20:24:02 2018
+    Info: Processing started: Tue Nov 27 10:07:48 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off colorful_breath_led_pro -c colorful_breath_led_pro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -535,10 +535,10 @@ Info (21057): Implemented 609 device resources after synthesis - the final resou
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 574 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Thu Nov 08 20:24:14 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Tue Nov 27 10:08:11 2018
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

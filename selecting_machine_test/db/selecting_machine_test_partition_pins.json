@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "digit_scan[0]",
+					"strict" : false
+				},
+				{
+					"name" : "digit_scan[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "BTN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

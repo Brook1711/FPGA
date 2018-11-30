@@ -1,5 +1,5 @@
 Flow report for colorful_breath_led_pro
-Thu Nov 08 20:24:27 2018
+Tue Nov 27 10:08:25 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 08 20:24:24 2018       ;
+; Flow Status                        ; Successful - Tue Nov 27 10:08:21 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; colorful_breath_led_pro                     ;
 ; Top-level Entity Name              ; colorful_breath_led_pro                     ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 11/08/2018 20:24:03     ;
+; Start date & time ; 11/27/2018 10:07:48     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; colorful_breath_led_pro ;
 +-------------------+-------------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 2543711158273.154167984215220          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1097761051755.154328446801520          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -95,11 +95,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4798 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; 5548 MB             ; 00:00:08                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4696 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4781 MB             ; 00:00:02                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4802 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5590 MB             ; 00:00:08                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4699 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4789 MB             ; 00:00:02                           ;
+; Total                ; 00:00:32     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,0 +1,41 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clk'
+Slack : -8.239
+TNS   : -395.265
+
+Type  : Setup 'decode_lattice:u1|frequency_divider:u1|clkout'
+Slack : -5.382
+TNS   : -156.320
+
+Type  : Setup 'frequency_divider:u_clk_6|clkout'
+Slack : -1.731
+TNS   : -5.178
+
+Type  : Hold 'clk'
+Slack : -2.555
+TNS   : -4.624
+
+Type  : Hold 'frequency_divider:u_clk_6|clkout'
+Slack : 1.693
+TNS   : 0.000
+
+Type  : Hold 'decode_lattice:u1|frequency_divider:u1|clkout'
+Slack : 1.701
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'decode_lattice:u1|frequency_divider:u1|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u_clk_6|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

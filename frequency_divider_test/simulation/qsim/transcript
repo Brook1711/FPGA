@@ -1,0 +1,42 @@
+# do frequency_divider.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:25:18 on Nov 30,2018
+# vlog -work work frequency_divider.vo 
+# -- Compiling module frequency_divider_top
+# 
+# Top level modules:
+# 	frequency_divider_top
+# End time: 08:25:18 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:25:18 on Nov 30,2018
+# vlog -work work frequency_divider_top.vwf.vt 
+# -- Compiling module frequency_divider_top_vlg_sample_tst
+# -- Compiling module frequency_divider_top_vlg_check_tst
+# -- Compiling module frequency_divider_top_vlg_vec_tst
+# 
+# Top level modules:
+# 	frequency_divider_top_vlg_vec_tst
+# End time: 08:25:18 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "frequency_divider.do" 
+# Start time: 08:25:18 on Nov 30,2018
+# Loading work.frequency_divider_top_vlg_vec_tst
+# Loading work.frequency_divider_top
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.frequency_divider_top_vlg_sample_tst
+# Loading work.frequency_divider_top_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : frequency_divider_top.vwf.vt(149)
+#    Time: 100 us  Iteration: 0  Instance: /frequency_divider_top_vlg_vec_tst/tb_out
+# End time: 08:25:19 on Nov 30,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

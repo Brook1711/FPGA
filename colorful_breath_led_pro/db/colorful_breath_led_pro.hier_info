@@ -1,24 +1,24 @@
 |colorful_breath_led_pro
 clk => clk.IN4
 key => key.IN1
-led[0] <= breath_led_and_led_test:u3.led
-led[1] <= breath_led_and_led_test:u3.led
-led[2] <= breath_led_and_led_test:u3.led
-led[3] <= breath_led_and_led_test:u3.led
-led[4] <= breath_led_and_led_test:u3.led
-led[5] <= breath_led_and_led_test:u3.led
-led[6] <= breath_led_and_led_test:u3.led
-led[7] <= breath_led_and_led_test:u3.led
-digit_seg[0] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[1] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[2] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[3] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[4] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[5] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[6] <= breath_led_and_led_test:u3.digit_seg
-digit_seg[7] <= breath_led_and_led_test:u3.digit_seg
-digit_cath[0] <= breath_led_and_led_test:u3.digit_cath
-digit_cath[1] <= breath_led_and_led_test:u3.digit_cath
+led[0] << breath_led_and_led_test:u3.led
+led[1] << breath_led_and_led_test:u3.led
+led[2] << breath_led_and_led_test:u3.led
+led[3] << breath_led_and_led_test:u3.led
+led[4] << breath_led_and_led_test:u3.led
+led[5] << breath_led_and_led_test:u3.led
+led[6] << breath_led_and_led_test:u3.led
+led[7] << breath_led_and_led_test:u3.led
+digit_seg[0] << breath_led_and_led_test:u3.digit_seg
+digit_seg[1] << breath_led_and_led_test:u3.digit_seg
+digit_seg[2] << breath_led_and_led_test:u3.digit_seg
+digit_seg[3] << breath_led_and_led_test:u3.digit_seg
+digit_seg[4] << breath_led_and_led_test:u3.digit_seg
+digit_seg[5] << breath_led_and_led_test:u3.digit_seg
+digit_seg[6] << breath_led_and_led_test:u3.digit_seg
+digit_seg[7] << breath_led_and_led_test:u3.digit_seg
+digit_cath[0] << breath_led_and_led_test:u3.digit_cath
+digit_cath[1] << breath_led_and_led_test:u3.digit_cath
 swx[0] => swx[0].IN2
 swx[1] => swx[1].IN2
 swx[2] => swx[2].IN2
@@ -28,12 +28,12 @@ swy[1] => swy[1].IN2
 swy[2] => swy[2].IN2
 swy[3] => swy[3].IN2
 real_rst => real_rst.IN3
-R_N5 <= R_N5.DB_MAX_OUTPUT_PORT_TYPE
-G_R3 <= G_R3.DB_MAX_OUTPUT_PORT_TYPE
-B_R4 <= B_R4.DB_MAX_OUTPUT_PORT_TYPE
-R_T5 <= R_T5.DB_MAX_OUTPUT_PORT_TYPE
-G_T6 <= G_T6.DB_MAX_OUTPUT_PORT_TYPE
-B_T4 <= B_T4.DB_MAX_OUTPUT_PORT_TYPE
+R_N5 << R_N5.DB_MAX_OUTPUT_PORT_TYPE
+G_R3 << G_R3.DB_MAX_OUTPUT_PORT_TYPE
+B_R4 << B_R4.DB_MAX_OUTPUT_PORT_TYPE
+R_T5 << R_T5.DB_MAX_OUTPUT_PORT_TYPE
+G_T6 << G_T6.DB_MAX_OUTPUT_PORT_TYPE
+B_T4 << B_T4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |colorful_breath_led_pro|debounce:u4

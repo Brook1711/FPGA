@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/debounce2/simulation/qsim
+vhard_block
+Z1 !s110 1543396390
+!i10b 1
+!s100 UKYjl?C[?;PjDY=<CBah30
+I_AkmiX9Fo>X=04A?aAY2j2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1543396388
+Z4 8top.vo
+Z5 Ftop.vo
+L0 1152
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1543396390.000000
+Z8 !s107 top.vo|
+Z9 !s90 -work|work|top.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vtop
+R1
+!i10b 1
+!s100 7DEOEfJHl_6h?:Y8Nzb0D2
+IKmaPIa7KF0oYNBYfX>]LA2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtop_vlg_vec_tst
+R1
+!i10b 1
+!s100 @>olXH4daK7BnoM?7^]3I3
+IA]GA_QlQ39iZffKN:UN8o3
+R2
+R0
+w1543396387
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

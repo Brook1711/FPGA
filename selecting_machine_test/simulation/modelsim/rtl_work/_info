@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/selecting_machine_test/simulation/modelsim
+vdebounce
+Z1 !s110 1543536266
+!i10b 1
+!s100 2[7gKcJ00OZGMzHiIm9mB3
+IYXaZQ5_Y6ZkJCHlHUOdCo1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1543493968
+8E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v
+FE:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1543536266.967000
+!s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test|E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test
+vselecting_machine_test
+R1
+!i10b 1
+!s100 fdVRJ]B>RA4Me4;<bD;QI2
+IQDEIj3V<R2MPS7hXfX1c23
+R2
+R0
+w1543508700
+8E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v
+FE:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v
+L0 5
+R3
+r1
+!s85 0
+31
+!s108 1543536266.714000
+!s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test|E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v|
+!i113 1
+R4
+R5

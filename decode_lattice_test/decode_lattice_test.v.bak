@@ -1,0 +1,3 @@
+module decode_lattice_test(clk, code, row, col)
+
+endmodule

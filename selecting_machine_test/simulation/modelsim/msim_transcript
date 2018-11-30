@@ -1,0 +1,68 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl
+# do selecting_machine_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test {E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:04:26 on Nov 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test" E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v 
+# -- Compiling module selecting_machine_test
+# 
+# Top level modules:
+# 	selecting_machine_test
+# End time: 08:04:26 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test {E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:04:26 on Nov 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test" E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 08:04:26 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test {E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:04:26 on Nov 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test" E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v 
+# -- Compiling module selecting_machine_test
+# 
+# Top level modules:
+# 	selecting_machine_test
+# End time: 08:04:26 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test {E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:04:26 on Nov 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_test" E:/prime_for_FPGA/Lite/demo/selecting_machine_test/debounce.v 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 08:04:26 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  top
+# vsim -gui "+altera" -l msim_transcript -do "selecting_machine_test_run_msim_rtl_verilog.do" 
+# Start time: 08:04:27 on Nov 30,2018
+# ** Error: (vsim-3170) Could not find 'E:/prime_for_FPGA/Lite/demo/selecting_machine_test/simulation/modelsim/rtl_work.top'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./selecting_machine_test_run_msim_rtl_verilog.do PAUSED at line 14
+# End time: 08:04:34 on Nov 30,2018, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 0
+# ERROR: No extended dataflow license exists

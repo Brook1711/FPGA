@@ -1,0 +1,44 @@
+//top:selecting_machine
+//date:2018/11/28
+//auther:Guo Xufeng
+
+module selecting_machine_test(clk, BTN, digit_scan, digit_cath, row, col);
+input clk;
+input [7:0] BTN;
+output reg [6:0] digit_scan;
+output [5:0] digit_cath;
+output [7:0] row;
+output [7:0] col;
+
+wire [1:0] BTN_pulse;
+
+       always @(posedge clk  or  posedge BTN[7])
+           begin
+             if (BTN[7])
+		digit_scan[0] <= 1'b1;
+	     else if (BTN_pulse[0])
+		digit_scan[0] <= ~digit_scan[0];
+	     else
+                digit_scan[0] <= digit_scan[0];
+	   end  
+       always @(posedge clk  or  posedge BTN[7])
+           begin
+             if (BTN[7])
+		digit_scan[1] <= 1'b1;
+	     else if (BTN_pulse[1])
+		digit_scan[1] <= ~digit_scan[1];
+	     else
+                digit_scan[1] <= digit_scan[1];
+	   end  
+debounce 
+	#(.N(2))
+	u1
+	(
+	.clk(clk),
+	.rst(BTN[7]),
+	.key(~BTN[1:0]),
+	.key_pulse(BTN_pulse[1:0])
+	);
+
+endmodule
+

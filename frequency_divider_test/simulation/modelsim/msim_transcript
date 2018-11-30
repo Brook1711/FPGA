@@ -1,0 +1,63 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl
+# do frequency_divider_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test {E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:09:28 on Nov 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test" E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v 
+# -- Compiling module frequency_divider_top
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	frequency_divider_top
+# End time: 08:09:28 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test {E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:09:28 on Nov 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test" E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v 
+# -- Compiling module frequency_divider_top
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	frequency_divider_top
+# End time: 08:09:28 on Nov 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  frequency_divider_top
+# vsim -gui "+altera" -l msim_transcript -do "frequency_divider_run_msim_rtl_verilog.do" 
+# Start time: 08:09:28 on Nov 30,2018
+# Loading work.frequency_divider_top
+# Loading work.frequency_divider
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+force -freeze sim:/frequency_divider_top/clk 1 0, 0 {50 ps} -r 100 -can 1
+add wave -r /*
+add wave -position insertpoint  \
+sim:/frequency_divider_top/clk
+force -freeze sim:/frequency_divider_top/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/frequency_divider_top/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/frequency_divider_top/clk St1 0
+wave create -driver freeze -pattern clock -initialvalue {-No Data-} -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/frequency_divider_top/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -r /*
+force -freeze sim:/frequency_divider_top/clk 1 0, 0 {50 ps} -r 100
+# End time: 08:24:31 on Nov 30,2018, Elapsed time: 0:15:03
+# Errors: 0, Warnings: 0
