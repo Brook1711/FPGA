@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/singlechip_74ls595/simulation/qsim
+vsinglechip_74ls595_test
+!s110 1543750385
+!i10b 1
+!s100 `8PK@gV_b:hC<LQk;FN0J3
+IcHk<_3IFH]4`J4@BYC;kT1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1543750378
+8singlechip_74ls595.vo
+Fsinglechip_74ls595.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1543750385.905000
+!s107 singlechip_74ls595.vo|
+!s90 -work|work|singlechip_74ls595.vo|
+!i113 1
+Z3 o-work work
+vsinglechip_74ls595_test_vlg_check_tst
+Z4 !s110 1543750386
+!i10b 1
+!s100 <`6fLDEX;H[BJzBNe_`om0
+I2mH?TR2_A5XKL7LSSZnFX0
+R1
+R0
+Z5 w1543750376
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 68
+R2
+r1
+!s85 0
+31
+Z8 !s108 1543750386.055000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vsinglechip_74ls595_test_vlg_sample_tst
+R4
+!i10b 1
+!s100 IhTG12PIY2;HK`e[86Yo[1
+IT0Qi82HOP7]a1SZ@d>9jV3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vsinglechip_74ls595_test_vlg_vec_tst
+R4
+!i10b 1
+!s100 n4=kjO9VVYEHcXHc^ef<A1
+Im__ikV=Yo0:9ihKA1Fg6m0
+R1
+R0
+R5
+R6
+R7
+L0 315
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

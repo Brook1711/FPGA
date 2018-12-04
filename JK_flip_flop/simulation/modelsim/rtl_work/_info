@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/JK_flip_flop/simulation/modelsim
+vfrequency_divider
+Z1 !s110 1543667049
+!i10b 1
+!s100 :UPE<9]OgZ0B3V3g722IL0
+Ij[;3H1LHm9Q?kdoL<G0@Y3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1543667049
+Z4 8E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+Z5 FE:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+L0 71
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1543667049.333000
+Z8 !s107 E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop|E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop
+vJK_flip_flop_part1
+R1
+!i10b 1
+!s100 l0d[YzmB4>E`]V9V7e`dE0
+IGde14S7MTgn<c`S><EGR00
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@j@k_flip_flop_part1
+vJK_flip_flop_test
+R1
+!i10b 1
+!s100 ?zYohDFVbde<T9H[E12S71
+Ii>^:1P@LDkf:=6eB:W9DL1
+R2
+R0
+w1543666867
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@j@k_flip_flop_test

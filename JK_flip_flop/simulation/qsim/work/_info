@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/JK_flip_flop/simulation/qsim
+vJK_flip_flop_test
+Z1 !s110 1543667911
+!i10b 1
+!s100 6_ZfP0WU8B2z:=Xa^6HiP0
+IQI<hY8dGUeC=<kXUUmoXQ3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1543667909
+8JK_flip_flop_test.vo
+FJK_flip_flop_test.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1543667911.192000
+!s107 JK_flip_flop_test.vo|
+!s90 -work|work|JK_flip_flop_test.vo|
+!i113 1
+Z4 o-work work
+n@j@k_flip_flop_test
+vJK_flip_flop_test_vlg_check_tst
+R1
+!i10b 1
+!s100 IemDJKXZ4AZ9>f3JGe6C51
+IJU@8A:5[FMQNl3[Z=DAD62
+R2
+R0
+Z5 w1543667906
+Z6 8Waveform2.vwf.vt
+Z7 FWaveform2.vwf.vt
+L0 68
+R3
+r1
+!s85 0
+31
+Z8 !s108 1543667911.371000
+Z9 !s107 Waveform2.vwf.vt|
+Z10 !s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R4
+n@j@k_flip_flop_test_vlg_check_tst
+vJK_flip_flop_test_vlg_sample_tst
+R1
+!i10b 1
+!s100 NN6oLG]RR=jJT8YJKfI_:3
+Ib[B>PnTiNO:=a`YhOn>JN3
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@j@k_flip_flop_test_vlg_sample_tst
+vJK_flip_flop_test_vlg_vec_tst
+R1
+!i10b 1
+!s100 9cOiE;1Dl`^joE:WADGo03
+I]NBoeEi<N1N;bMQ=]e@ba0
+R2
+R0
+R5
+R6
+R7
+L0 190
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@j@k_flip_flop_test_vlg_vec_tst

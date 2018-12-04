@@ -1,0 +1,39 @@
+# do JK_flip_flop_test.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:31 on Dec 01,2018
+# vlog -work work JK_flip_flop_test.vo 
+# -- Compiling module JK_flip_flop_test
+# 
+# Top level modules:
+# 	JK_flip_flop_test
+# End time: 20:38:31 on Dec 01,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:38:31 on Dec 01,2018
+# vlog -work work Waveform2.vwf.vt 
+# -- Compiling module JK_flip_flop_test_vlg_sample_tst
+# -- Compiling module JK_flip_flop_test_vlg_check_tst
+# -- Compiling module JK_flip_flop_test_vlg_vec_tst
+# 
+# Top level modules:
+# 	JK_flip_flop_test_vlg_vec_tst
+# End time: 20:38:31 on Dec 01,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "JK_flip_flop_test.do" 
+# Start time: 20:38:31 on Dec 01,2018
+# Loading work.JK_flip_flop_test_vlg_vec_tst
+# Loading work.JK_flip_flop_test
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.JK_flip_flop_test_vlg_sample_tst
+# Loading work.JK_flip_flop_test_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform2.vwf.vt(186)
+#    Time: 1 us  Iteration: 0  Instance: /JK_flip_flop_test_vlg_vec_tst/tb_out
+# End time: 20:38:32 on Dec 01,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

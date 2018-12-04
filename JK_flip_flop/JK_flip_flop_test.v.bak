@@ -1,0 +1,4 @@
+module JK_flip_flop_test(clk, rst, J, K, SD, SR, Q);
+
+endmodule
+

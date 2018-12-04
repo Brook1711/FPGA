@@ -1,0 +1,163 @@
+|singlechip_74ls595_test
+clk => ~NO_FANOUT~
+SI => SI.IN1
+Q[0] << singlechip_74ls595:u1.Q
+Q[1] << singlechip_74ls595:u1.Q
+Q[2] << singlechip_74ls595:u1.Q
+Q[3] << singlechip_74ls595:u1.Q
+Q[4] << singlechip_74ls595:u1.Q
+Q[5] << singlechip_74ls595:u1.Q
+Q[6] << singlechip_74ls595:u1.Q
+Q[7] << singlechip_74ls595:u1.Q
+QH << singlechip_74ls595:u1.QH
+SCLR => SCLR.IN1
+SCK => SCK.IN1
+RCK => RCK.IN1
+G => G.IN1
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1
+SI => SI.IN1
+Q[0] <= singlechip_74ls374:OUT0.Q
+Q[1] <= singlechip_74ls374:OUT1.Q
+Q[2] <= singlechip_74ls374:OUT2.Q
+Q[3] <= singlechip_74ls374:OUT3.Q
+Q[4] <= singlechip_74ls374:OUT4.Q
+Q[5] <= singlechip_74ls374:OUT5.Q
+Q[6] <= singlechip_74ls374:OUT6.Q
+Q[7] <= singlechip_74ls374:OUT7.Q
+QH <= Q_temp[7].DB_MAX_OUTPUT_PORT_TYPE
+SCLR => SCLR.IN8
+SCK => SCK.IN8
+RCK => RCK.IN8
+G => G.IN16
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F0
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F1
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F2
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F3
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F4
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F5
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F6
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:F7
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT0
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT1
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT2
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT3
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT4
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT5
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT6
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|singlechip_74ls595_test|singlechip_74ls595:u1|singlechip_74ls374:OUT7
+SCLR => Q.OUTPUTSELECT
+OC_ => Q.OE
+clk => Q_temp.CLK
+D => Q_temp.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

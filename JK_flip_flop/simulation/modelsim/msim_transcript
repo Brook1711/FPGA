@@ -1,0 +1,30 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl
+# do JK_flip_flop_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop {E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:24:09 on Dec 01,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
+# -- Compiling module JK_flip_flop_test
+# -- Compiling module JK_flip_flop
+# ** Error: E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v(41): near ")": syntax error, unexpected ')', expecting .* or '.'
+# -- Compiling module JK_flip_flop_part1
+# -- Compiling module frequency_divider
+# End time: 20:24:09 on Dec 01,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/Altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./JK_flip_flop_test_run_msim_rtl_verilog.do line 8
+# D:/Altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop {E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v}"

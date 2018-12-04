@@ -1,0 +1,3 @@
+module singlechip_74ls595(SI, Q, QH, SCLR, SCK, RCK, G, );
+
+endmodule

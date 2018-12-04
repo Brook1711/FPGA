@@ -1,0 +1,70 @@
+|JK_flip_flop_test
+clk => clk.IN1
+rst => ~NO_FANOUT~
+J => J.IN1
+K => K.IN1
+SD => SD.IN1
+RD => RD.IN1
+Q <= JK_flip_flop:u_JK.Q
+Q_ <= JK_flip_flop:u_JK.Q_
+
+
+|JK_flip_flop_test|frequency_divider:u_clk_6
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|JK_flip_flop_test|JK_flip_flop:u_JK
+clk => clk.IN1
+J => J.IN1
+K => K.IN1
+SD => Q.IN0
+SD => Q.IN1
+SD => Q_.DATAB
+RD => Q.IN1
+RD => Q.DATAB
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q_ <= Q_.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|JK_flip_flop_test|JK_flip_flop:u_JK|JK_flip_flop_part1:u_JK_part1
+clk => Q~reg0.CLK
+J => always0.IN0
+J => always0.IN0
+J => always0.IN0
+J => always0.IN0
+K => always0.IN1
+K => always0.IN1
+K => always0.IN1
+K => always0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
