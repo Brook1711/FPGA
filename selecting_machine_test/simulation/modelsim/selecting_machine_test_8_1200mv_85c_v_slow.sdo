@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "selecting_machine_test")
-  (DATE "11/30/2018 20:38:33")
+  (DATE "12/06/2018 19:07:53")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition")

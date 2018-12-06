@@ -65,26 +65,26 @@ CHIP  "selecting_machine_test"  ASSIGNED TO AN: EPM1270T144C5
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-digit_cath[2]                : 1         : output : 2.5 V             :         : 1         : N              
-GND*                         : 2         :        :                   :         : 1         :                
-GND*                         : 3         :        :                   :         : 1         :                
-GND*                         : 4         :        :                   :         : 1         :                
-BTN[2]                       : 5         : input  : 2.5 V             :         : 1         : N              
-GND*                         : 6         :        :                   :         : 1         :                
-GND*                         : 7         :        :                   :         : 1         :                
-GND*                         : 8         :        :                   :         : 1         :                
+row[7]                       : 1         : output : 2.5 V             :         : 1         : Y              
+row[6]                       : 2         : output : 2.5 V             :         : 1         : Y              
+row[5]                       : 3         : output : 2.5 V             :         : 1         : Y              
+row[4]                       : 4         : output : 2.5 V             :         : 1         : Y              
+row[3]                       : 5         : output : 2.5 V             :         : 1         : Y              
+row[2]                       : 6         : output : 2.5 V             :         : 1         : Y              
+row[1]                       : 7         : output : 2.5 V             :         : 1         : Y              
+row[0]                       : 8         : output : 2.5 V             :         : 1         : Y              
 VCCIO1                       : 9         : power  :                   : 2.5V    : 1         :                
 GNDIO                        : 10        : gnd    :                   :         :           :                
 GND*                         : 11        :        :                   :         : 1         :                
-BTN[3]                       : 12        : input  : 2.5 V             :         : 1         : N              
+GND*                         : 12        :        :                   :         : 1         :                
 GND*                         : 13        :        :                   :         : 1         :                
 GND*                         : 14        :        :                   :         : 1         :                
-digit_scan[5]                : 15        : output : 2.5 V             :         : 1         : N              
+GND*                         : 15        :        :                   :         : 1         :                
 GND*                         : 16        :        :                   :         : 1         :                
 GNDINT                       : 17        : gnd    :                   :         :           :                
-GND*                         : 18        :        :                   :         : 1         :                
+clk                          : 18        : input  : 2.5 V             :         : 1         : Y              
 VCCINT                       : 19        : power  :                   : 2.5V/3.3V :           :                
-GND*                         : 20        :        :                   :         : 1         :                
+BTN[1]                       : 20        : input  : 2.5 V             :         : 1         : Y              
 GND*                         : 21        :        :                   :         : 1         :                
 GND*                         : 22        :        :                   :         : 1         :                
 GND*                         : 23        :        :                   :         : 1         :                
@@ -92,49 +92,49 @@ GND*                         : 24        :        :                   :         
 VCCIO1                       : 25        : power  :                   : 2.5V    : 1         :                
 GNDIO                        : 26        : gnd    :                   :         :           :                
 GND*                         : 27        :        :                   :         : 1         :                
-digit_scan[2]                : 28        : output : 2.5 V             :         : 1         : N              
-digit_scan[1]                : 29        : output : 2.5 V             :         : 1         : N              
+GND*                         : 28        :        :                   :         : 1         :                
+GND*                         : 29        :        :                   :         : 1         :                
 GND*                         : 30        :        :                   :         : 1         :                
-digit_cath[0]                : 31        : output : 2.5 V             :         : 1         : N              
-rst                          : 32        : input  : 2.5 V             :         : 1         : N              
+GND*                         : 31        :        :                   :         : 1         :                
+GND*                         : 32        :        :                   :         : 1         :                
 TMS                          : 33        : input  :                   :         : 1         :                
 TDI                          : 34        : input  :                   :         : 1         :                
 TCK                          : 35        : input  :                   :         : 1         :                
 TDO                          : 36        : output :                   :         : 1         :                
-clk                          : 37        : input  : 2.5 V             :         : 4         : N              
-GND*                         : 38        :        :                   :         : 4         :                
-GND*                         : 39        :        :                   :         : 4         :                
-row[4]                       : 40        : output : 2.5 V             :         : 4         : N              
-GND*                         : 41        :        :                   :         : 4         :                
-GND*                         : 42        :        :                   :         : 4         :                
-GND*                         : 43        :        :                   :         : 4         :                
-digit_scan[7]                : 44        : output : 2.5 V             :         : 4         : N              
-GND*                         : 45        :        :                   :         : 4         :                
+GND*                         : 37        :        :                   :         : 4         :                
+col[0]                       : 38        : output : 2.5 V             :         : 4         : Y              
+col[1]                       : 39        : output : 2.5 V             :         : 4         : Y              
+col[2]                       : 40        : output : 2.5 V             :         : 4         : Y              
+col[3]                       : 41        : output : 2.5 V             :         : 4         : Y              
+col[4]                       : 42        : output : 2.5 V             :         : 4         : Y              
+col[5]                       : 43        : output : 2.5 V             :         : 4         : Y              
+col[6]                       : 44        : output : 2.5 V             :         : 4         : Y              
+col[7]                       : 45        : output : 2.5 V             :         : 4         : Y              
 VCCIO4                       : 46        : power  :                   : 2.5V    : 4         :                
 GNDIO                        : 47        : gnd    :                   :         :           :                
-BTN[4]                       : 48        : input  : 2.5 V             :         : 4         : N              
+GND*                         : 48        :        :                   :         : 4         :                
 GND*                         : 49        :        :                   :         : 4         :                
-BTN[5]                       : 50        : input  : 2.5 V             :         : 4         : N              
-col[0]                       : 51        : output : 2.5 V             :         : 4         : N              
-digit_scan[4]                : 52        : output : 2.5 V             :         : 4         : N              
-GND*                         : 53        :        :                   :         : 4         :                
+GND*                         : 50        :        :                   :         : 4         :                
+digit_scan[0]                : 51        : output : 2.5 V             :         : 4         : Y              
+digit_scan[1]                : 52        : output : 2.5 V             :         : 4         : Y              
+digit_scan[2]                : 53        : output : 2.5 V             :         : 4         : Y              
 GNDINT                       : 54        : gnd    :                   :         :           :                
-BTN[0]                       : 55        : input  : 2.5 V             :         : 4         : N              
+digit_scan[3]                : 55        : output : 2.5 V             :         : 4         : Y              
 VCCINT                       : 56        : power  :                   : 2.5V/3.3V :           :                
-GND*                         : 57        :        :                   :         : 4         :                
-GND*                         : 58        :        :                   :         : 4         :                
-GND*                         : 59        :        :                   :         : 4         :                
-col[5]                       : 60        : output : 2.5 V             :         : 4         : N              
-GND*                         : 61        :        :                   :         : 4         :                
-GND*                         : 62        :        :                   :         : 4         :                
-GND*                         : 63        :        :                   :         : 4         :                
+digit_scan[4]                : 57        : output : 2.5 V             :         : 4         : Y              
+digit_scan[5]                : 58        : output : 2.5 V             :         : 4         : Y              
+digit_scan[6]                : 59        : output : 2.5 V             :         : 4         : Y              
+GND*                         : 60        :        :                   :         : 4         :                
+BTN[0]                       : 61        : input  : 2.5 V             :         : 4         : Y              
+digit_scan[7]                : 62        : output : 2.5 V             :         : 4         : Y              
+digit_cath[0]                : 63        : output : 2.5 V             :         : 4         : Y              
 VCCIO4                       : 64        : power  :                   : 2.5V    : 4         :                
 GNDIO                        : 65        : gnd    :                   :         :           :                
-GND*                         : 66        :        :                   :         : 4         :                
-col[3]                       : 67        : output : 2.5 V             :         : 4         : N              
-GND*                         : 68        :        :                   :         : 4         :                
-GND*                         : 69        :        :                   :         : 4         :                
-GND*                         : 70        :        :                   :         : 4         :                
+digit_cath[1]                : 66        : output : 2.5 V             :         : 4         : Y              
+digit_cath[2]                : 67        : output : 2.5 V             :         : 4         : Y              
+digit_cath[3]                : 68        : output : 2.5 V             :         : 4         : Y              
+digit_cath[4]                : 69        : output : 2.5 V             :         : 4         : Y              
+digit_cath[5]                : 70        : output : 2.5 V             :         : 4         : Y              
 GND*                         : 71        :        :                   :         : 4         :                
 GND*                         : 72        :        :                   :         : 4         :                
 GND*                         : 73        :        :                   :         : 3         :                
@@ -143,52 +143,52 @@ GND*                         : 75        :        :                   :         
 GND*                         : 76        :        :                   :         : 3         :                
 GND*                         : 77        :        :                   :         : 3         :                
 GND*                         : 78        :        :                   :         : 3         :                
-digit_cath[5]                : 79        : output : 2.5 V             :         : 3         : N              
+GND*                         : 79        :        :                   :         : 3         :                
 GND*                         : 80        :        :                   :         : 3         :                
 GND*                         : 81        :        :                   :         : 3         :                
 VCCIO3                       : 82        : power  :                   : 2.5V    : 3         :                
 GNDIO                        : 83        : gnd    :                   :         :           :                
 GND*                         : 84        :        :                   :         : 3         :                
-BTN[6]                       : 85        : input  : 2.5 V             :         : 3         : N              
-digit_scan[0]                : 86        : output : 2.5 V             :         : 3         : N              
+GND*                         : 85        :        :                   :         : 3         :                
+GND*                         : 86        :        :                   :         : 3         :                
 GND*                         : 87        :        :                   :         : 3         :                
 GND*                         : 88        :        :                   :         : 3         :                
-GND*                         : 89        :        :                   :         : 3         :                
+BTN[2]                       : 89        : input  : 2.5 V             :         : 3         : Y              
 VCCINT                       : 90        : power  :                   : 2.5V/3.3V :           :                
-row[5]                       : 91        : output : 2.5 V             :         : 3         : N              
+BTN[3]                       : 91        : input  : 2.5 V             :         : 3         : Y              
 GNDINT                       : 92        : gnd    :                   :         :           :                
 GND*                         : 93        :        :                   :         : 3         :                
 GND*                         : 94        :        :                   :         : 3         :                
-row[6]                       : 95        : output : 2.5 V             :         : 3         : N              
+GND*                         : 95        :        :                   :         : 3         :                
 GND*                         : 96        :        :                   :         : 3         :                
-row[0]                       : 97        : output : 2.5 V             :         : 3         : N              
+GND*                         : 97        :        :                   :         : 3         :                
 GND*                         : 98        :        :                   :         : 3         :                
 GNDIO                        : 99        : gnd    :                   :         :           :                
 VCCIO3                       : 100       : power  :                   : 2.5V    : 3         :                
 GND*                         : 101       :        :                   :         : 3         :                
 GND*                         : 102       :        :                   :         : 3         :                
-row[3]                       : 103       : output : 2.5 V             :         : 3         : N              
+GND*                         : 103       :        :                   :         : 3         :                
 GND*                         : 104       :        :                   :         : 3         :                
 GND*                         : 105       :        :                   :         : 3         :                
 GND*                         : 106       :        :                   :         : 3         :                
-col[4]                       : 107       : output : 2.5 V             :         : 3         : N              
+GND*                         : 107       :        :                   :         : 3         :                
 GND*                         : 108       :        :                   :         : 3         :                
 GND*                         : 109       :        :                   :         : 2         :                
-row[1]                       : 110       : output : 2.5 V             :         : 2         : N              
-row[2]                       : 111       : output : 2.5 V             :         : 2         : N              
-digit_scan[3]                : 112       : output : 2.5 V             :         : 2         : N              
+GND*                         : 110       :        :                   :         : 2         :                
+GND*                         : 111       :        :                   :         : 2         :                
+GND*                         : 112       :        :                   :         : 2         :                
 GND*                         : 113       :        :                   :         : 2         :                
-BTN[1]                       : 114       : input  : 2.5 V             :         : 2         : N              
+GND*                         : 114       :        :                   :         : 2         :                
 GNDIO                        : 115       : gnd    :                   :         :           :                
 VCCIO2                       : 116       : power  :                   : 2.5V    : 2         :                
 GND*                         : 117       :        :                   :         : 2         :                
-row[7]                       : 118       : output : 2.5 V             :         : 2         : N              
+GND*                         : 118       :        :                   :         : 2         :                
 GND*                         : 119       :        :                   :         : 2         :                
-col[1]                       : 120       : output : 2.5 V             :         : 2         : N              
-col[2]                       : 121       : output : 2.5 V             :         : 2         : N              
-GND*                         : 122       :        :                   :         : 2         :                
-GND*                         : 123       :        :                   :         : 2         :                
-GND*                         : 124       :        :                   :         : 2         :                
+GND*                         : 120       :        :                   :         : 2         :                
+BTN[4]                       : 121       : input  : 2.5 V             :         : 2         : Y              
+BTN[5]                       : 122       : input  : 2.5 V             :         : 2         : Y              
+BTN[6]                       : 123       : input  : 2.5 V             :         : 2         : Y              
+rst                          : 124       : input  : 2.5 V             :         : 2         : Y              
 GND*                         : 125       :        :                   :         : 2         :                
 VCCINT                       : 126       : power  :                   : 2.5V/3.3V :           :                
 GND*                         : 127       :        :                   :         : 2         :                
@@ -196,16 +196,16 @@ GNDINT                       : 128       : gnd    :                   :         
 GND*                         : 129       :        :                   :         : 2         :                
 GND*                         : 130       :        :                   :         : 2         :                
 GND*                         : 131       :        :                   :         : 2         :                
-col[6]                       : 132       : output : 2.5 V             :         : 2         : N              
+GND*                         : 132       :        :                   :         : 2         :                
 GND*                         : 133       :        :                   :         : 2         :                
 GND*                         : 134       :        :                   :         : 2         :                
 GNDIO                        : 135       : gnd    :                   :         :           :                
 VCCIO2                       : 136       : power  :                   : 2.5V    : 2         :                
-digit_scan[6]                : 137       : output : 2.5 V             :         : 2         : N              
+GND*                         : 137       :        :                   :         : 2         :                
 GND*                         : 138       :        :                   :         : 2         :                
-col[7]                       : 139       : output : 2.5 V             :         : 2         : N              
-digit_cath[1]                : 140       : output : 2.5 V             :         : 2         : N              
+GND*                         : 139       :        :                   :         : 2         :                
+GND*                         : 140       :        :                   :         : 2         :                
 GND*                         : 141       :        :                   :         : 2         :                
-digit_cath[3]                : 142       : output : 2.5 V             :         : 2         : N              
-digit_cath[4]                : 143       : output : 2.5 V             :         : 2         : N              
+GND*                         : 142       :        :                   :         : 2         :                
+GND*                         : 143       :        :                   :         : 2         :                
 GND*                         : 144       :        :                   :         : 2         :                

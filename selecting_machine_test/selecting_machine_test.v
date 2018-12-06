@@ -6,10 +6,24 @@ output [7:0] row;
 output [7:0] col;
 output [7:0] digit_scan;
 output [5:0] digit_cath;
-reg [6:0] flag; 
+wire [6:0] flag; 
 wire [27:0] code;
 wire [6:0] clk_seven;
 wire clk_500;
+wire [6:0] BTN_pulse_temp;
+
+flag_control u_flag(
+	.clk(clk),
+	.rst(rst),
+	.BTN_pulse(BTN_pulse_temp),
+	.flag(flag));
+
+debounce #(.N(7)) u_debounce(
+	.clk(clk),
+	.rst(rst),
+	.key(~BTN),
+	.key_pulse(BTN_pulse_temp));
+
 frequency_divider #(.N(12500000)) u_clk_6(
 	.clkin(clk),
 	.clkout(clk_seven[6])
@@ -82,15 +96,15 @@ sequencer_num u_sequencer_num_0(
 	);
 
 decode_seg u_decode_seg(
-	.clk_500(clk_500),
+	.clk_500(clk_seven[6]),
 	.rst(rst),
 	.code(code[23:0]),
-	.digit_seg(digit_seg),
+	.digit_seg(digit_scan),
 	.digit_cath(digit_cath)
 	);
 
 decode_lattice u2(
-.clk_500(clk_500),
+.clk_500(clk_seven[6]),
 .rst(rst),
 .code(code[27:24]),
 .row(row),
@@ -321,6 +335,115 @@ always @(posedge clk_500) begin
 	endcase
 end
 
+endmodule
+
+
+module flag_control(clk, rst, BTN_pulse, flag);
+input clk;
+input rst;
+input [6:0] BTN_pulse;
+output reg [6:0] flag;
+initial begin
+flag<=7'b111_1111;
+end
+
+always @(posedge clk or posedge rst ) begin
+	if (rst) begin
+		// reset
+		flag <= 7'b111_1111;
+	end
+	else if (BTN_pulse[6]) begin
+		flag[6]<=0;
+	end
+	else if (BTN_pulse[5] & flag[6] == 0) begin
+		flag[5]<=0;
+	end
+	else if (BTN_pulse[4] & flag[5] == 0) begin
+		flag[4]<=0;
+	end
+	else if (BTN_pulse[3] & flag[4] == 0) begin
+		flag[3]<=0;
+	end
+	else if (BTN_pulse[2] & flag[3] == 0) begin
+		flag[2]<=0;
+	end
+	else if (BTN_pulse[1] & flag[2] == 0) begin
+		flag[1]<=0;
+	end
+	else if (BTN_pulse[0] & flag[1] == 0) begin
+		flag[0]<=0;
+	end
+	else begin
+		flag<=flag;
+	end
+end
+
+endmodule
+
+
+ module debounce (clk,rst,key,key_pulse);
+ 
+        parameter       N  =  1;                      //要消除的按键的数量
+ 
+	input             clk;
+        input             rst;
+        input 	[N-1:0]   key;                        //输入的按键					
+	output  [N-1:0]   key_pulse;                  //按键动作产生的脉冲	
+ 
+        reg     [N-1:0]   key_rst_pre;                //定义一个寄存器型变量存储上一个触发时的按键值
+        reg     [N-1:0]   key_rst;                    //定义一个寄存器变量储存储当前时刻触发的按键值
+ 
+        wire    [N-1:0]   key_edge;                   //检测到按键由高到低变化是产生一个高脉冲
+ 
+        //利用非阻塞赋值特点，将两个时钟触发时按键状态存储在两个寄存器变量中
+        always @(posedge clk  or  posedge rst)
+          begin
+             if (rst) begin
+                 key_rst <= {N{1'b1}};                //初始化时给key_rst赋值全为1，{}中表示N个1
+                 key_rst_pre <= {N{1'b1}};
+             end
+             else begin
+                 key_rst <= key;                     //第一个时钟上升沿触发之后key的值赋给key_rst,同时key_rst的值赋给key_rst_pre
+                 key_rst_pre <= key_rst;             //非阻塞赋值。相当于经过两个时钟触发，key_rst存储的是当前时刻key的值，key_rst_pre存储的是前一个时钟的key的值
+             end    
+           end
+ 
+        assign  key_edge = key_rst_pre & (~key_rst);//脉冲边沿检测。当key检测到下降沿时，key_edge产生一个时钟周期的高电平
+ 
+        reg	[17:0]	  cnt;                       //产生延时所用的计数器，系统时钟12MHz，要延时20ms左右时间，至少需要18位计数器     
+ 
+        //产生20ms延时，当检测到key_edge有效是计数器清零开始计数
+        always @(posedge clk or posedge rst)
+           begin
+             if(rst)
+                cnt <= 18'h0;
+             else if(key_edge)
+                cnt <= 18'h0;
+             else
+                cnt <= cnt + 1'h1;
+             end  
+ 
+        reg     [N-1:0]   key_sec_pre;                //延时后检测电平寄存器变量
+        reg     [N-1:0]   key_sec;                    
+ 
+ 
+        //延时后检测key，如果按键状态变低产生一个时钟的高脉冲。如果按键状态是高的话说明按键无效
+        always @(posedge clk  or  posedge rst)
+          begin
+             if (rst) 
+                 key_sec <= {N{1'b1}};                
+             else if (cnt==18'h3ffff)
+                 key_sec <= key;  
+          end
+       always @(posedge clk  or  posedge rst)
+          begin
+             if (rst)
+                 key_sec_pre <= {N{1'b1}};
+             else                   
+                 key_sec_pre <= key_sec;             
+         end      
+       assign  key_pulse = key_sec_pre & (~key_sec);     
+ 
 endmodule
 
 module frequency_divider(clkin, clkout);

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
 
-// DATE "11/30/2018 20:38:33"
+// DATE "12/06/2018 19:07:53"
 
 // 
 // Device: Altera EP4CE6F17C8 Package FBGA256
@@ -46,45 +46,45 @@ output 	[7:0] digit_scan;
 output 	[5:0] digit_cath;
 
 // Design Ports Information
-// clk	=>  Location: PIN_M1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rst	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[0]	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[1]	=>  Location: PIN_D3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[2]	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[3]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[4]	=>  Location: PIN_L10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[5]	=>  Location: PIN_T5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BTN[6]	=>  Location: PIN_C9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[0]	=>  Location: PIN_D15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[1]	=>  Location: PIN_T11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[2]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[3]	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[4]	=>  Location: PIN_P9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[5]	=>  Location: PIN_N15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[6]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// row[7]	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[0]	=>  Location: PIN_F14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[1]	=>  Location: PIN_N12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[2]	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[3]	=>  Location: PIN_F8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[4]	=>  Location: PIN_K9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[5]	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// col[6]	=>  Location: PIN_E6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// rst	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[0]	=>  Location: PIN_A15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[1]	=>  Location: PIN_L11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[2]	=>  Location: PIN_N5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[3]	=>  Location: PIN_R8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[4]	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[5]	=>  Location: PIN_D4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BTN[6]	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[0]	=>  Location: PIN_E7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[1]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[2]	=>  Location: PIN_L12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[3]	=>  Location: PIN_C9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[4]	=>  Location: PIN_N15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[5]	=>  Location: PIN_E5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[6]	=>  Location: PIN_T3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// row[7]	=>  Location: PIN_C16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[0]	=>  Location: PIN_M11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[1]	=>  Location: PIN_K10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[2]	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[3]	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[4]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[5]	=>  Location: PIN_T9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// col[6]	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // col[7]	=>  Location: PIN_N1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[0]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[1]	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[2]	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[3]	=>  Location: PIN_T9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[4]	=>  Location: PIN_L8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[5]	=>  Location: PIN_J15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[6]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_scan[7]	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_cath[0]	=>  Location: PIN_E8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_cath[1]	=>  Location: PIN_T14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_cath[2]	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_cath[3]	=>  Location: PIN_F1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_cath[4]	=>  Location: PIN_N5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// digit_cath[5]	=>  Location: PIN_D5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[0]	=>  Location: PIN_N16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[1]	=>  Location: PIN_K9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[2]	=>  Location: PIN_J13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[3]	=>  Location: PIN_J15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[4]	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[5]	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[6]	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_scan[7]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_cath[0]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_cath[1]	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_cath[2]	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_cath[3]	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_cath[4]	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// digit_cath[5]	=>  Location: PIN_D6,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -143,7 +143,7 @@ wire \digit_cath[4]~output_o ;
 wire \digit_cath[5]~output_o ;
 
 
-// Location: IOOBUF_X34_Y19_N2
+// Location: IOOBUF_X7_Y24_N2
 cycloneive_io_obuf \row[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -156,7 +156,7 @@ defparam \row[0]~output .bus_hold = "false";
 defparam \row[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X23_Y0_N9
+// Location: IOOBUF_X25_Y24_N16
 cycloneive_io_obuf \row[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -169,7 +169,7 @@ defparam \row[1]~output .bus_hold = "false";
 defparam \row[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X7_Y24_N16
+// Location: IOOBUF_X34_Y3_N23
 cycloneive_io_obuf \row[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -182,7 +182,7 @@ defparam \row[2]~output .bus_hold = "false";
 defparam \row[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X25_Y24_N23
+// Location: IOOBUF_X18_Y24_N9
 cycloneive_io_obuf \row[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -195,7 +195,7 @@ defparam \row[3]~output .bus_hold = "false";
 defparam \row[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X25_Y0_N2
+// Location: IOOBUF_X34_Y7_N16
 cycloneive_io_obuf \row[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -208,7 +208,7 @@ defparam \row[4]~output .bus_hold = "false";
 defparam \row[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X34_Y7_N16
+// Location: IOOBUF_X0_Y23_N9
 cycloneive_io_obuf \row[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -221,7 +221,7 @@ defparam \row[5]~output .bus_hold = "false";
 defparam \row[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X18_Y24_N16
+// Location: IOOBUF_X1_Y0_N2
 cycloneive_io_obuf \row[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -234,7 +234,7 @@ defparam \row[6]~output .bus_hold = "false";
 defparam \row[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X1_Y0_N9
+// Location: IOOBUF_X34_Y20_N9
 cycloneive_io_obuf \row[7]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -247,7 +247,7 @@ defparam \row[7]~output .bus_hold = "false";
 defparam \row[7]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X34_Y19_N16
+// Location: IOOBUF_X32_Y0_N9
 cycloneive_io_obuf \col[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -260,7 +260,7 @@ defparam \col[0]~output .bus_hold = "false";
 defparam \col[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X32_Y0_N2
+// Location: IOOBUF_X25_Y0_N16
 cycloneive_io_obuf \col[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -273,7 +273,7 @@ defparam \col[1]~output .bus_hold = "false";
 defparam \col[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X23_Y0_N16
+// Location: IOOBUF_X21_Y24_N9
 cycloneive_io_obuf \col[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -286,7 +286,7 @@ defparam \col[2]~output .bus_hold = "false";
 defparam \col[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X13_Y24_N23
+// Location: IOOBUF_X11_Y0_N9
 cycloneive_io_obuf \col[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -299,7 +299,7 @@ defparam \col[3]~output .bus_hold = "false";
 defparam \col[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X18_Y0_N9
+// Location: IOOBUF_X7_Y24_N16
 cycloneive_io_obuf \col[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -312,7 +312,7 @@ defparam \col[4]~output .bus_hold = "false";
 defparam \col[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X13_Y0_N2
+// Location: IOOBUF_X18_Y0_N16
 cycloneive_io_obuf \col[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -325,7 +325,7 @@ defparam \col[5]~output .bus_hold = "false";
 defparam \col[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X7_Y24_N9
+// Location: IOOBUF_X5_Y24_N16
 cycloneive_io_obuf \col[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -351,7 +351,7 @@ defparam \col[7]~output .bus_hold = "false";
 defparam \col[7]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X3_Y24_N16
+// Location: IOOBUF_X34_Y7_N23
 cycloneive_io_obuf \digit_scan[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -364,7 +364,7 @@ defparam \digit_scan[0]~output .bus_hold = "false";
 defparam \digit_scan[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X5_Y24_N2
+// Location: IOOBUF_X18_Y0_N9
 cycloneive_io_obuf \digit_scan[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -377,7 +377,7 @@ defparam \digit_scan[1]~output .bus_hold = "false";
 defparam \digit_scan[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X21_Y0_N9
+// Location: IOOBUF_X34_Y11_N2
 cycloneive_io_obuf \digit_scan[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -390,7 +390,7 @@ defparam \digit_scan[2]~output .bus_hold = "false";
 defparam \digit_scan[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X18_Y0_N16
+// Location: IOOBUF_X34_Y10_N9
 cycloneive_io_obuf \digit_scan[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -403,7 +403,7 @@ defparam \digit_scan[3]~output .bus_hold = "false";
 defparam \digit_scan[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X13_Y0_N16
+// Location: IOOBUF_X0_Y8_N16
 cycloneive_io_obuf \digit_scan[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -416,7 +416,7 @@ defparam \digit_scan[4]~output .bus_hold = "false";
 defparam \digit_scan[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X34_Y10_N9
+// Location: IOOBUF_X23_Y24_N23
 cycloneive_io_obuf \digit_scan[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -429,7 +429,7 @@ defparam \digit_scan[5]~output .bus_hold = "false";
 defparam \digit_scan[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X25_Y24_N2
+// Location: IOOBUF_X5_Y24_N23
 cycloneive_io_obuf \digit_scan[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -442,7 +442,7 @@ defparam \digit_scan[6]~output .bus_hold = "false";
 defparam \digit_scan[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X5_Y24_N16
+// Location: IOOBUF_X30_Y24_N9
 cycloneive_io_obuf \digit_scan[7]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -455,7 +455,7 @@ defparam \digit_scan[7]~output .bus_hold = "false";
 defparam \digit_scan[7]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X13_Y24_N16
+// Location: IOOBUF_X3_Y24_N16
 cycloneive_io_obuf \digit_cath[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -468,7 +468,7 @@ defparam \digit_cath[0]~output .bus_hold = "false";
 defparam \digit_cath[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X30_Y0_N16
+// Location: IOOBUF_X13_Y24_N2
 cycloneive_io_obuf \digit_cath[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -481,7 +481,7 @@ defparam \digit_cath[1]~output .bus_hold = "false";
 defparam \digit_cath[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X13_Y24_N2
+// Location: IOOBUF_X0_Y22_N2
 cycloneive_io_obuf \digit_cath[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -494,7 +494,7 @@ defparam \digit_cath[2]~output .bus_hold = "false";
 defparam \digit_cath[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X0_Y19_N23
+// Location: IOOBUF_X9_Y24_N16
 cycloneive_io_obuf \digit_cath[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -507,7 +507,7 @@ defparam \digit_cath[3]~output .bus_hold = "false";
 defparam \digit_cath[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X7_Y0_N23
+// Location: IOOBUF_X3_Y24_N23
 cycloneive_io_obuf \digit_cath[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -520,7 +520,7 @@ defparam \digit_cath[4]~output .bus_hold = "false";
 defparam \digit_cath[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X3_Y24_N2
+// Location: IOOBUF_X3_Y24_N9
 cycloneive_io_obuf \digit_cath[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -533,7 +533,7 @@ defparam \digit_cath[5]~output .bus_hold = "false";
 defparam \digit_cath[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y11_N22
+// Location: IOIBUF_X34_Y12_N8
 cycloneive_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -543,7 +543,7 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y12_N8
+// Location: IOIBUF_X34_Y12_N1
 cycloneive_io_ibuf \rst~input (
 	.i(rst),
 	.ibar(gnd),
@@ -553,7 +553,7 @@ defparam \rst~input .bus_hold = "false";
 defparam \rst~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X1_Y0_N22
+// Location: IOIBUF_X21_Y24_N1
 cycloneive_io_ibuf \BTN[0]~input (
 	.i(BTN[0]),
 	.ibar(gnd),
@@ -563,7 +563,7 @@ defparam \BTN[0]~input .bus_hold = "false";
 defparam \BTN[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X1_Y24_N8
+// Location: IOIBUF_X32_Y0_N15
 cycloneive_io_ibuf \BTN[1]~input (
 	.i(BTN[1]),
 	.ibar(gnd),
@@ -573,7 +573,7 @@ defparam \BTN[1]~input .bus_hold = "false";
 defparam \BTN[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y12_N1
+// Location: IOIBUF_X7_Y0_N22
 cycloneive_io_ibuf \BTN[2]~input (
 	.i(BTN[2]),
 	.ibar(gnd),
@@ -583,7 +583,7 @@ defparam \BTN[2]~input .bus_hold = "false";
 defparam \BTN[2]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X18_Y24_N22
+// Location: IOIBUF_X16_Y0_N8
 cycloneive_io_ibuf \BTN[3]~input (
 	.i(BTN[3]),
 	.ibar(gnd),
@@ -593,7 +593,7 @@ defparam \BTN[3]~input .bus_hold = "false";
 defparam \BTN[3]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X25_Y0_N8
+// Location: IOIBUF_X16_Y24_N22
 cycloneive_io_ibuf \BTN[4]~input (
 	.i(BTN[4]),
 	.ibar(gnd),
@@ -603,7 +603,7 @@ defparam \BTN[4]~input .bus_hold = "false";
 defparam \BTN[4]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X9_Y0_N1
+// Location: IOIBUF_X0_Y23_N1
 cycloneive_io_ibuf \BTN[5]~input (
 	.i(BTN[5]),
 	.ibar(gnd),
@@ -613,7 +613,7 @@ defparam \BTN[5]~input .bus_hold = "false";
 defparam \BTN[5]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X18_Y24_N8
+// Location: IOIBUF_X23_Y0_N15
 cycloneive_io_ibuf \BTN[6]~input (
 	.i(BTN[6]),
 	.ibar(gnd),
