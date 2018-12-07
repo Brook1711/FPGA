@@ -1,5 +1,5 @@
 |selecting_machine_test
-clk => clk.IN9
+clk => clk.IN10
 rst => rst.IN11
 BTN[0] => _.IN1
 BTN[1] => _.IN1
@@ -8,36 +8,38 @@ BTN[3] => _.IN1
 BTN[4] => _.IN1
 BTN[5] => _.IN1
 BTN[6] => _.IN1
-row[0] <= decode_lattice:u2.row
-row[1] <= decode_lattice:u2.row
-row[2] <= decode_lattice:u2.row
-row[3] <= decode_lattice:u2.row
-row[4] <= decode_lattice:u2.row
-row[5] <= decode_lattice:u2.row
-row[6] <= decode_lattice:u2.row
-row[7] <= decode_lattice:u2.row
-col[0] <= decode_lattice:u2.col
-col[1] <= decode_lattice:u2.col
-col[2] <= decode_lattice:u2.col
-col[3] <= decode_lattice:u2.col
-col[4] <= decode_lattice:u2.col
-col[5] <= decode_lattice:u2.col
-col[6] <= decode_lattice:u2.col
-col[7] <= decode_lattice:u2.col
-digit_scan[0] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[1] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[2] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[3] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[4] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[5] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[6] <= decode_seg:u_decode_seg.digit_seg
-digit_scan[7] <= decode_seg:u_decode_seg.digit_seg
-digit_cath[0] <= decode_seg:u_decode_seg.digit_cath
-digit_cath[1] <= decode_seg:u_decode_seg.digit_cath
-digit_cath[2] <= decode_seg:u_decode_seg.digit_cath
-digit_cath[3] <= decode_seg:u_decode_seg.digit_cath
-digit_cath[4] <= decode_seg:u_decode_seg.digit_cath
-digit_cath[5] <= decode_seg:u_decode_seg.digit_cath
+row[0] << decode_lattice:u2.row
+row[1] << decode_lattice:u2.row
+row[2] << decode_lattice:u2.row
+row[3] << decode_lattice:u2.row
+row[4] << decode_lattice:u2.row
+row[5] << decode_lattice:u2.row
+row[6] << decode_lattice:u2.row
+row[7] << decode_lattice:u2.row
+col[0] << decode_lattice:u2.col
+col[1] << decode_lattice:u2.col
+col[2] << decode_lattice:u2.col
+col[3] << decode_lattice:u2.col
+col[4] << decode_lattice:u2.col
+col[5] << decode_lattice:u2.col
+col[6] << decode_lattice:u2.col
+col[7] << decode_lattice:u2.col
+digit_scan[0] << decode_seg:u_decode_seg.digit_seg
+digit_scan[1] << decode_seg:u_decode_seg.digit_seg
+digit_scan[2] << decode_seg:u_decode_seg.digit_seg
+digit_scan[3] << decode_seg:u_decode_seg.digit_seg
+digit_scan[4] << decode_seg:u_decode_seg.digit_seg
+digit_scan[5] << decode_seg:u_decode_seg.digit_seg
+digit_scan[6] << decode_seg:u_decode_seg.digit_seg
+digit_scan[7] << decode_seg:u_decode_seg.digit_seg
+digit_cath[0] << decode_seg:u_decode_seg.digit_cath
+digit_cath[1] << decode_seg:u_decode_seg.digit_cath
+digit_cath[2] << decode_seg:u_decode_seg.digit_cath
+digit_cath[3] << decode_seg:u_decode_seg.digit_cath
+digit_cath[4] << decode_seg:u_decode_seg.digit_cath
+digit_cath[5] << decode_seg:u_decode_seg.digit_cath
+digit_cath[6] << decode_seg:u_decode_seg.digit_cath
+digit_cath[7] << decode_seg:u_decode_seg.digit_cath
 
 
 |selecting_machine_test|flag_control:u_flag
@@ -191,6 +193,39 @@ key_pulse[3] <= key_pulse.DB_MAX_OUTPUT_PORT_TYPE
 key_pulse[4] <= key_pulse.DB_MAX_OUTPUT_PORT_TYPE
 key_pulse[5] <= key_pulse.DB_MAX_OUTPUT_PORT_TYPE
 key_pulse[6] <= key_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|selecting_machine_test|frequency_divider:u_clk_500
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |selecting_machine_test|frequency_divider:u_clk_6
@@ -568,6 +603,8 @@ clk_500 => digit_cath[2]~reg0.CLK
 clk_500 => digit_cath[3]~reg0.CLK
 clk_500 => digit_cath[4]~reg0.CLK
 clk_500 => digit_cath[5]~reg0.CLK
+clk_500 => digit_cath[6]~reg0.CLK
+clk_500 => digit_cath[7]~reg0.CLK
 clk_500 => cath_control[0].CLK
 clk_500 => cath_control[1].CLK
 clk_500 => cath_control[2].CLK
@@ -612,6 +649,8 @@ digit_cath[2] <= digit_cath[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 digit_cath[3] <= digit_cath[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 digit_cath[4] <= digit_cath[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 digit_cath[5] <= digit_cath[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_cath[6] <= digit_cath[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_cath[7] <= digit_cath[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |selecting_machine_test|decode_lattice:u2

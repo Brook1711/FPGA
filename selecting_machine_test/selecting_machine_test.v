@@ -5,7 +5,7 @@ input [6:0] BTN;
 output [7:0] row;
 output [7:0] col;
 output [7:0] digit_scan;
-output [5:0] digit_cath;
+output [7:0] digit_cath;
 wire [6:0] flag; 
 wire [27:0] code;
 wire [6:0] clk_seven;
@@ -23,7 +23,10 @@ debounce #(.N(7)) u_debounce(
 	.rst(rst),
 	.key(~BTN),
 	.key_pulse(BTN_pulse_temp));
-
+	
+frequency_divider #(.N(50000)) u_clk_500(
+	.clkin(clk),
+	.clkout(clk_500));
 frequency_divider #(.N(12500000)) u_clk_6(
 	.clkin(clk),
 	.clkout(clk_seven[6])
@@ -96,7 +99,7 @@ sequencer_num u_sequencer_num_0(
 	);
 
 decode_seg u_decode_seg(
-	.clk_500(clk_seven[6]),
+	.clk_500(clk_500),
 	.rst(rst),
 	.code(code[23:0]),
 	.digit_seg(digit_scan),
@@ -104,7 +107,7 @@ decode_seg u_decode_seg(
 	);
 
 decode_lattice u2(
-.clk_500(clk_seven[6]),
+.clk_500(clk_500),
 .rst(rst),
 .code(code[27:24]),
 .row(row),
@@ -191,7 +194,7 @@ input clk_500;
 input rst;
 input [23:0] code;
 output reg [7:0] digit_seg;
-output reg [5:0] digit_cath;
+output reg [7:0] digit_cath;
 
 
 reg [3:0] digit;
@@ -224,12 +227,12 @@ always @(posedge clk_500 or posedge rst) begin
         4'h7:  digit_seg <= 8'b11100000;
         4'h8:  digit_seg <= 8'b11111110;
         4'h9:  digit_seg <= 8'b11110110;
-        4'hA:  digit_seg <= 8'b11101110;
-        4'hB:  digit_seg <= 8'b00111110;
-        4'hC:  digit_seg <= 8'b10011100;
-        4'hD:  digit_seg <= 8'b01111010;
-        4'hE:  digit_seg <= 8'b10011110;
-        4'hF:  digit_seg <= 8'b10001110;
+        4'hA:  digit_seg <= 8'b11101110;//显示A
+        4'hB:  digit_seg <= 8'b10011100;//显示C
+        4'hC:  digit_seg <= 8'b10011110;//显示E
+        4'hD:  digit_seg <= 8'b10001110;//显示F
+        4'hE:  digit_seg <= 8'b01101110;//显示H
+        4'hF:  digit_seg <= 8'b00011100;//显示L
 		default:;
 	endcase
 end
@@ -237,27 +240,27 @@ end
 always @(posedge clk_500) begin
 	case(cath_control)
 	3'h0: begin
-		digit_cath<=6'b1111_1110;
+		digit_cath<=8'b1111_1110;
 		digit<=code[3:0];
 	end
 	3'h1: begin
-		digit_cath<=6'b1111_1101;
+		digit_cath<=8'b1111_1101;
 		digit<=code[7:4];
 	end
 	3'h2: begin
-		digit_cath<=6'b1111_1011;
+		digit_cath<=8'b1111_1011;
 		digit<=code[11:8];
 	end
 	3'h3: begin
-		digit_cath<=6'b1111_0111;
+		digit_cath<=8'b1111_0111;
 		digit<=code[15:12];
 	end
 	3'h4: begin
-		digit_cath<=6'b1110_1111;
+		digit_cath<=8'b1110_1111;
 		digit<=code[19:16];
 	end
 	3'h5: begin
-		digit_cath<=6'b1101_1111;
+		digit_cath<=8'b1101_1111;
 		digit<=code[23:20];
 	end
 	default:;
