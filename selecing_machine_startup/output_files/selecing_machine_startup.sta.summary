@@ -1,0 +1,137 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clk'
+Slack : -8.546
+TNS   : -1837.398
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_500|clkout'
+Slack : -6.268
+TNS   : -214.720
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_5|clkout'
+Slack : -3.973
+TNS   : -11.659
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_6|clkout'
+Slack : -3.821
+TNS   : -13.984
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_2|clkout'
+Slack : -3.742
+TNS   : -13.861
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_4|clkout'
+Slack : -3.339
+TNS   : -12.115
+
+Type  : Setup 'selecting_machine_startup:u_startup|frequency_divider:u_clk_500|clkout'
+Slack : -3.311
+TNS   : -45.366
+
+Type  : Setup 'selecting_machine_startup:u_startup|frequency_divider:u_clk_2|clkout'
+Slack : -2.880
+TNS   : -10.762
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_1|clkout'
+Slack : -2.364
+TNS   : -8.144
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_0|clkout'
+Slack : -2.359
+TNS   : -9.236
+
+Type  : Setup 'selecting_machine_test:u_basic|frequency_divider:u_clk_3|clkout'
+Slack : -1.809
+TNS   : -7.058
+
+Type  : Hold 'clk'
+Slack : -2.556
+TNS   : -22.204
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_500|clkout'
+Slack : -0.099
+TNS   : -0.099
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_2|clkout'
+Slack : 1.668
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_3|clkout'
+Slack : 1.676
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_4|clkout'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_startup:u_startup|frequency_divider:u_clk_2|clkout'
+Slack : 1.692
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_0|clkout'
+Slack : 1.692
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_startup:u_startup|frequency_divider:u_clk_500|clkout'
+Slack : 1.727
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_1|clkout'
+Slack : 1.870
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_5|clkout'
+Slack : 1.918
+TNS   : 0.000
+
+Type  : Hold 'selecting_machine_test:u_basic|frequency_divider:u_clk_6|clkout'
+Slack : 1.977
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'selecting_machine_startup:u_startup|frequency_divider:u_clk_2|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_startup:u_startup|frequency_divider:u_clk_500|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_0|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_1|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_2|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_3|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_4|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_500|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_5|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'selecting_machine_test:u_basic|frequency_divider:u_clk_6|clkout'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

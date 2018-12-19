@@ -1,0 +1,4 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+    {{"Slow Model"} {selecting_machine_startup_test_mol.vo selecting_machine_startup_test_mol_v.sdo}}
+}

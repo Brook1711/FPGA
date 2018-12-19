@@ -1,0 +1,16 @@
+E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v {1 {vlog -work work -stats=none E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module selecting_machine_test
+-- Compiling module sequencer_eng
+-- Compiling module sequencer_num
+-- Compiling module sequencer_chi
+-- Compiling module decode_seg
+-- Compiling module decode_lattice
+-- Compiling module flag_control
+-- Compiling module debounce
+-- Compiling module frequency_divider
+
+Top level modules:
+	selecting_machine_test
+
+} {} {}}

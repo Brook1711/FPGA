@@ -133,7 +133,7 @@ VCCD_PLL2                    : D13       : power  :                   : 1.2V    
 RESERVED_INPUT               : D14       :        :                   :         : 7         :                
 RESERVED_INPUT               : D15       :        :                   :         : 6         :                
 RESERVED_INPUT               : D16       :        :                   :         : 6         :                
-GND+                         : E1        :        :                   :         : 1         :                
+clkin                        : E1        : input  : 2.5 V             :         : 1         : N              
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
@@ -245,7 +245,7 @@ RESERVED_INPUT               : L13       :        :                   :         
 RESERVED_INPUT               : L14       :        :                   :         : 5         :                
 RESERVED_INPUT               : L15       :        :                   :         : 5         :                
 RESERVED_INPUT               : L16       :        :                   :         : 5         :                
-clk                          : M1        : input  : 2.5 V             :         : 2         : Y              
+GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                

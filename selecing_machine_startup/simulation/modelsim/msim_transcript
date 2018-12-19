@@ -1,0 +1,94 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl
+# do selecing_machine_startup_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecing_machine_startup {E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/selecting_machine_startup_test.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:53:32 on Dec 07,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecing_machine_startup" E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/selecting_machine_startup_test.v 
+# -- Compiling module selecting_machine_startup_test
+# -- Compiling module selecting_machine_startup
+# -- Compiling module decode_lattice_startup
+# -- Compiling module decode_seg_startup
+# -- Compiling module selecting_machine_test
+# -- Compiling module sequencer_eng
+# -- Compiling module sequencer_num
+# -- Compiling module sequencer_chi
+# -- Compiling module decode_seg
+# -- Compiling module decode_lattice
+# -- Compiling module flag_control
+# -- Compiling module debounce
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	selecting_machine_startup_test
+# End time: 21:53:32 on Dec 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.selecting_machine_startup_test
+# vsim -gui "+altera" -l msim_transcript -do "selecing_machine_startup_run_msim_rtl_verilog.do" 
+# Start time: 21:53:45 on Dec 07,2018
+# Loading work.selecting_machine_startup_test
+# Loading work.selecting_machine_startup
+# Loading work.frequency_divider
+# Loading work.decode_lattice_startup
+# Loading work.decode_seg_startup
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+add wave -position insertpoint sim:/selecting_machine_startup_test/*
+force -freeze sim:/selecting_machine_startup_test/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/selecting_machine_startup_test/sw 0 0
+force -freeze sim:/selecting_machine_startup_test/BTN_7 0 0
+force -freeze sim:/selecting_machine_startup_test/BTN 0000000 0
+run
+run
+force -freeze sim:/selecting_machine_startup_test/digit_cath 11111111 0
+run
+run
+run
+run
+run
+noforce sim:/selecting_machine_startup_test/digit_cath
+run
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.frequency_divider
+# vsim 
+# Start time: 21:59:17 on Dec 07,2018
+# Loading work.frequency_divider
+add wave -position insertpoint sim:/frequency_divider/*
+force -freeze sim:/frequency_divider/clkin 1 0, 0 {50 ns} -r 100
+run
+run
+run
+run
+run
+run
+add dataflow \
+sim:/frequency_divider/clkout 
+# WARNING: No extended dataflow license exists
+quit -sim
+# Loading project easy

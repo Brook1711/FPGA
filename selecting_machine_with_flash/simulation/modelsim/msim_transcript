@@ -1,0 +1,163 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do selecting_machine_with_flash_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_with_flash {E:/prime_for_FPGA/Lite/demo/selecting_machine_with_flash/selecting_machine_with_flash.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 17:14:25 on Dec 13,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_with_flash" E:/prime_for_FPGA/Lite/demo/selecting_machine_with_flash/selecting_machine_with_flash.v 
+# -- Compiling module selecting_machine_with_flash
+# -- Compiling module selecting_machine_startup
+# -- Compiling module selecting_machine_test
+# -- Compiling module sequencer_eng
+# -- Compiling module sequencer_num
+# -- Compiling module sequencer_chi
+# -- Compiling module decode_seg
+# -- Compiling module decode_lattice
+# -- Compiling module flag_control
+# -- Compiling module debounce
+# -- Compiling module flash
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	selecting_machine_with_flash
+# End time: 17:14:25 on Dec 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.flash
+# vsim -gui "+altera" -l msim_transcript -do "selecting_machine_with_flash_run_msim_rtl_verilog.do" 
+# Start time: 17:15:43 on Dec 13,2018
+# Loading work.flash
+add wave -position insertpoint sim:/flash/*
+force -freeze sim:/flash/clk_2 HiZ 0
+force -freeze sim:/flash/rst HiZ 0
+force -freeze sim:/flash/rst 0 0
+force -freeze sim:/flash/finnal_flag 1 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/flash/clk_2 1 0, 0 {50 ns} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/flash/finnal_flag 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.selecting_machine_test
+# vsim 
+# Start time: 17:17:46 on Dec 13,2018
+# Loading work.selecting_machine_test
+# Loading work.flash
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.frequency_divider
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/selecting_machine_test/*
+force -freeze sim:/selecting_machine_test/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/selecting_machine_test/rst 1 0
+force -freeze sim:/selecting_machine_test/BTN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/selecting_machine_test/rst 0 0
+force -freeze sim:/selecting_machine_test/flag - 0
+# ** Error: (vsim-4011) Invalid force value: - 0.
+# 
+run
+run
+run
+force -freeze sim:/selecting_machine_test/flag 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Break key hit
+# Simulation stop requested.
+# End time: 17:22:25 on Dec 13,2018, Elapsed time: 0:04:39
+# Errors: 1, Warnings: 1

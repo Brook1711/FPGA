@@ -1,0 +1,304 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/simulation/modelsim
+vdebounce
+Z1 !s110 1544164013
+!i10b 1
+!s100 KES>Z@VPjDzTP0k5>T8fc2
+ICCSj5CANz1jEHn6i3c>ZJ2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1544150309
+Z4 8E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test.v
+Z5 FE:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test.v
+L0 590
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1544164013.044000
+Z8 !s107 E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb|E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb
+vdecode_lattice
+R1
+!i10b 1
+!s100 oU_0k262gb_k[kgSd_I<80
+ID`_>1`nD?^@EhkaTBT?BM0
+R2
+R0
+R3
+R4
+R5
+L0 475
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdecode_lattice_startup
+R1
+!i10b 1
+!s100 dh0:e>cCH8m]UZTo;GX8>3
+I?j^4e2Y?TDB1fOP`ei6Bf3
+R2
+R0
+R3
+R4
+R5
+L0 95
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdecode_seg
+R1
+!i10b 1
+!s100 H2`H4iA7n]=hVCGOmP3>C0
+IjGFj:n6a0VE;SPRa4TbgY2
+R2
+R0
+R3
+R4
+R5
+L0 395
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdecode_seg_startup
+R1
+!i10b 1
+!s100 j^0lX;UGMJS>fJJ^o>kTL3
+I^[nm`Kf@2G7AnGKAaiaa81
+R2
+R0
+R3
+R4
+R5
+L0 151
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vflag_control
+R1
+!i10b 1
+!s100 z[H9]:T2S9ZmNh2aXchLK1
+IPzaO1Z>10K08hXUMCbMdC0
+R2
+R0
+R3
+R4
+R5
+L0 547
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfrequency_divider
+R1
+!i10b 1
+!s100 z>87RTc0n6kKj=V6V]NPP1
+Ige6Gad=<^G4R]iF?[]hnR2
+R2
+R0
+R3
+R4
+R5
+L0 655
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vselecting_machine_startup
+R1
+!i10b 1
+!s100 9diiIGl_WJ^H5dG^R=H6I2
+I=RI0];Vd_nBM3UFK5TS?U0
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vselecting_machine_startup_test
+R1
+!i10b 1
+!s100 2ZiO=VDUncgVnOPa@RDXT0
+I3fBLTUD2CeHmdT?i;8WnU0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vselecting_machine_startup_test_tb
+!s110 1544164012
+!i10b 1
+!s100 mEC_E27Y9W0l14liPa1ZG1
+IMi_[kj@J;4fkkc[iSd36=1
+R2
+R0
+w1544163843
+8E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test_tb.v
+FE:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1544164012.881000
+!s107 E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb|E:/prime_for_FPGA/Lite/demo/selecing_machine_startup_tb/selecting_machine_startup_test_tb.v|
+!i113 1
+R10
+R11
+vselecting_machine_test
+R1
+!i10b 1
+!s100 _6hHjLdn1aAiCdfP<0k<_1
+I>l5:OIhJlOS5RW2]Wm=<o0
+R2
+R0
+R3
+R4
+R5
+L0 204
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsequencer_chi
+R1
+!i10b 1
+!s100 ^mij]d32^WITNUPn`;ehL3
+INDi3N:=T<S`nJ@IdDcQoE3
+R2
+R0
+R3
+R4
+R5
+L0 370
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsequencer_eng
+R1
+!i10b 1
+!s100 HK`=LYPSe@UbW4@e[`2Ri2
+IC16zCcQhHBT3?c>1`]3@z1
+R2
+R0
+R3
+R4
+R5
+L0 320
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsequencer_num
+R1
+!i10b 1
+!s100 25n<?VlizRPR3Ba?XP7512
+Ikh:bia_b2J<k`X0T@K4IF2
+R2
+R0
+R3
+R4
+R5
+L0 345
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,171 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl
+# do selecting_machine_startup_test_mol_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/Altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol {E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/selecting_machine_startup_test_mol.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:45:29 on Dec 10,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol" E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/selecting_machine_startup_test_mol.v 
+# -- Compiling module selecting_machine_startup_test_mol
+# -- Compiling module selecting_machine_startup
+# -- Compiling module decode_lattice_startup
+# -- Compiling module decode_seg_startup
+# -- Compiling module selecting_machine_test
+# -- Compiling module sequencer_eng
+# -- Compiling module sequencer_num
+# -- Compiling module sequencer_chi
+# -- Compiling module decode_seg
+# -- Compiling module decode_lattice
+# -- Compiling module flag_control
+# -- Compiling module debounce
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	selecting_machine_startup_test_mol
+# End time: 20:45:29 on Dec 10,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.selecting_machine_startup_test_mol
+# vsim -gui "+altera" -l msim_transcript -do "selecting_machine_startup_test_mol_run_msim_rtl_verilog.do" 
+# Start time: 20:45:38 on Dec 10,2018
+# Loading work.selecting_machine_startup_test_mol
+# Loading work.selecting_machine_startup
+# Loading work.frequency_divider
+# Loading work.decode_lattice_startup
+# Loading work.decode_seg_startup
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+add wave -position insertpoint sim:/selecting_machine_startup_test_mol/*
+run
+force -freeze sim:/selecting_machine_startup_test_mol/BTN_7 1 0
+run
+run
+run
+run
+run
+run
+run
+vsim work.decode_lattice
+# WARNING: No extended dataflow license exists
+# vsim 
+# Start time: 20:46:59 on Dec 10,2018
+# Loading work.decode_lattice
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/decode_lattice/*
+force -freeze sim:/decode_lattice/clk_500 1 0, 0 {50 ns} -r 100
+force -freeze sim:/decode_lattice/rst 1 0
+force -freeze sim:/decode_lattice/code 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.selecting_machine_test
+# vsim 
+# Start time: 20:47:47 on Dec 10,2018
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.frequency_divider
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/selecting_machine_test/*
+force -freeze sim:/selecting_machine_test/rst 1 0
+force -freeze sim:/selecting_machine_test/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/selecting_machine_test/BTN 0 0
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/selecting_machine_startup_test_mol.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:49:42 on Dec 10,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol" E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/selecting_machine_startup_test_mol.v 
+# -- Compiling module selecting_machine_startup_test_mol
+# -- Compiling module selecting_machine_startup
+# -- Compiling module decode_lattice_startup
+# -- Compiling module decode_seg_startup
+# -- Compiling module selecting_machine_test
+# -- Compiling module sequencer_eng
+# -- Compiling module sequencer_num
+# -- Compiling module sequencer_chi
+# -- Compiling module decode_seg
+# -- Compiling module decode_lattice
+# -- Compiling module flag_control
+# -- Compiling module debounce
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	selecting_machine_startup_test_mol
+# End time: 20:49:42 on Dec 10,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.selecting_machine_test
+# vsim 
+# Start time: 20:49:49 on Dec 10,2018
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.frequency_divider
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/selecting_machine_test/*
+run
+run
+force -freeze sim:/selecting_machine_test/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/selecting_machine_test/rst 0 0
+force -freeze sim:/selecting_machine_test/BTN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/selecting_machine_test/rst 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Break key hit
+# Simulation stop requested.
+# End time: 20:51:41 on Dec 10,2018, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 1

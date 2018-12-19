@@ -1,0 +1,241 @@
+|bell
+clk => clk.IN7
+rst => ~NO_FANOUT~
+bell_code[0] => Mux0.IN3
+bell_code[1] => Mux0.IN2
+bell_code[2] => Mux0.IN1
+bell_pulse => frequncy_bell.OUTPUTSELECT
+frequncy_bell <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_1
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_2
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_3
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_4
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_5
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_6
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bell|frequency_divider:bell_clk_7
+clkin => cnt[0].CLK
+clkin => cnt[1].CLK
+clkin => cnt[2].CLK
+clkin => cnt[3].CLK
+clkin => cnt[4].CLK
+clkin => cnt[5].CLK
+clkin => cnt[6].CLK
+clkin => cnt[7].CLK
+clkin => cnt[8].CLK
+clkin => cnt[9].CLK
+clkin => cnt[10].CLK
+clkin => cnt[11].CLK
+clkin => cnt[12].CLK
+clkin => cnt[13].CLK
+clkin => cnt[14].CLK
+clkin => cnt[15].CLK
+clkin => cnt[16].CLK
+clkin => cnt[17].CLK
+clkin => cnt[18].CLK
+clkin => cnt[19].CLK
+clkin => cnt[20].CLK
+clkin => cnt[21].CLK
+clkin => cnt[22].CLK
+clkin => cnt[23].CLK
+clkin => cnt[24].CLK
+clkin => cnt[25].CLK
+clkin => cnt[26].CLK
+clkin => cnt[27].CLK
+clkin => clkout~reg0.CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

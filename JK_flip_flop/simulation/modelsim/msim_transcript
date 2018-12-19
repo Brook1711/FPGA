@@ -14,17 +14,172 @@
 # 
 # vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop {E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 20:24:09 on Dec 01,2018
+# Start time: 20:09:16 on Dec 18,2018
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
 # -- Compiling module JK_flip_flop_test
 # -- Compiling module JK_flip_flop
-# ** Error: E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v(41): near ")": syntax error, unexpected ')', expecting .* or '.'
+# ** Error: E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v(42): near ")": syntax error, unexpected ')', expecting .* or '.'
 # -- Compiling module JK_flip_flop_part1
 # -- Compiling module frequency_divider
-# End time: 20:24:09 on Dec 01,2018, Elapsed time: 0:00:00
+# End time: 20:09:16 on Dec 18,2018, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: D:/Altera/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./JK_flip_flop_test_run_msim_rtl_verilog.do line 8
 # D:/Altera/modelsim_ase/win32aloem/vlog failed.
 #     while executing
 # "vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop {E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v}"
+vsim work.JK_flip_flop_test
+# vsim -gui "+altera" -l msim_transcript -do "JK_flip_flop_test_run_msim_rtl_verilog.do" 
+# Start time: 20:09:56 on Dec 18,2018
+# Loading work.JK_flip_flop_test
+# Loading work.frequency_divider
+# ** Error: (vsim-3033) E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v(14): Instantiation of 'JK_flip_flop' failed. The design unit was not found.
+# 
+#         Region: /JK_flip_flop_test
+#         Searched libraries:
+#             E:/prime_for_FPGA/Lite/demo/JK_flip_flop/simulation/modelsim/rtl_work
+# Error loading design
+vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:09:59 on Dec 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
+# -- Compiling module JK_flip_flop_test
+# -- Compiling module JK_flip_flop
+# -- Compiling module JK_flip_flop_part1
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	JK_flip_flop_test
+# End time: 20:09:59 on Dec 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.JK_flip_flop_test
+# vsim 
+# Start time: 20:10:02 on Dec 18,2018
+# Loading work.JK_flip_flop_test
+# Loading work.frequency_divider
+# Loading work.JK_flip_flop
+# Loading work.JK_flip_flop_part1
+add wave -position insertpoint sim:/JK_flip_flop_test/*
+force -freeze sim:/JK_flip_flop_test/clk 1 0, 0 {10 ns} -r 20
+vsim work.JK_flip_flop
+# vsim 
+# Start time: 20:10:41 on Dec 18,2018
+# Loading work.JK_flip_flop
+# Loading work.JK_flip_flop_part1
+add wave -position insertpoint sim:/JK_flip_flop/*
+force -freeze sim:/JK_flip_flop/clk 1 0, 0 {10 ns} -r 20
+force -freeze sim:/JK_flip_flop/J 0 0
+force -freeze sim:/JK_flip_flop/K 0 0
+noforce sim:/JK_flip_flop/SD
+force -freeze sim:/JK_flip_flop/SD 0 0
+force -freeze sim:/JK_flip_flop/RD 0 0
+run
+force -freeze sim:/JK_flip_flop/Q 0 0
+force -freeze sim:/JK_flip_flop/Q_ 0 0
+force -freeze sim:/JK_flip_flop/Q1 0 0
+run
+noforce sim:/JK_flip_flop/Q1
+noforce sim:/JK_flip_flop/Q_
+noforce sim:/JK_flip_flop/Q
+run
+run
+run
+force -freeze sim:/JK_flip_flop/RD 1 0
+force -freeze sim:/JK_flip_flop/SD 1 0
+run
+force -freeze sim:/JK_flip_flop/Q 0 0
+force -freeze sim:/JK_flip_flop/Q_ 1 0
+force -freeze sim:/JK_flip_flop/Q1 0 0
+run
+noforce sim:/JK_flip_flop/Q1
+noforce sim:/JK_flip_flop/Q_
+noforce sim:/JK_flip_flop/Q
+run
+run
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:14:56 on Dec 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
+# -- Compiling module JK_flip_flop_test
+# -- Compiling module JK_flip_flop
+# -- Compiling module JK_flip_flop_part1
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	JK_flip_flop_test
+# End time: 20:14:56 on Dec 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:14:59 on Dec 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
+# -- Compiling module JK_flip_flop_test
+# -- Compiling module JK_flip_flop
+# -- Compiling module JK_flip_flop_part1
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	JK_flip_flop_test
+# End time: 20:14:59 on Dec 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:15:00 on Dec 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
+# -- Compiling module JK_flip_flop_test
+# -- Compiling module JK_flip_flop
+# -- Compiling module JK_flip_flop_part1
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	JK_flip_flop_test
+# End time: 20:15:01 on Dec 18,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:15:03 on Dec 18,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/prime_for_FPGA/Lite/demo/JK_flip_flop" E:/prime_for_FPGA/Lite/demo/JK_flip_flop/JK_flip_flop_test.v 
+# -- Compiling module JK_flip_flop_test
+# -- Compiling module JK_flip_flop
+# -- Compiling module JK_flip_flop_part1
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	JK_flip_flop_test
+# End time: 20:15:03 on Dec 18,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.JK_flip_flop
+# vsim 
+# Start time: 20:15:08 on Dec 18,2018
+# Loading work.JK_flip_flop
+# Loading work.JK_flip_flop_part1
+add wave -position insertpoint sim:/JK_flip_flop/*
+force -freeze sim:/JK_flip_flop/clk 1 0, 0 {10 ns} -r 20
+force -freeze sim:/JK_flip_flop/J 0 0
+force -freeze sim:/JK_flip_flop/K 0 0
+force -freeze sim:/JK_flip_flop/SD 1 0
+force -freeze sim:/JK_flip_flop/RD 1 0
+run
+run
+run
+run
+force -freeze sim:/JK_flip_flop/J 1 0
+force -freeze sim:/JK_flip_flop/K 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf E:/prime_for_FPGA/Lite/demo/JK_flip_flop/simulation/modelsim/wave.do
+# End time: 21:46:33 on Dec 18,2018, Elapsed time: 1:31:25
+# Errors: 0, Warnings: 0

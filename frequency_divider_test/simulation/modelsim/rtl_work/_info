@@ -8,45 +8,24 @@ z2
 !i10f 100
 cModel Technology
 Z0 dE:/prime_for_FPGA/Lite/demo/frequency_divider_test/simulation/modelsim
-vfrequency_divider
-Z1 !s110 1543536568
-!i10b 1
-!s100 Va^zhK<:h5M@nb0Vg2<N91
-IO?cELf`SClUGEUDnRkoF_2
-Z2 V`JN@9S9cnhjKRR_L]QIcM3
-R0
-Z3 w1543497168
-Z4 8E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v
-Z5 FE:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v
-L0 14
-Z6 OV;L;10.3d;59
-r1
-!s85 0
-31
-Z7 !s108 1543536568.360000
-Z8 !s107 E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v|
-Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test|E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v|
-!i113 1
-Z10 o-vlog01compat -work work
-Z11 !s92 -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test
 vfrequency_divider_top
-R1
+!s110 1544192367
 !i10b 1
-!s100 ]cDLQ3X:n?]bHJoclI4ho1
-IM9CTM]oV?^EUGN<^?kEoH1
-R2
+!s100 0_J5okUPi7FdgmZ^CTE[G3
+ITGlz7CjWi9Y_g@8?;b`Ob1
+V`JN@9S9cnhjKRR_L]QIcM3
 R0
-R3
-R4
-R5
-L0 1
-R6
+w1544192308
+8E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v
+FE:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v
+L0 3
+OV;L;10.3d;59
 r1
 !s85 0
 31
-R7
-R8
-R9
+!s108 1544192367.807000
+!s107 E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test|E:/prime_for_FPGA/Lite/demo/frequency_divider_test/frequency_divider.v|
 !i113 1
-R10
-R11
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+E:/prime_for_FPGA/Lite/demo/frequency_divider_test

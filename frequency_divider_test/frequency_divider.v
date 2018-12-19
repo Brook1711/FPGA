@@ -1,17 +1,6 @@
-module frequency_divider_top(clk, clkout);
-input clk;
-output clkout;
-frequency_divider 
-	#(.N(1))
-	u1
-	(
-	.clkin(clk),
-	.clkout(clkout)
-	);
+`timescale 1ns/1ns
 
-endmodule 
-
-module frequency_divider(clkin, clkout);
+module frequency_divider_top(clkin, clkout);
 parameter N = 1;
 input clkin;
 output reg clkout;
@@ -19,6 +8,7 @@ reg [27:0] cnt;
 initial 
 begin
 cnt=0;
+clkout=0;
 end
 always @(posedge clkin) begin
 	if (cnt==N) begin

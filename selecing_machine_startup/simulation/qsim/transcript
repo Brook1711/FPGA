@@ -1,0 +1,90 @@
+# do selecing_machine_startup.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:13:28 on Dec 07,2018
+# vlog -work work selecing_machine_startup.vo 
+# -- Compiling module selecting_machine_startup_test
+# 
+# Top level modules:
+# 	selecting_machine_startup_test
+# End time: 13:13:28 on Dec 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:13:29 on Dec 07,2018
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module selecting_machine_startup_test_vlg_sample_tst
+# -- Compiling module selecting_machine_startup_test_vlg_check_tst
+# -- Compiling module selecting_machine_startup_test_vlg_vec_tst
+# 
+# Top level modules:
+# 	selecting_machine_startup_test_vlg_vec_tst
+# End time: 13:13:29 on Dec 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "selecing_machine_startup.do" 
+# Start time: 13:13:29 on Dec 07,2018
+# Loading work.selecting_machine_startup_test_vlg_vec_tst
+# Loading work.selecting_machine_startup_test
+# Loading maxii_ver.maxii_io
+# Loading maxii_ver.maxii_lcell
+# Loading maxii_ver.maxii_asynch_lcell
+# Loading maxii_ver.maxii_lcell_register
+# Loading work.selecting_machine_startup_test_vlg_sample_tst
+# Loading work.selecting_machine_startup_test_vlg_check_tst
+# ERROR! Vector Mismatch for output port col[0] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[1] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[4] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port col[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_cath[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11000000
+# ERROR! Vector Mismatch for output port digit_cath[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11000000
+# ERROR! Vector Mismatch for output port digit_scan[0] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[1] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[4] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+# ERROR! Vector Mismatch for output port digit_scan[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111111
+#          18 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(768)
+#    Time: 100 us  Iteration: 0  Instance: /selecting_machine_startup_test_vlg_vec_tst/tb_out

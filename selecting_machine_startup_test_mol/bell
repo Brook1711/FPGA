@@ -1,0 +1,50 @@
+module bell
+	(
+		ClkIn,
+		Resetb,
+		Bell
+	);
+	input ClkIn,Resetb;
+	output Bell;
+	
+	reg Bell;
+	wire ClkBell;
+	reg [15:0] Cnt;
+	reg [15:0] PreDiv;//每个音调需要分频的系数
+	reg [12:0] Delay;//每个音调持续的时间
+
+	defparam Gen_ClkBell.divdWIDTH=2,Gen_ClkBell.divdFACTOR=2;//4分频，得到12M时钟
+	gen_divd Gen_ClkBell(.reset(Resetb),.clkin(ClkIn),.clkout(ClkBell));	
+	
+	always @ (negedge Resetb or posedge ClkBell)
+		if(!Resetb)
+			begin
+			Bell<=1'b0;
+			Cnt<=13'd0;
+			Delay<=13'd0;
+			PreDiv<=16'h5997;//音调1
+			end
+		else
+			begin
+			Cnt<=Cnt+1'b1;
+			if(Cnt>=PreDiv)
+				begin
+				Bell<=~Bell;
+				Cnt<=16'd0;
+				Delay<=Delay+1'd1;
+				case(Delay)   //进行音调的切换
+					13'd1000:PreDiv<=16'h4FCD;//2
+					13'd2000:PreDiv<=16'h471B;//3
+					13'd3000:PreDiv<=16'h431E;//4
+					13'd4000:PreDiv<=16'h3BCA;//5
+					13'd5000:PreDiv<=16'h3544;//6
+					13'd6000:PreDiv<=16'h2F74;//7
+					13'd7000:
+						begin
+						Delay<=13'd0;;//置为0,从头开始演奏
+						PreDiv<=16'h5997;//音调1
+						end
+				endcase
+				end
+			end		
+endmodule

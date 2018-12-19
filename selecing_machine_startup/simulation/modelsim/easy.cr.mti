@@ -1,0 +1,15 @@
+E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v {1 {vlog -work work -stats=none E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module led
+
+Top level modules:
+	led
+
+} {} {}} E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW.v {1 {vlog -work work -stats=none E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module LED_FLOW
+
+Top level modules:
+	LED_FLOW
+
+} {} {}}

@@ -1,9 +1,4 @@
 |frequency_divider_top
-clk => clk.IN1
-clkout <= frequency_divider:u1.clkout
-
-
-|frequency_divider_top|frequency_divider:u1
 clkin => cnt[0].CLK
 clkin => cnt[1].CLK
 clkin => cnt[2].CLK

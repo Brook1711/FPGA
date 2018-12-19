@@ -1,0 +1,332 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/prime_for_FPGA/Lite/demo/selecting_machine_test/simulation/modelsim
+vdebounce
+Z0 !s110 1544188662
+!i10b 1
+!s100 m@K8Tbm>o5GYG_K_HOod[1
+IA^d_BY>a1k[?:ODoJVcOf1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dE:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol
+Z3 w1544188576
+Z4 8E:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\selecting_machine_startup_test_mol.v
+Z5 FE:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\selecting_machine_startup_test_mol.v
+L0 604
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1544188662.604000
+Z8 !s107 E:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\selecting_machine_startup_test_mol.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|E:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\selecting_machine_startup_test_mol.v|
+!i113 1
+Z10 o-work work
+vdecode_lattice
+R0
+!i10b 1
+!s100 6clBBZXjcdSJm_a5>AKEc2
+IbR<WkX5?4KH_MlzQL`K;z3
+R1
+R2
+R3
+R4
+R5
+L0 489
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_lattice_startup
+R0
+!i10b 1
+!s100 V;Xa_YeeB=GL3V8`M>V1g3
+I6Dm@R6fe6?ZhM3IYP0o112
+R1
+R2
+R3
+R4
+R5
+L0 109
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_seg
+R0
+!i10b 1
+!s100 Uom;aLkKWZC50XaAGiROY2
+Ii@<g0;n6_`EMB45iKUCci2
+R1
+R2
+R3
+R4
+R5
+L0 409
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_seg_startup
+R0
+!i10b 1
+!s100 TT;CIfDO5kk:;GVRNV60:1
+I8loMnhl@B2_3]56UbiU@m3
+R1
+R2
+R3
+R4
+R5
+L0 165
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vflag_control
+R0
+!i10b 1
+!s100 MDCgk>n=Qoa^c;Z1K?9zN2
+I36mQV`A3ie?IbzBK7AAlB3
+R1
+R2
+R3
+R4
+R5
+L0 561
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfrequency_divider
+R0
+!i10b 1
+!s100 N`C8b_d0QZJ>DFcFzBR?L2
+IHBUNC>H>YNIL<G`oT@kb30
+R1
+R2
+R3
+R4
+R5
+L0 669
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vled
+!s110 1544188060
+!i10b 1
+!s100 e;5J:VIEXhH55zENfl]l=1
+IhlH3Jh^4B4>fXb`cegF4n3
+R1
+R2
+w1544188052
+8E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW_tb.v
+FE:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1544188060.922000
+!s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW_tb.v|
+!i113 1
+R10
+vLED_FLOW
+Z11 !s110 1544188323
+!i10b 1
+!s100 [bXkET]9d>5Z>z]h@oWgS2
+IzM_L=HCT=k`5d2R3A6ZC70
+R1
+R2
+w1544187753
+8E:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\LED_FLOW.v
+FE:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\LED_FLOW.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1544188323.168000
+!s107 E:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\LED_FLOW.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:\prime_for_FPGA\Lite\demo\selecting_machine_startup_test_mol\LED_FLOW.v|
+!i113 1
+R10
+n@l@e@d_@f@l@o@w
+vLED_FLOW_tb
+R11
+!i10b 1
+!s100 0AkR@D^z1k8Ol>0F?I4[U1
+INj5RVbNS0i=d_fFBDH3F82
+R1
+R2
+w1544188125
+8E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v
+FE:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1544188323.366000
+!s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v|
+!i113 1
+R10
+n@l@e@d_@f@l@o@w_tb
+vselecting_machine_startup
+R0
+!i10b 1
+!s100 e^Vi877L2Nm=Pj^FV1daT3
+IeFldcOl>3hakN@=o35M@K0
+R1
+R2
+R3
+R4
+R5
+L0 56
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vselecting_machine_startup_test_mol
+R0
+!i10b 1
+!s100 Ndab2kQeKG@3O]Q3TN@F@1
+IgmE]SSSKzXT`2fZLNX2U@0
+R1
+R2
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vselecting_machine_test
+R0
+!i10b 1
+!s100 44n8<6Tf`0`oSXU_`?0_41
+IMjCFU3h<UPQ;M:T<CN^OR0
+R1
+R2
+R3
+R4
+R5
+L0 218
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_chi
+R0
+!i10b 1
+!s100 fo;T`dAfRDU7oFK20Hklh2
+IiKm@NX<?JQ>Bn134QIR9<0
+R1
+R2
+R3
+R4
+R5
+L0 384
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_eng
+R0
+!i10b 1
+!s100 k<HYz0BY:LbzFaoDFWMPR3
+IQA]D2CX>F>RW]fJi?Xz7z1
+R1
+R2
+R3
+R4
+R5
+L0 334
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_num
+R0
+!i10b 1
+!s100 =XGh=^kA=YE<:aK>^em2_2
+IE^]3W2F??]`oecFZFNHoe3
+R1
+R2
+R3
+R4
+R5
+L0 359
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

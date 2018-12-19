@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module JK_flip_flop_test(clk, rst, J, K, SD, RD, Q, Q_);
 input clk, rst, J, K, SD, RD;
 output Q;
@@ -24,49 +25,56 @@ endmodule
 
 module JK_flip_flop(clk, J, K, SD, RD, Q, Q_);
 input clk, J, K, SD, RD;
-output Q;
-output Q_;
+output Q, Q_;
 
-wire Q1;
+reg Q1;
 
-assign Q_ = (SD^RD==1)? SD : ((SD == 1)? ~Q1:1'bz);
+wire clr;
 
-assign Q = (SD^RD==1)? RD : ((SD == 1)? Q1:1'bz);
+assign clr = SD & RD;
+assign judgez = SD|RD;
+assign Q_ = ~Q1;
 
-JK_flip_flop_part1 u_JK_part1(
-	.clk(clk),
-	.J(J),
-	.K(K),
-	.Q(Q1),
-	);
+assign Q = Q1;
 
-endmodule
+//assign Q_ = (SD^RD==1)? SD : ((SD == 1)? ~Q1:1'bz);
 
-module JK_flip_flop_part1(clk, J, K, Q);
-input clk, J, K;
-output reg Q;
+//assign Q = (SD^RD==1)? RD : ((SD == 1)? Q1:1'bz);
 
-always @(negedge clk) begin
+
+initial 
+begin
+	Q1=0;
+end
+always @(posedge clk or negedge clr or negedge judgez) begin
+if (judgez==0) begin
+	Q1<=1'bz;
+end
+else if (clr==0) begin
+	Q1<=RD;
+end
+
+else begin
 	if (J == 0 & K == 0) begin
-			Q<=Q;
+			Q1<=Q1;
 	end
 	else if (J == 0 & K == 1) begin
-			Q<=0;
+			Q1<=0;
 	end
 	else if (J == 1 & K == 0) begin
-			Q<=1;
+			Q1<=1;
 	end
 	else if (J == 1 & K == 1) begin
-			Q<=!Q;
+			Q1<=!Q1;
 	end
 	else begin
-			Q<=Q;
+			Q1<=Q1;
 	end
 end
 
+end
+
 endmodule
-
-
 
 module frequency_divider(clkin, clkout);
 parameter N = 1;
@@ -75,7 +83,8 @@ output reg clkout;
 reg [27:0] cnt;
 initial 
 begin
-cnt=0;
+cnt<=0;
+clkout<=0;
 end
 always @(posedge clkin) begin
 	if (cnt==N) begin

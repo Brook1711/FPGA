@@ -1,0 +1,187 @@
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+quit -sim
+# reading D:/Altera/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project LED_FLOW
+# Compile of LED_FLOW.v was successful.
+# Compile of LED_FLOW.v was successful.
+# Error opening E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW_tb.v
+# Path name 'E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW_tb.v' doesn't exist.
+# Compile of LED_FLOW_tb.v failed with 1 errors.
+# Compile of LED_FLOW_tb.v was successful.
+# Compile of LED_FLOW.v was successful.
+# Compile of LED_FLOW_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.LED_FLOW_tb
+# vsim 
+# Start time: 21:08:59 on Dec 07,2018
+# Loading work.LED_FLOW_tb
+vsim work.LED_FLOW
+# vsim 
+# Start time: 21:09:37 on Dec 07,2018
+# Loading work.LED_FLOW
+# Loading work.led
+# Compile of LED_FLOW.v was successful.
+# Compile of led.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.LED_FLOW
+# vsim 
+# Start time: 21:12:27 on Dec 07,2018
+# Loading work.LED_FLOW
+# Loading work.led
+add wave -position insertpoint sim:/LED_FLOW/*
+run
+#                    0CLOCK_50M=0 RST_N=0 LED =   x
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/LED_FLOW/RST_n 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/LED_FLOW/RST_n 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# reading D:/Altera/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project mol
+# Compile of selecting_machine_startup_test_mol.v was successful.
+vsim work.selecting_machine_startup_test_mol
+# vsim 
+# Start time: 21:17:53 on Dec 07,2018
+# Loading work.selecting_machine_startup_test_mol
+# Loading work.selecting_machine_startup
+# Loading work.frequency_divider
+# Loading work.decode_lattice_startup
+# Loading work.decode_seg_startup
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+add wave -position insertpoint sim:/selecting_machine_startup_test_mol/*
+run
+# End time: 21:19:44 on Dec 07,2018, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 0

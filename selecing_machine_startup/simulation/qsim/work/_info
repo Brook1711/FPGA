@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/selecing_machine_startup/simulation/qsim
+vselecting_machine_startup_test
+!s110 1544159608
+!i10b 1
+!s100 3mF`1[4Zgo0M_4m<IGGlZ3
+I]MSKd4K_MzWFaz_99i;Ba3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1544159607
+8selecing_machine_startup.vo
+Fselecing_machine_startup.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1544159608.755000
+!s107 selecing_machine_startup.vo|
+!s90 -work|work|selecing_machine_startup.vo|
+!i113 1
+Z3 o-work work
+vselecting_machine_startup_test_vlg_check_tst
+Z4 !s110 1544159609
+!i10b 1
+!s100 Fge22;75Uo50JS5NP2`Wn2
+IKCd?o<b]ZU[o]Vil8PBGZ1
+R1
+R0
+Z5 w1544159604
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 64
+R2
+r1
+!s85 0
+31
+Z8 !s108 1544159609.072000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vselecting_machine_startup_test_vlg_sample_tst
+R4
+!i10b 1
+!s100 OQh[Pa801P3X>f1RW4UeB3
+IJ@A?N52Ygk1KMoW7l<ZT62
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vselecting_machine_startup_test_vlg_vec_tst
+R4
+!i10b 1
+!s100 PD`]]V9:0^7khbAZjUJPk3
+I1ffSVj0=ng;@:HGKV3i?>0
+R1
+R0
+R5
+R6
+R7
+L0 772
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

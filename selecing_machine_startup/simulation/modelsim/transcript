@@ -1,0 +1,26 @@
+# Compile of led.v was successful.
+# Compile of LED_FLOW.v was successful.
+# 2 compiles, 0 failed with no errors.
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:08:56 on Dec 07,2018
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# ** Error: (vlog-19) Failed to access library 'rtl_work' at "rtl_work".
+# 
+# No such file or directory. (errno = ENOENT)
+# End time: 22:08:56 on Dec 07,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# D:/Altera/modelsim_ase/win32aloem/vlog failed.
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:08:56 on Dec 07,2018
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# ** Error: (vcom-19) Failed to access library 'rtl_work' at "rtl_work".
+# 
+# No such file or directory. (errno = ENOENT)
+# End time: 22:08:56 on Dec 07,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# D:/Altera/modelsim_ase/win32aloem/vcom failed.
+# Compile of led.v was successful.
+# Compile of LED_FLOW.v was successful.
+# 2 compiles, 0 failed with no errors.

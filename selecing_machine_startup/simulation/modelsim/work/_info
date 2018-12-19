@@ -1,0 +1,331 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/selecing_machine_startup/simulation/modelsim
+vdebounce
+Z1 !s110 1544162523
+!i10b 1
+!s100 KES>Z@VPjDzTP0k5>T8fc2
+I=lTmKg4]CkkHffORki`cY1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1544150309
+Z4 8E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/selecting_machine_startup_test.v
+Z5 FE:/prime_for_FPGA/Lite/demo/selecing_machine_startup/selecting_machine_startup_test.v
+L0 590
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1544162522.973000
+Z8 !s107 E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/selecting_machine_startup_test.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/selecting_machine_startup_test.v|
+!i113 1
+Z10 o-work work
+vdecode_lattice
+R1
+!i10b 1
+!s100 oU_0k262gb_k[kgSd_I<80
+I46Igj5_0YY<o?lB;zMlP41
+R2
+R0
+R3
+R4
+R5
+L0 475
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_lattice_startup
+Z11 !s110 1544162522
+!i10b 1
+!s100 dh0:e>cCH8m]UZTo;GX8>3
+IgXk72PR`3Om=d0CS]>VfQ0
+R2
+R0
+R3
+R4
+R5
+L0 95
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_seg
+R1
+!i10b 1
+!s100 H2`H4iA7n]=hVCGOmP3>C0
+Ie]X?@^LiB^cQh@W1E_]6Z3
+R2
+R0
+R3
+R4
+R5
+L0 395
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_seg_startup
+R1
+!i10b 1
+!s100 j^0lX;UGMJS>fJJ^o>kTL3
+IQ@2UH>jn[SP<L4>W=0fFh2
+R2
+R0
+R3
+R4
+R5
+L0 151
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vflag_control
+R1
+!i10b 1
+!s100 z[H9]:T2S9ZmNh2aXchLK1
+I2Md=hX3N<zTUJ`IJE?VDn3
+R2
+R0
+R3
+R4
+R5
+L0 547
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfrequency_divider
+R1
+!i10b 1
+!s100 z>87RTc0n6kKj=V6V]NPP1
+I]4^C<LCa?RC3jgGnAdP0O1
+R2
+R0
+R3
+R4
+R5
+L0 655
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vled
+!s110 1544191531
+!i10b 1
+!s100 e;5J:VIEXhH55zENfl]l=1
+IREgHf2[o1`P5ok9cR=oC^2
+R2
+R0
+w1544189250
+8E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v
+FE:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1544191531.942000
+!s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/led.v|
+!i113 1
+R10
+vLED_FLOW
+!s110 1544191532
+!i10b 1
+!s100 dGoE:7C51X^I_[l?@_nBR3
+I;LG`99D]mb=^fkS6:KAJT3
+R2
+R0
+w1544189570
+8E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW.v
+FE:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW.v
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1544191532.171000
+!s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecting_machine_startup_test_mol/LED_FLOW.v|
+!i113 1
+R10
+n@l@e@d_@f@l@o@w
+vselecting_machine_startup
+R11
+!i10b 1
+!s100 9diiIGl_WJ^H5dG^R=H6I2
+IUdVP^nYAaofF3cIWz]_M_2
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vselecting_machine_startup_test
+!s110 1544162605
+!i10b 1
+!s100 GaC90CJb8UoC^0C@E=Rbe1
+IEn?H<>SBV<=za[jh?Td2:3
+R2
+R0
+w1544162596
+Z12 8E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/simulation/modelsim/selecting_machine_startup_test_tb.v
+Z13 FE:/prime_for_FPGA/Lite/demo/selecing_machine_startup/simulation/modelsim/selecting_machine_startup_test_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1544162605.815000
+Z14 !s107 E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/simulation/modelsim/selecting_machine_startup_test_tb.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecing_machine_startup/simulation/modelsim/selecting_machine_startup_test_tb.v|
+!i113 1
+R10
+vselecting_machine_startup_test_tb
+!s110 1544162892
+!i10b 1
+!s100 BU8>LOSVGTOCa<;9e^ZR43
+INiz=Xj9d<@4DS>]dheAYN1
+R2
+R0
+w1544162885
+R12
+R13
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1544162892.142000
+R14
+R15
+!i113 1
+R10
+vselecting_machine_test
+R1
+!i10b 1
+!s100 _6hHjLdn1aAiCdfP<0k<_1
+I^f`TXgZ^j7hEZc6fA`T9z3
+R2
+R0
+R3
+R4
+R5
+L0 204
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_chi
+R1
+!i10b 1
+!s100 ^mij]d32^WITNUPn`;ehL3
+IfjY[SAdYG4YWh2Y_I9>z70
+R2
+R0
+R3
+R4
+R5
+L0 370
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_eng
+R1
+!i10b 1
+!s100 HK`=LYPSe@UbW4@e[`2Ri2
+I87eDnbCD@YdDg2iRmhfZ42
+R2
+R0
+R3
+R4
+R5
+L0 320
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_num
+R1
+!i10b 1
+!s100 25n<?VlizRPR3Ba?XP7512
+I0fhL234^e;^1EChAGm7n`0
+R2
+R0
+R3
+R4
+R5
+L0 345
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

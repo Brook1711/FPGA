@@ -51,3 +51,4 @@ set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE decode_seg_test.v
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"

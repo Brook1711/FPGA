@@ -1,0 +1,105 @@
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+wave create -pattern none -portmode output -language vlog -range 7 0 /selecting_machine_startup_test_mol/row
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# selecting_machine_startup_test_mol
+wave create -pattern none -portmode output -language vlog -range 7 0 /selecting_machine_startup_test_mol/col
+# selecting_machine_startup_test_mol
+wave create -pattern none -portmode output -language vlog -range 7 0 /selecting_machine_startup_test_mol/digit_scan
+# selecting_machine_startup_test_mol
+wave create -pattern none -portmode output -language vlog -range 7 0 /selecting_machine_startup_test_mol/digit_cath
+# selecting_machine_startup_test_mol
+vsim work.selecting_machine_startup_test_mol
+# vsim -gui "+altera" -l msim_transcript -do "selecting_machine_startup_test_mol_run_msim_rtl_verilog.do" 
+# Start time: 15:08:54 on Dec 07,2018
+# Loading work.selecting_machine_startup_test_mol
+# Loading work.selecting_machine_startup
+# Loading work.frequency_divider
+# Loading work.decode_lattice_startup
+# Loading work.decode_seg_startup
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+add wave sim:/selecting_machine_startup_test_mol/*
+run
+vsim work.selecting_machine_startup_test_mol
+# vsim 
+# Start time: 15:09:48 on Dec 07,2018
+# Loading work.selecting_machine_startup_test_mol
+# Loading work.selecting_machine_startup
+# Loading work.frequency_divider
+# Loading work.decode_lattice_startup
+# Loading work.decode_seg_startup
+# Loading work.selecting_machine_test
+# Loading work.flag_control
+# Loading work.debounce
+# Loading work.sequencer_chi
+# Loading work.sequencer_eng
+# Loading work.sequencer_num
+# Loading work.decode_seg
+# Loading work.decode_lattice
+add wave  \
+sim:/selecting_machine_startup_test_mol/clk
+run
+add wave  \
+sim:/selecting_machine_startup_test_mol/row
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+# Compile of selecting_machine_startup_test_mol.v was successful.
+add wave sim:/selecting_machine_startup_test_mol/#ASSIGN#35/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave sim:/selecting_machine_startup_test_mol/u_basic/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 15:18:09 on Dec 07,2018, Elapsed time: 0:08:21
+# Errors: 0, Warnings: 0

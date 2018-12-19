@@ -1,0 +1,190 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/prime_for_FPGA/Lite/demo/selecting_machine_test/simulation/modelsim
+vdebounce
+Z1 !s110 1544186672
+!i10b 1
+!s100 R>AfBOjY;LL6f><JA`i_a0
+I2<odgEY5`D]fSb9`d94C02
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1544141929
+Z4 8E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v
+Z5 FE:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v
+L0 387
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+Z7 !s108 1544186672.296000
+Z8 !s107 E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|E:/prime_for_FPGA/Lite/demo/selecting_machine_test/selecting_machine_test.v|
+!i113 1
+Z10 o-work work
+vdecode_lattice
+R1
+!i10b 1
+!s100 1bch<z`c?K`mCz9nLi;i<2
+I]^j89H`j3iNHAJY;OD;1X2
+R2
+R0
+R3
+R4
+R5
+L0 272
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdecode_seg
+R1
+!i10b 1
+!s100 KLIYndJCEAiQHME5_OWzY1
+Ib>WfabL7IBX74VI_]M1342
+R2
+R0
+R3
+R4
+R5
+L0 192
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vflag_control
+R1
+!i10b 1
+!s100 dJe^<=`_`KbaXG`Ol70fK1
+InM>z7Qg_dJaZP:XH[`mz70
+R2
+R0
+R3
+R4
+R5
+L0 344
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfrequency_divider
+R1
+!i10b 1
+!s100 WOfWHnNRCbTF8IfEGLI^i3
+IUgMfOR3hXV]mloe5lG]=L1
+R2
+R0
+R3
+R4
+R5
+L0 452
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vselecting_machine_test
+R1
+!i10b 1
+!s100 iS0LmiA;]U:PYHRg[Kb1R2
+I5?RHVUf6GP>`FkZ3;L9=e0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_chi
+R1
+!i10b 1
+!s100 HRKj:^RfKj]Df5z1=Q=nA3
+IQ<UU0X`NhWE4@Mi^ceA[>2
+R2
+R0
+R3
+R4
+R5
+L0 167
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_eng
+R1
+!i10b 1
+!s100 MWdJP=13:N?NjR^[P4=BC0
+IQ5<kJYhd895kKlzKX=hkH0
+R2
+R0
+R3
+R4
+R5
+L0 117
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsequencer_num
+R1
+!i10b 1
+!s100 9P5X;WMMX<;;82QagLC]f1
+I?c8WOz03aITHlk7LU`X?Q0
+R2
+R0
+R3
+R4
+R5
+L0 142
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
